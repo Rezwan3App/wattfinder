@@ -15,7 +15,8 @@ Existing apps quote a station's max kW and leave the driver to guess. This app m
 - **Metro area:** NYC (real station data via OpenChargeMap)
 - **Car catalog:** Tesla Model 3 LR RWD, Hyundai Ioniq 5 LR AWD, Chevy Bolt EV — three deliberately different charge-curve shapes (steep taper / plateau+cliff / stepped)
 - **Data approach:** real station locations + connector types + power ratings from OpenChargeMap's free API, cached to JSON (never called live from the demo). Occupancy/availability is a synthetic, seeded, time-of-day-aware model layered on top.
-- **Stack:** React + TypeScript + Tailwind, a map library (Leaflet, free tiles), shadcn/ui. Light serverless routes for station data and estimators. Deploys on Vercel.
+- **Stack:** Next.js (App Router) + TypeScript + Tailwind, Leaflet (free tiles), shadcn/ui. Postgres via Supabase for cached station data and the occupancy layer (real schema, not static JSON — deliberately semi-complex). Deploys on Vercel.
+- **Optional bonus (deferred, revisit Phase 4):** a Hugging Face Gradio mini-app reusing the estimator code, as a standalone engineering artifact.
 
 ## Two estimators (the engineering core)
 
@@ -33,6 +34,7 @@ Existing apps quote a station's max kW and leave the driver to guess. This app m
 ## Blocking items
 
 - [ ] Register a free OpenChargeMap API key at [openchargemap.org](https://openchargemap.org) (My Profile → My Apps → Register An Application) and drop it into `.env.local` (see `.env.local.example`)
+- [ ] Create a free Supabase project (supabase.com) for the Postgres database and drop its connection details into `.env.local`
 
 ## Project docs
 

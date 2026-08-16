@@ -10,13 +10,11 @@ App track of Project 3 (portfolio piece). Full spec: `../MD files masterlist/pro
 
 - Metro area: NYC
 - Car catalog: Tesla Model 3 LR RWD, Hyundai Ioniq 5 LR AWD, Chevy Bolt EV (curve data already researched)
-- Data: real OpenChargeMap station data cached to JSON, never fetched live from the demo; synthetic seeded occupancy layer on top
-- Stack: React + TypeScript + Tailwind + Leaflet (free tiles) + shadcn/ui, light serverless routes, Vercel deploy
+- Data: real OpenChargeMap station data pulled once and cached into Postgres (never fetched live from the demo); synthetic seeded occupancy layer lives in the DB too, not just in-memory
+- **Stack (Aug 15, 2026):** Next.js (App Router) + TypeScript + Tailwind + Leaflet (free tiles) + shadcn/ui. Postgres via Supabase for station + occupancy data (real schema, not static JSON) — chosen over Neon for the easier Vercel integration; swappable if it becomes friction. Deploys on Vercel.
+- Deliberately semi-complex by request: real DB layer instead of flat JSON is the main added moving part, on top of the Next.js app.
+- Optional Hugging Face Gradio mini-app (reusing the estimator code): deferred, decide again at Phase 4.
 - Repo: private, `Rezwan3App/ev-charging-companion` on GitHub
-
-## Stack decision still open
-
-Framework (Next.js vs. Vite + separate serverless functions) not yet chosen — decide at the start of Phase 1 based on how the serverless routes for station data / estimators are best served on Vercel.
 
 ## Blocking on Rezwan
 
