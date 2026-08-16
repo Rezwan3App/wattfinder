@@ -21,8 +21,8 @@ App track of Project 3 (portfolio piece). Full spec: `../MD files masterlist/pro
 - **Primary color: green.** Soft/muted background treatment, not a stark or saturated look — soft green backgrounds specifically called out (details TBD once real design work starts).
 - Use the `/impeccable` skill for the actual design pass when Phase 3 starts, not a generic frontend build.
 - **Logo:** he wants real logo inspiration he sources himself, not AI-generated logo concepts. Wait for him to bring reference images before proposing any logo direction.
-- Hosted live on Vercel (already the plan) — confirmed, not just a placeholder deploy target.
-- **Project name: WattFinder** (decided Aug 15, 2026, "simple/direct descriptive" direction). Repo and local folder renamed to `wattfinder`.
+- Hosted live on Vercel (already the plan) — confirmed, not just a placeholder deploy target. Default `wattfinder.vercel.app` subdomain for now; custom domain is a later, explicitly-approved purchase decision, not assumed.
+- **Project name: WattFinder**, brand casing is lowercase **wattfinder** in logo/headers (decided Aug 15, 2026, "simple/direct descriptive" direction). Repo and local folder renamed to `wattfinder`.
 
 ## Blocking on Rezwan
 
