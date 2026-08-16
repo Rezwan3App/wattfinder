@@ -1,4 +1,4 @@
-# EV Charging Companion — project memory
+# WattFinder — project memory
 
 Follow `project-workflow.md` operating rules (subagent orchestration, plugin usage, token efficiency, writing style) from the MD files masterlist folder for every session on this project.
 
@@ -14,7 +14,7 @@ App track of Project 3 (portfolio piece). Full spec: `../MD files masterlist/pro
 - **Stack (Aug 15, 2026):** Next.js (App Router) + TypeScript + Tailwind + Leaflet (free tiles) + shadcn/ui. Postgres via Supabase for station + occupancy data (real schema, not static JSON) — chosen over Neon for the easier Vercel integration; swappable if it becomes friction. Deploys on Vercel.
 - Deliberately semi-complex by request: real DB layer instead of flat JSON is the main added moving part, on top of the Next.js app.
 - Optional Hugging Face Gradio mini-app (reusing the estimator code): deferred, decide again at Phase 4.
-- Repo: private, `Rezwan3App/ev-charging-companion` on GitHub
+- Repo: private, `Rezwan3App/wattfinder` on GitHub, local folder `Desktop/wattfinder`
 
 ## Design direction (added Aug 15, 2026 — build itself deferred to a later session)
 
@@ -22,7 +22,7 @@ App track of Project 3 (portfolio piece). Full spec: `../MD files masterlist/pro
 - Use the `/impeccable` skill for the actual design pass when Phase 3 starts, not a generic frontend build.
 - **Logo:** he wants real logo inspiration he sources himself, not AI-generated logo concepts. Wait for him to bring reference images before proposing any logo direction.
 - Hosted live on Vercel (already the plan) — confirmed, not just a placeholder deploy target.
-- **Project name: not yet decided.** Repo is currently named `ev-charging-companion` (descriptive placeholder). Rename repo + update docs once a name is picked.
+- **Project name: WattFinder** (decided Aug 15, 2026, "simple/direct descriptive" direction). Repo and local folder renamed to `wattfinder`.
 
 ## Blocking on Rezwan
 

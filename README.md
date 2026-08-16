@@ -1,4 +1,4 @@
-# EV Charging Companion
+# WattFinder
 
 A smart EV charging companion app. Answers the two questions that actually matter in the moment: *which nearby station is free right now, and how long will charging actually take there for my car?*
 
