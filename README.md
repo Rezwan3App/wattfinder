@@ -23,6 +23,25 @@ Existing apps quote a station's max kW and leave the driver to guess. This app m
 1. **Availability / wait-time predictor** — synthetic occupancy by time-of-day/day-of-week, reproducible via seed. Outputs: likely free now / busy / short wait, plus estimated wait if busy.
 2. **Charge-time estimator** — realistic per-car charging curve (not naive `kWh / kW`), min of station kW vs. car's accepted rate at current SoC. Outputs: realistic minutes to 80% (and full), with a small curve chart.
 
+## Timeline estimate
+
+Phase 0 done. Remaining: ~4-6 build sessions (1-1.5 for data layer, 0.5-1 for estimators, 1.5-2 for app build, 0.5-1 for polish/deploy, 0.5-1 for story assets). At one session/week that's 4-6 weeks to a live v1; two sessions some weeks compresses it to 2-3 weeks.
+
+## Project narrative
+
+WattFinder exists to fix a specific, common frustration for EV drivers: existing charging apps either don't know whether a nearby station is actually free right now, or they estimate charging time using a naive calculation that ignores how batteries actually behave. Drivers are told a station delivers "150 kW" and left to do the math themselves, when the real answer depends on their specific car, their current battery percentage, and the physics of how charging speed tapers as a battery fills up. The result is wasted trips to occupied or broken stations, and charge-time guesses that are routinely wrong by 10 to 15 minutes. WattFinder is built to answer the two questions that actually matter in that moment: which nearby station is free right now, and how long will charging honestly take, for this car, at this battery level, on this specific charger.
+
+The app pulls real charging station locations, connector types, and power ratings from OpenChargeMap's public API for the New York metro area, cached into a Postgres database rather than fetched live, since OCM is a registry, not a real-time availability feed. On top of that real map data, WattFinder layers a synthetic but seeded and time-of-day-aware occupancy model to simulate realistic busy/free patterns, and a charge-time estimator that models the actual charging curve for three deliberately different EVs, a Tesla Model 3, a Hyundai Ioniq 5, and a Chevy Bolt, each of which tapers, plateaus, or steps down differently as the battery fills. The estimator takes the minimum of what the car can accept and what the station can deliver at that state of charge, so the app can say something like "Station B, about 4 minutes away, open now, roughly 22 minutes to 80 percent," and explain exactly how it got there.
+
+Beyond the app itself, WattFinder is the deliberate fusion of the two halves of my background: the mechanical engineering training in battery behavior and power delivery from my time at Zachry Nuclear, and the product management instinct for turning that technical depth into a simple, trustworthy consumer decision. It's built as a portfolio piece for product management interviews, specifically to demonstrate that I can reason about the underlying engineering well enough to make a defensible product call, not just describe a feature on top of someone else's data. The honesty angle, showing drivers the real number instead of the misleading sticker spec, is both the technical differentiator and the interview story: an engineering insight that directly shapes a product decision.
+
+## Resume bullet drafts
+
+Not final, no fabricated metrics until the app is live and measured:
+
+- Designed and built WattFinder, a full-stack EV charging app (Next.js, TypeScript, Supabase/Postgres) that models real per-vehicle charging curves across 3 EV platforms to replace misleading sticker-kW claims with physics-based charge-time predictions and live-feeling station availability.
+- Built WattFinder end-to-end (React/Next.js, Postgres, real charging-station data) as a product case study in translating battery/power-delivery engineering into a consumer-facing recommendation feature.
+
 ## Build phases
 
 - [ ] Phase 1 — data layer (cached OCM stations + synthetic occupancy + charge-curve model)
