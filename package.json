@@ -7,7 +7,9 @@
     "build": "next build",
     "start": "next start",
     "lint": "eslint",
-    "test:estimator": "tsx src/lib/estimator.test.ts"
+    "test:estimator": "tsx src/lib/estimator.test.ts",
+    "fetch:stations": "tsx --env-file=.env.local scripts/fetch-ocm.ts",
+    "seed": "tsx --env-file=.env.local scripts/seed.ts"
   },
   "dependencies": {
     "next": "16.3.1",
@@ -24,6 +26,7 @@
     "eslint": "^9",
     "eslint-config-next": "16.3.1",
     "tailwindcss": "^4",
+    "tsx": "^4.23.12",
     "typescript": "^5"
   }
 }

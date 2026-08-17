@@ -35,7 +35,8 @@ App track of Project 3 (portfolio piece). Full spec: `../MD files masterlist/pro
 ## Supabase project
 
 - Project ref: `nsmkanozwuwgynatdaft`, region us-east-2. Free tier auto-pauses after ~7 days idle — un-pause in the dashboard if a session hits a dead DB.
-- Seed/re-seed: `npx tsx --env-file=.env.local scripts/fetch-ocm.ts` then `scripts/seed.ts`.
+- Seed/re-seed: `npm run fetch:stations` then `npm run seed`. Schema of record: `db/schema.sql`.
+- Aug 17, 2026 (review pass): dropped redundant `occupancy_seed` column (was a copy of ocm_id; use ocm_id as the occupancy seed). Added `db/schema.sql`, made `tsx` a real devDependency (npm scripts were broken without it), added `fetch:stations`/`seed` npm scripts.
 
 ## Session-close checklist
 

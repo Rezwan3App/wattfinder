@@ -1,0 +1,307 @@
+<title>WattFinder: What You Built Today</title>
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<style>
+  :root {
+    --bg: #eef3ea;
+    --surface: #ffffff;
+    --surface-2: #f5f8f2;
+    --ink: #17231b;
+    --muted: #5d6d61;
+    --faint: #8a988c;
+    --primary: #2f7a4d;
+    --primary-deep: #1c4a30;
+    --primary-soft: #e2efe4;
+    --border: #d7e2d6;
+    --border-strong: #c2d3c0;
+    --shadow: 0 1px 2px rgba(23, 35, 27, 0.04), 0 8px 24px rgba(23, 35, 27, 0.06);
+    --mono: ui-monospace, SFMono-Regular, "SF Mono", Menlo, Consolas, monospace;
+    --sans: ui-sans-serif, system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
+  }
+  :root:not([data-theme="light"]) {
+    @media (prefers-color-scheme: dark) {
+      --bg: #0e1410;
+      --surface: #161d17;
+      --surface-2: #1b241d;
+      --ink: #e7efe6;
+      --muted: #9db0a1;
+      --faint: #6f8175;
+      --primary: #5cb87f;
+      --primary-deep: #8fd6a8;
+      --primary-soft: #1e2c22;
+      --border: #26332a;
+      --border-strong: #35473a;
+      --shadow: 0 1px 2px rgba(0, 0, 0, 0.3), 0 10px 30px rgba(0, 0, 0, 0.35);
+    }
+  }
+  :root[data-theme="dark"] {
+    --bg: #0e1410;
+    --surface: #161d17;
+    --surface-2: #1b241d;
+    --ink: #e7efe6;
+    --muted: #9db0a1;
+    --faint: #6f8175;
+    --primary: #5cb87f;
+    --primary-deep: #8fd6a8;
+    --primary-soft: #1e2c22;
+    --border: #26332a;
+    --border-strong: #35473a;
+    --shadow: 0 1px 2px rgba(0, 0, 0, 0.3), 0 10px 30px rgba(0, 0, 0, 0.35);
+  }
+
+  * { box-sizing: border-box; }
+  body {
+    margin: 0;
+    background: var(--bg);
+    color: var(--ink);
+    font-family: var(--sans);
+    line-height: 1.6;
+    -webkit-font-smoothing: antialiased;
+  }
+  .wrap { max-width: 760px; margin: 0 auto; padding: 56px 24px 80px; }
+
+  .eyebrow {
+    font-family: var(--mono);
+    font-size: 12px;
+    letter-spacing: 0.14em;
+    text-transform: uppercase;
+    color: var(--primary);
+    margin: 0 0 14px;
+    font-weight: 600;
+  }
+  h1 {
+    font-size: clamp(30px, 6vw, 44px);
+    line-height: 1.1;
+    letter-spacing: -0.02em;
+    margin: 0 0 16px;
+    font-weight: 800;
+    text-wrap: balance;
+  }
+  .lede {
+    font-size: 18px;
+    color: var(--muted);
+    margin: 0;
+    max-width: 60ch;
+  }
+  .lede b { color: var(--ink); font-weight: 650; }
+
+  .analogy {
+    margin: 40px 0 8px;
+    background: var(--surface);
+    border: 1px solid var(--border);
+    border-radius: 16px;
+    padding: 24px 26px;
+    box-shadow: var(--shadow);
+  }
+  .analogy h2 { margin: 0 0 8px; font-size: 19px; letter-spacing: -0.01em; }
+  .analogy p { margin: 0; color: var(--muted); }
+  .analogy .store { color: var(--primary-deep); font-weight: 650; }
+
+  .section-label {
+    font-family: var(--mono);
+    font-size: 12px;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    color: var(--faint);
+    margin: 52px 0 4px;
+  }
+
+  /* Pipeline spine */
+  .pipe { position: relative; margin: 24px 0 0; padding-left: 8px; }
+  .pipe::before {
+    content: "";
+    position: absolute;
+    left: 25px; top: 18px; bottom: 40px;
+    width: 2px;
+    background: linear-gradient(var(--border-strong), var(--border));
+  }
+  .node { position: relative; padding: 0 0 26px 66px; }
+  .num {
+    position: absolute; left: 8px; top: 0;
+    width: 36px; height: 36px; border-radius: 50%;
+    background: var(--primary); color: #fff;
+    display: grid; place-items: center;
+    font-family: var(--mono); font-weight: 600; font-size: 15px;
+    box-shadow: 0 0 0 5px var(--bg);
+    z-index: 1;
+  }
+  .node.future .num { background: var(--surface); color: var(--faint); border: 2px dashed var(--border-strong); box-shadow: 0 0 0 5px var(--bg); }
+  .card {
+    background: var(--surface);
+    border: 1px solid var(--border);
+    border-radius: 14px;
+    padding: 18px 20px;
+    box-shadow: var(--shadow);
+  }
+  .node.future .card { background: var(--surface-2); border-style: dashed; box-shadow: none; }
+  .card h3 { margin: 0 0 5px; font-size: 17px; letter-spacing: -0.01em; }
+  .card .real { color: var(--muted); font-size: 14.5px; margin: 0; }
+  .card .plain { color: var(--ink); margin: 0 0 10px; font-size: 15.5px; }
+  .card .plain b { color: var(--primary-deep); }
+  .file {
+    display: inline-block;
+    font-family: var(--mono); font-size: 12.5px;
+    background: var(--primary-soft); color: var(--primary-deep);
+    padding: 2px 8px; border-radius: 6px; margin-top: 10px;
+    border: 1px solid var(--border);
+  }
+  .tag-you {
+    display: inline-block; font-family: var(--mono); font-size: 11px;
+    letter-spacing: 0.08em; text-transform: uppercase;
+    color: var(--primary); border: 1px solid var(--primary);
+    padding: 1px 7px; border-radius: 20px; margin-left: 8px; vertical-align: 2px;
+  }
+  .tag-me {
+    display: inline-block; font-family: var(--mono); font-size: 11px;
+    letter-spacing: 0.08em; text-transform: uppercase;
+    color: var(--faint); border: 1px solid var(--border-strong);
+    padding: 1px 7px; border-radius: 20px; margin-left: 8px; vertical-align: 2px;
+  }
+
+  /* Stat panel */
+  .stats {
+    margin: 8px 0 0;
+    display: grid; grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+    gap: 1px; background: var(--border);
+    border: 1px solid var(--border); border-radius: 14px; overflow: hidden;
+    box-shadow: var(--shadow);
+  }
+  .stat { background: var(--surface); padding: 20px 18px; text-align: center; }
+  .stat .n {
+    font-size: 30px; font-weight: 800; letter-spacing: -0.02em; color: var(--primary-deep);
+    font-variant-numeric: tabular-nums; line-height: 1;
+  }
+  .stat .l { font-size: 12.5px; color: var(--muted); margin-top: 7px; }
+
+  /* Progress */
+  .progress { margin-top: 12px; display: flex; flex-direction: column; gap: 10px; }
+  .prow {
+    display: flex; align-items: center; gap: 12px;
+    background: var(--surface); border: 1px solid var(--border);
+    border-radius: 12px; padding: 13px 16px; box-shadow: var(--shadow);
+  }
+  .prow.todo { background: var(--surface-2); border-style: dashed; box-shadow: none; }
+  .check {
+    flex: none; width: 22px; height: 22px; border-radius: 50%;
+    display: grid; place-items: center;
+    background: var(--primary); color: #fff; font-size: 13px; font-weight: 700;
+  }
+  .prow.todo .check { background: transparent; border: 2px dashed var(--border-strong); color: var(--faint); }
+  .prow .t { font-weight: 600; font-size: 15px; }
+  .prow .d { color: var(--muted); font-size: 14px; }
+  .prow.todo .t { color: var(--muted); }
+
+  .footer { margin-top: 44px; color: var(--faint); font-size: 14px; border-top: 1px solid var(--border); padding-top: 20px; }
+  .footer b { color: var(--muted); }
+
+  @media (prefers-reduced-motion: no-preference) {
+    .node, .analogy, .prow, .stat { animation: rise 0.5s cubic-bezier(0.2, 0.7, 0.3, 1) both; }
+    .node:nth-child(2){animation-delay:.04s}.node:nth-child(3){animation-delay:.08s}
+    .node:nth-child(4){animation-delay:.12s}.node:nth-child(5){animation-delay:.16s}
+    .node:nth-child(6){animation-delay:.2s}.node:nth-child(7){animation-delay:.24s}
+    @keyframes rise { from { opacity: 0; transform: translateY(10px); } to { opacity: 1; transform: none; } }
+  }
+</style>
+
+<div class="wrap">
+  <p class="eyebrow">WattFinder · August 17, 2026</p>
+  <h1>What you built today, in plain English</h1>
+  <p class="lede">You went from an empty project to a working app that holds <b>498 real charging stations</b>. Here is the whole thing as one simple picture. Nothing technical required to follow it.</p>
+
+  <div class="analogy">
+    <h2>The one idea to hold onto</h2>
+    <p>Building this is like <span class="store">stocking a store</span>. There is a giant public warehouse of charging stations out there. Today you sent a truck to grab the New York ones, brought them back in boxes, and unpacked them onto labeled shelves in your own stockroom. Your app is the store that will sell from those shelves.</p>
+  </div>
+
+  <p class="section-label">The journey of the data, step by step</p>
+  <div class="pipe">
+
+    <div class="node">
+      <div class="num">1</div>
+      <div class="card">
+        <h3>OpenChargeMap <span class="tag-you">you got the key</span></h3>
+        <p class="plain">A free public <b>warehouse</b> that lists charging stations all over the world.</p>
+        <p class="real">You registered for a free key that lets us ask it questions. Think of it as a library card for the warehouse.</p>
+      </div>
+    </div>
+
+    <div class="node">
+      <div class="num">2</div>
+      <div class="card">
+        <h3>The fetch script <span class="tag-me">I wrote this</span></h3>
+        <p class="plain">A small program that acts like a <b>pickup truck</b>. It drove to the warehouse and grabbed only the New York City stations.</p>
+        <p class="real">It asked for everything inside a box drawn around NYC, and 500 stations came back.</p>
+        <span class="file">scripts/fetch-ocm.ts</span>
+      </div>
+    </div>
+
+    <div class="node">
+      <div class="num">3</div>
+      <div class="card">
+        <h3>The cache file <span class="tag-me">created automatically</span></h3>
+        <p class="plain">The <b>boxes the truck brought back</b>. A single file on your computer holding all the station info.</p>
+        <p class="real">We keep this so we never have to bother the warehouse again. It is the reason the app stays fast and reliable.</p>
+        <span class="file">data/stations-nyc.json</span>
+      </div>
+    </div>
+
+    <div class="node">
+      <div class="num">4</div>
+      <div class="card">
+        <h3>Your database on Supabase <span class="tag-you">you made the account</span></h3>
+        <p class="plain">Your own <b>stockroom with labeled shelves</b>. A proper, organized place to store the stations so the app can find any of them instantly.</p>
+        <p class="real">You created it for free. We built two shelves: one for stations, one for the plug types at each station. It is locked so the public can read it but never mess with it.</p>
+      </div>
+    </div>
+
+    <div class="node">
+      <div class="num">5</div>
+      <div class="card">
+        <h3>The seed script <span class="tag-me">I wrote this</span></h3>
+        <p class="plain">The <b>unpacking</b>. It opened the boxes and placed every station neatly onto the right shelf in your stockroom.</p>
+        <p class="real">Run it once and the whole stockroom is stocked. Run it again anytime to restock from scratch.</p>
+        <span class="file">scripts/seed.ts</span>
+      </div>
+    </div>
+
+    <div class="node future">
+      <div class="num">6</div>
+      <div class="card">
+        <h3>The app itself <span class="tag-me">coming next</span></h3>
+        <p class="plain">The <b>storefront</b> customers walk into. A map where a driver sees nearby stations and how long charging will really take.</p>
+        <p class="real">Not built yet. This is where the green design, the logo, and the map come in.</p>
+      </div>
+    </div>
+
+  </div>
+
+  <p class="section-label">What is sitting in your stockroom right now</p>
+  <div class="stats">
+    <div class="stat"><div class="n">498</div><div class="l">real stations</div></div>
+    <div class="stat"><div class="n">541</div><div class="l">plugs / connectors</div></div>
+    <div class="stat"><div class="n">35</div><div class="l">NYC neighborhoods</div></div>
+    <div class="stat"><div class="n">89</div><div class="l">fast chargers</div></div>
+    <div class="stat"><div class="n">350</div><div class="l">fastest kW</div></div>
+  </div>
+
+  <p class="section-label">The bigger picture: two engines, both now running</p>
+  <div class="progress">
+    <div class="prow">
+      <div class="check">✓</div>
+      <div><span class="t">The math engine.</span> <span class="d">Figures out how long a car really takes to charge. Built and tested last session.</span></div>
+    </div>
+    <div class="prow">
+      <div class="check">✓</div>
+      <div><span class="t">The data engine.</span> <span class="d">Holds the 498 real stations. Built today. This is everything above.</span></div>
+    </div>
+    <div class="prow todo">
+      <div class="check"></div>
+      <div><span class="t">The busy-or-free layer.</span> <span class="d">Next: a way to show which stations are likely open right now.</span></div>
+    </div>
+    <div class="prow todo">
+      <div class="check"></div>
+      <div><span class="t">The storefront.</span> <span class="d">Then: the actual map app, with the green look and your logo.</span></div>
+    </div>
+  </div>
+
+  <p class="footer">The two hardest, least visible parts are done: the calculations and the real data. What is left is the fun, visible part. <b>You are further along than it feels.</b></p>
+</div>

@@ -36,10 +36,10 @@ async function main() {
     for (const s of stations) {
       const { rows } = await client.query(
         `insert into public.stations
-           (ocm_id, name, town, latitude, longitude, num_points, data_quality, base_utilization, occupancy_seed)
-         values ($1,$2,$3,$4,$5,$6,$7,$8,$9)
+           (ocm_id, name, town, latitude, longitude, num_points, data_quality, base_utilization)
+         values ($1,$2,$3,$4,$5,$6,$7,$8)
          returning id`,
-        [s.ocm_id, s.name, s.town, s.latitude, s.longitude, s.num_points, s.data_quality, baseUtilization(s.ocm_id), s.ocm_id],
+        [s.ocm_id, s.name, s.town, s.latitude, s.longitude, s.num_points, s.data_quality, baseUtilization(s.ocm_id)],
       );
       const stationId = rows[0].id;
       for (const c of s.connections) {
