@@ -1,0 +1,8726 @@
+[
+  {
+    "ocm_id": 48229,
+    "name": "TAPPS",
+    "town": "Brooklyn",
+    "latitude": 40.6015954,
+    "longitude": -73.9346045,
+    "num_points": null,
+    "data_quality": 3,
+    "connections": [
+      {
+        "connector_type": "Type1",
+        "power_kw": 3,
+        "current_type": "AC (1-phase)",
+        "quantity": 2
+      }
+    ]
+  },
+  {
+    "ocm_id": 352638,
+    "name": "Bical Auto Mall - Bical Parking",
+    "town": "Brooklyn",
+    "latitude": 40.602038,
+    "longitude": -73.912661,
+    "num_points": null,
+    "data_quality": 3,
+    "connections": [
+      {
+        "connector_type": "Type1",
+        "power_kw": 3.7,
+        "current_type": "AC (1-phase)",
+        "quantity": 9
+      }
+    ]
+  },
+  {
+    "ocm_id": 352634,
+    "name": "Bical Auto Mall - Bical Auto Mall DCFC",
+    "town": "Brooklyn",
+    "latitude": 40.601815,
+    "longitude": -73.912651,
+    "num_points": null,
+    "data_quality": 3,
+    "connections": [
+      {
+        "connector_type": "CCS",
+        "power_kw": 50,
+        "current_type": "DC",
+        "quantity": 2
+      }
+    ]
+  },
+  {
+    "ocm_id": 263014,
+    "name": "3000 Ocean Pkwy Apartments 2",
+    "town": "Brooklyn",
+    "latitude": 40.5775921,
+    "longitude": -73.969165,
+    "num_points": null,
+    "data_quality": 3,
+    "connections": [
+      {
+        "connector_type": "Type1",
+        "power_kw": 3.7,
+        "current_type": "AC (1-phase)",
+        "quantity": 1
+      }
+    ]
+  },
+  {
+    "ocm_id": 352490,
+    "name": "201 Brighton 1st Rd - Garage",
+    "town": "Brooklyn",
+    "latitude": 40.575202,
+    "longitude": -73.966603,
+    "num_points": null,
+    "data_quality": 3,
+    "connections": [
+      {
+        "connector_type": "Type1",
+        "power_kw": 3.7,
+        "current_type": "AC (1-phase)",
+        "quantity": 8
+      }
+    ]
+  },
+  {
+    "ocm_id": 352511,
+    "name": "532 Neptune Avenue",
+    "town": "Brooklyn",
+    "latitude": 40.57886583436617,
+    "longitude": -73.97256106492748,
+    "num_points": null,
+    "data_quality": 3,
+    "connections": [
+      {
+        "connector_type": "Type1",
+        "power_kw": 3.7,
+        "current_type": "AC (1-phase)",
+        "quantity": 6
+      }
+    ]
+  },
+  {
+    "ocm_id": 226590,
+    "name": "626 Sheepshead Bay Rd - Parking",
+    "town": "Brooklyn",
+    "latitude": 40.57897316619045,
+    "longitude": -73.97511250278187,
+    "num_points": null,
+    "data_quality": 3,
+    "connections": [
+      {
+        "connector_type": "Type1",
+        "power_kw": 3.7,
+        "current_type": "AC (1-phase)",
+        "quantity": 6
+      }
+    ]
+  },
+  {
+    "ocm_id": 277125,
+    "name": "532 Neptune Upper Parking",
+    "town": "New York",
+    "latitude": 40.57978,
+    "longitude": -73.97439,
+    "num_points": null,
+    "data_quality": 3,
+    "connections": [
+      {
+        "connector_type": "Type1",
+        "power_kw": 3.7,
+        "current_type": "AC (1-phase)",
+        "quantity": 8
+      }
+    ]
+  },
+  {
+    "ocm_id": 352587,
+    "name": "Kings Nissan",
+    "town": "Brooklyn",
+    "latitude": 40.589167,
+    "longitude": -73.960707,
+    "num_points": null,
+    "data_quality": 3,
+    "connections": [
+      {
+        "connector_type": "Type1",
+        "power_kw": 3.7,
+        "current_type": "AC (1-phase)",
+        "quantity": 1
+      }
+    ]
+  },
+  {
+    "ocm_id": 352572,
+    "name": "430806  Avalon Brooklyn Bay (Shared)",
+    "town": "Brooklyn",
+    "latitude": 40.58711,
+    "longitude": -73.95346,
+    "num_points": null,
+    "data_quality": 3,
+    "connections": [
+      {
+        "connector_type": "Type1",
+        "power_kw": 3.7,
+        "current_type": "AC (1-phase)",
+        "quantity": 1
+      }
+    ]
+  },
+  {
+    "ocm_id": 89629,
+    "name": "THE VUE",
+    "town": "Brooklyn",
+    "latitude": 40.5837551,
+    "longitude": -73.9501228,
+    "num_points": null,
+    "data_quality": 3,
+    "connections": [
+      {
+        "connector_type": "CHAdeMO",
+        "power_kw": 40,
+        "current_type": "DC",
+        "quantity": 1
+      },
+      {
+        "connector_type": "CCS",
+        "power_kw": 40,
+        "current_type": "DC",
+        "quantity": 1
+      }
+    ]
+  },
+  {
+    "ocm_id": 352562,
+    "name": "430806  Avalon Brooklyn Bay",
+    "town": "Brooklyn",
+    "latitude": 40.5859085,
+    "longitude": -73.9537896,
+    "num_points": null,
+    "data_quality": 3,
+    "connections": [
+      {
+        "connector_type": "Type1",
+        "power_kw": 3.7,
+        "current_type": "AC (1-phase)",
+        "quantity": 5
+      }
+    ]
+  },
+  {
+    "ocm_id": 352555,
+    "name": "2750 East 12th St Series",
+    "town": "Brooklyn",
+    "latitude": 40.58429054995201,
+    "longitude": -73.95775203231837,
+    "num_points": null,
+    "data_quality": 3,
+    "connections": [
+      {
+        "connector_type": "Type1",
+        "power_kw": 3.7,
+        "current_type": "AC (1-phase)",
+        "quantity": 2
+      }
+    ]
+  },
+  {
+    "ocm_id": 263016,
+    "name": "Kings Bay",
+    "town": "Brooklyn",
+    "latitude": 40.59164,
+    "longitude": -73.93749,
+    "num_points": null,
+    "data_quality": 3,
+    "connections": [
+      {
+        "connector_type": "Type1",
+        "power_kw": 3.7,
+        "current_type": "AC (1-phase)",
+        "quantity": 24
+      }
+    ]
+  },
+  {
+    "ocm_id": 294535,
+    "name": "PLAZA HONDA PUBLIC LEVEL 3",
+    "town": "Brooklyn",
+    "latitude": 40.618355,
+    "longitude": -73.945087,
+    "num_points": null,
+    "data_quality": 3,
+    "connections": [
+      {
+        "connector_type": "CHAdeMO",
+        "power_kw": 50,
+        "current_type": "DC",
+        "quantity": 1
+      },
+      {
+        "connector_type": "CCS",
+        "power_kw": 50,
+        "current_type": "DC",
+        "quantity": 1
+      }
+    ]
+  },
+  {
+    "ocm_id": 352706,
+    "name": "PLAZA HYUNDAI PUBLIC LEVEL 3",
+    "town": "Brooklyn",
+    "latitude": 40.618364,
+    "longitude": -73.945066,
+    "num_points": null,
+    "data_quality": 3,
+    "connections": [
+      {
+        "connector_type": "CCS",
+        "power_kw": 50,
+        "current_type": "DC",
+        "quantity": 1
+      },
+      {
+        "connector_type": "Tesla",
+        "power_kw": 50,
+        "current_type": "DC",
+        "quantity": 1
+      }
+    ]
+  },
+  {
+    "ocm_id": 226660,
+    "name": "New Tech Energy",
+    "town": "Brooklyn",
+    "latitude": 40.628872,
+    "longitude": -73.971992,
+    "num_points": null,
+    "data_quality": 3,
+    "connections": [
+      {
+        "connector_type": "Type1",
+        "power_kw": 3.7,
+        "current_type": "AC (1-phase)",
+        "quantity": 1
+      }
+    ]
+  },
+  {
+    "ocm_id": 352783,
+    "name": "581 Ocean Parkway",
+    "town": "Brooklyn",
+    "latitude": 40.6342434,
+    "longitude": -73.9717521,
+    "num_points": null,
+    "data_quality": 3,
+    "connections": [
+      {
+        "connector_type": "Type1",
+        "power_kw": 3.7,
+        "current_type": "AC (1-phase)",
+        "quantity": 13
+      }
+    ]
+  },
+  {
+    "ocm_id": 277135,
+    "name": "The 19th Ave Condominium",
+    "town": "Brooklyn",
+    "latitude": 40.626403,
+    "longitude": -73.977822,
+    "num_points": null,
+    "data_quality": 3,
+    "connections": [
+      {
+        "connector_type": "Type1",
+        "power_kw": 3.7,
+        "current_type": "AC (1-phase)",
+        "quantity": 4
+      }
+    ]
+  },
+  {
+    "ocm_id": 352666,
+    "name": "The Venetian - Garage",
+    "town": "Brooklyn",
+    "latitude": 40.609178,
+    "longitude": -73.971448,
+    "num_points": null,
+    "data_quality": 3,
+    "connections": [
+      {
+        "connector_type": "Type1",
+        "power_kw": 3.7,
+        "current_type": "AC (1-phase)",
+        "quantity": 20
+      }
+    ]
+  },
+  {
+    "ocm_id": 263019,
+    "name": "Carnegie Management",
+    "town": "Brooklyn",
+    "latitude": 40.61095,
+    "longitude": -73.968547,
+    "num_points": null,
+    "data_quality": 3,
+    "connections": [
+      {
+        "connector_type": "Type1",
+        "power_kw": 3.7,
+        "current_type": "AC (1-phase)",
+        "quantity": 1
+      }
+    ]
+  },
+  {
+    "ocm_id": 352679,
+    "name": "1535 E 14th St - Basement 1",
+    "town": "Brooklyn",
+    "latitude": 40.611982,
+    "longitude": -73.959622,
+    "num_points": null,
+    "data_quality": 3,
+    "connections": [
+      {
+        "connector_type": "Type1",
+        "power_kw": 3.7,
+        "current_type": "AC (1-phase)",
+        "quantity": 8
+      }
+    ]
+  },
+  {
+    "ocm_id": 352635,
+    "name": "30 Bay 29th Street",
+    "town": "Brooklyn",
+    "latitude": 40.60185,
+    "longitude": -73.99552,
+    "num_points": null,
+    "data_quality": 3,
+    "connections": [
+      {
+        "connector_type": "Type1",
+        "power_kw": 3.7,
+        "current_type": "AC (1-phase)",
+        "quantity": 10
+      }
+    ]
+  },
+  {
+    "ocm_id": 467117,
+    "name": "BHU - Bensonhurst#1 Municipal Parking Field",
+    "town": "Brooklyn",
+    "latitude": 40.608064,
+    "longitude": -74.002928,
+    "num_points": null,
+    "data_quality": 3,
+    "connections": [
+      {
+        "connector_type": "CHAdeMO",
+        "power_kw": 50,
+        "current_type": "DC",
+        "quantity": 1
+      },
+      {
+        "connector_type": "CCS",
+        "power_kw": 50,
+        "current_type": "DC",
+        "quantity": 1
+      }
+    ]
+  },
+  {
+    "ocm_id": 226668,
+    "name": "BORO PARK BORO CHARGE 3",
+    "town": "Borough Park",
+    "latitude": 40.63851,
+    "longitude": -73.998605,
+    "num_points": null,
+    "data_quality": 3,
+    "connections": [
+      {
+        "connector_type": "Type1",
+        "power_kw": 3.7,
+        "current_type": "AC (1-phase)",
+        "quantity": 2
+      }
+    ]
+  },
+  {
+    "ocm_id": 352803,
+    "name": "BORO PARK BORO CHARGE 8",
+    "town": "Borough Park",
+    "latitude": 40.638536,
+    "longitude": -73.99864,
+    "num_points": null,
+    "data_quality": 3,
+    "connections": [
+      {
+        "connector_type": "Type1",
+        "power_kw": 3.7,
+        "current_type": "AC (1-phase)",
+        "quantity": 2
+      }
+    ]
+  },
+  {
+    "ocm_id": 226664,
+    "name": "BRT STATION 1",
+    "town": "Sunset Park",
+    "latitude": 40.63557,
+    "longitude": -74.01628,
+    "num_points": null,
+    "data_quality": 3,
+    "connections": [
+      {
+        "connector_type": "Type1",
+        "power_kw": 3.7,
+        "current_type": "AC (1-phase)",
+        "quantity": 2
+      }
+    ]
+  },
+  {
+    "ocm_id": 352795,
+    "name": "Bay Ridge Nissan",
+    "town": "Brooklyn",
+    "latitude": 40.636324,
+    "longitude": -74.019228,
+    "num_points": null,
+    "data_quality": 3,
+    "connections": [
+      {
+        "connector_type": "Type1",
+        "power_kw": 3.7,
+        "current_type": "AC (1-phase)",
+        "quantity": 1
+      }
+    ]
+  },
+  {
+    "ocm_id": 62138,
+    "name": "BRI - Bay Ridge Municipal Parking Garage",
+    "town": "Brooklyn",
+    "latitude": 40.621698,
+    "longitude": -74.02567,
+    "num_points": null,
+    "data_quality": 3,
+    "connections": [
+      {
+        "connector_type": "Type1",
+        "power_kw": 3.7,
+        "current_type": "AC (1-phase)",
+        "quantity": 5
+      }
+    ]
+  },
+  {
+    "ocm_id": 226646,
+    "name": "HCBR STATION 1",
+    "town": "Brooklyn",
+    "latitude": 40.619335,
+    "longitude": -74.029466,
+    "num_points": null,
+    "data_quality": 3,
+    "connections": [
+      {
+        "connector_type": "Type1",
+        "power_kw": 3.7,
+        "current_type": "AC (1-phase)",
+        "quantity": 1
+      }
+    ]
+  },
+  {
+    "ocm_id": 269704,
+    "name": "Reseller Warehouse - Bright Energy Services",
+    "town": "Brooklyn",
+    "latitude": 40.61777,
+    "longitude": -74.02713,
+    "num_points": null,
+    "data_quality": 3,
+    "connections": [
+      {
+        "connector_type": "Type1",
+        "power_kw": 3.7,
+        "current_type": "AC (1-phase)",
+        "quantity": 2
+      }
+    ]
+  },
+  {
+    "ocm_id": 352665,
+    "name": "EVCS-01 BUILDING 129",
+    "town": "Brooklyn",
+    "latitude": 40.608875,
+    "longitude": -74.025917,
+    "num_points": null,
+    "data_quality": 3,
+    "connections": [
+      {
+        "connector_type": "Type1",
+        "power_kw": 3.7,
+        "current_type": "AC (1-phase)",
+        "quantity": 2
+      }
+    ]
+  },
+  {
+    "ocm_id": 467114,
+    "name": "Best Buy - Tesla Supercharger",
+    "town": "Brooklyn",
+    "latitude": 40.594772,
+    "longitude": -73.998751,
+    "num_points": null,
+    "data_quality": 3,
+    "connections": [
+      {
+        "connector_type": "CCS",
+        "power_kw": 50,
+        "current_type": "DC",
+        "quantity": 1
+      },
+      {
+        "connector_type": "Tesla",
+        "power_kw": 50,
+        "current_type": "DC",
+        "quantity": 1
+      }
+    ]
+  },
+  {
+    "ocm_id": 352612,
+    "name": "Target - Tesla Supercharger",
+    "town": "Brooklyn",
+    "latitude": 40.594639,
+    "longitude": -73.999969,
+    "num_points": null,
+    "data_quality": 3,
+    "connections": [
+      {
+        "connector_type": "Tesla",
+        "power_kw": 50,
+        "current_type": "DC",
+        "quantity": 20
+      }
+    ]
+  },
+  {
+    "ocm_id": 280674,
+    "name": "Brooklyn, NY Supercharger",
+    "town": "Brooklyn",
+    "latitude": 40.581278326014804,
+    "longitude": -73.98490962823132,
+    "num_points": 12,
+    "data_quality": 1,
+    "connections": [
+      {
+        "connector_type": "Tesla",
+        "power_kw": 250,
+        "current_type": "DC",
+        "quantity": 12
+      },
+      {
+        "connector_type": "CCS",
+        "power_kw": 250,
+        "current_type": "DC",
+        "quantity": 12
+      }
+    ]
+  },
+  {
+    "ocm_id": 352535,
+    "name": "Raymour & Flanigan RF#1091",
+    "town": "Brooklyn",
+    "latitude": 40.5819835,
+    "longitude": -73.9845913,
+    "num_points": null,
+    "data_quality": 3,
+    "connections": [
+      {
+        "connector_type": "CHAdeMO",
+        "power_kw": 100,
+        "current_type": "DC",
+        "quantity": 4
+      },
+      {
+        "connector_type": "CCS",
+        "power_kw": 350,
+        "current_type": "DC",
+        "quantity": 2
+      },
+      {
+        "connector_type": "CCS",
+        "power_kw": 100,
+        "current_type": "DC",
+        "quantity": 2
+      }
+    ]
+  },
+  {
+    "ocm_id": 226570,
+    "name": "Hylan New Dorp Plaza",
+    "town": "Staten Island",
+    "latitude": 40.569064,
+    "longitude": -74.109548,
+    "num_points": null,
+    "data_quality": 3,
+    "connections": [
+      {
+        "connector_type": "Type1",
+        "power_kw": 3.7,
+        "current_type": "AC (1-phase)",
+        "quantity": 2
+      }
+    ]
+  },
+  {
+    "ocm_id": 226508,
+    "name": "Staten Island University Hospital (South Side 375 Sequine Ave)",
+    "town": "Staten Island",
+    "latitude": 40.516758,
+    "longitude": -74.196379,
+    "num_points": null,
+    "data_quality": 3,
+    "connections": [
+      {
+        "connector_type": "Type1",
+        "power_kw": 3.7,
+        "current_type": "AC (1-phase)",
+        "quantity": 4
+      }
+    ]
+  },
+  {
+    "ocm_id": 226594,
+    "name": "Staten Island Mall Richmond Ave Entrance",
+    "town": "Staten Island",
+    "latitude": 40.581734,
+    "longitude": -74.168433,
+    "num_points": null,
+    "data_quality": 3,
+    "connections": [
+      {
+        "connector_type": "Type1",
+        "power_kw": 3.7,
+        "current_type": "AC (1-phase)",
+        "quantity": 2
+      }
+    ]
+  },
+  {
+    "ocm_id": 226598,
+    "name": "Staten Island Mall Dave and Busters",
+    "town": "Staten Island",
+    "latitude": 40.582698,
+    "longitude": -74.167876,
+    "num_points": null,
+    "data_quality": 3,
+    "connections": [
+      {
+        "connector_type": "Type1",
+        "power_kw": 3.7,
+        "current_type": "AC (1-phase)",
+        "quantity": 4
+      }
+    ]
+  },
+  {
+    "ocm_id": 226605,
+    "name": "Staten Island Mall Tommys Tavern and Tap",
+    "town": "Staten Island",
+    "latitude": 40.581128,
+    "longitude": -74.167923,
+    "num_points": null,
+    "data_quality": 3,
+    "connections": [
+      {
+        "connector_type": "Type1",
+        "power_kw": 3.7,
+        "current_type": "AC (1-phase)",
+        "quantity": 2
+      }
+    ]
+  },
+  {
+    "ocm_id": 352678,
+    "name": "1441 Richmond Ave",
+    "town": "Staten Island",
+    "latitude": 40.6116,
+    "longitude": -74.1564,
+    "num_points": null,
+    "data_quality": 3,
+    "connections": [
+      {
+        "connector_type": "CHAdeMO",
+        "power_kw": 50,
+        "current_type": "DC",
+        "quantity": 1
+      },
+      {
+        "connector_type": "CCS",
+        "power_kw": 50,
+        "current_type": "DC",
+        "quantity": 1
+      }
+    ]
+  },
+  {
+    "ocm_id": 352680,
+    "name": "Expressway Plaza - Tesla Supercharger",
+    "town": "Staten Island",
+    "latitude": 40.612043,
+    "longitude": -74.156647,
+    "num_points": null,
+    "data_quality": 3,
+    "connections": [
+      {
+        "connector_type": "Tesla",
+        "power_kw": 50,
+        "current_type": "DC",
+        "quantity": 12
+      }
+    ]
+  },
+  {
+    "ocm_id": 226592,
+    "name": "Staten Island Mall Macys",
+    "town": "Staten Island",
+    "latitude": 40.583139,
+    "longitude": -74.166332,
+    "num_points": null,
+    "data_quality": 3,
+    "connections": [
+      {
+        "connector_type": "Type1",
+        "power_kw": 3.7,
+        "current_type": "AC (1-phase)",
+        "quantity": 2
+      }
+    ]
+  },
+  {
+    "ocm_id": 226635,
+    "name": "CORP COMM 3 STATION 1 CC3",
+    "town": "Staten Island",
+    "latitude": 40.604213,
+    "longitude": -74.179561,
+    "num_points": null,
+    "data_quality": 3,
+    "connections": [
+      {
+        "connector_type": "Type1",
+        "power_kw": 3.7,
+        "current_type": "AC (1-phase)",
+        "quantity": 2
+      }
+    ]
+  },
+  {
+    "ocm_id": 352649,
+    "name": "CORP COMM 3 STATION 2 CC3",
+    "town": "Staten Island",
+    "latitude": 40.604154,
+    "longitude": -74.179546,
+    "num_points": null,
+    "data_quality": 3,
+    "connections": [
+      {
+        "connector_type": "Type1",
+        "power_kw": 3.7,
+        "current_type": "AC (1-phase)",
+        "quantity": 2
+      }
+    ]
+  },
+  {
+    "ocm_id": 226632,
+    "name": "CORP COMM 3 STATION 6 CC3",
+    "town": "Staten Island",
+    "latitude": 40.603961,
+    "longitude": -74.179472,
+    "num_points": null,
+    "data_quality": 3,
+    "connections": [
+      {
+        "connector_type": "Type1",
+        "power_kw": 3.7,
+        "current_type": "AC (1-phase)",
+        "quantity": 2
+      }
+    ]
+  },
+  {
+    "ocm_id": 142321,
+    "name": "Dana Ford Lincoln",
+    "town": "Staten Island",
+    "latitude": 40.587162,
+    "longitude": -74.194747,
+    "num_points": null,
+    "data_quality": 3,
+    "connections": [
+      {
+        "connector_type": "Type1",
+        "power_kw": 3.7,
+        "current_type": "AC (1-phase)",
+        "quantity": 1
+      }
+    ]
+  },
+  {
+    "ocm_id": 142351,
+    "name": "IKEA Distribution Services Center",
+    "town": "Staten Island",
+    "latitude": 40.613685,
+    "longitude": -74.184556,
+    "num_points": null,
+    "data_quality": 3,
+    "connections": [
+      {
+        "connector_type": "Type1",
+        "power_kw": 3.7,
+        "current_type": "AC (1-phase)",
+        "quantity": 10
+      }
+    ]
+  },
+  {
+    "ocm_id": 226637,
+    "name": "HAMPTON INN STATION 3",
+    "town": "Staten Island",
+    "latitude": 40.612671,
+    "longitude": -74.17882,
+    "num_points": null,
+    "data_quality": 3,
+    "connections": [
+      {
+        "connector_type": "Type1",
+        "power_kw": 3.7,
+        "current_type": "AC (1-phase)",
+        "quantity": 2
+      }
+    ]
+  },
+  {
+    "ocm_id": 226652,
+    "name": "National Grid - Staten Island",
+    "town": "Staten Island",
+    "latitude": 40.624733,
+    "longitude": -74.179551,
+    "num_points": null,
+    "data_quality": 3,
+    "connections": [
+      {
+        "connector_type": "Type1",
+        "power_kw": 3.7,
+        "current_type": "AC (1-phase)",
+        "quantity": 2
+      }
+    ]
+  },
+  {
+    "ocm_id": 246239,
+    "name": "TRMC Parking Garage",
+    "town": "Elizabeth",
+    "latitude": 40.659784,
+    "longitude": -74.213515,
+    "num_points": null,
+    "data_quality": 3,
+    "connections": [
+      {
+        "connector_type": "Type1",
+        "power_kw": 3.7,
+        "current_type": "AC (1-phase)",
+        "quantity": 3
+      }
+    ]
+  },
+  {
+    "ocm_id": 124881,
+    "name": "Elizabeth Parking Authority - J Christian Bollwage Garage",
+    "town": "Elizabeth",
+    "latitude": 40.663848,
+    "longitude": -74.216585,
+    "num_points": null,
+    "data_quality": 3,
+    "connections": [
+      {
+        "connector_type": "Type1",
+        "power_kw": 3.7,
+        "current_type": "AC (1-phase)",
+        "quantity": 2
+      }
+    ]
+  },
+  {
+    "ocm_id": 246243,
+    "name": "Mills at Jersey Gardens",
+    "town": "Elizabeth",
+    "latitude": 40.66244,
+    "longitude": -74.17328,
+    "num_points": 10,
+    "data_quality": 3,
+    "connections": [
+      {
+        "connector_type": "CCS",
+        "power_kw": 350,
+        "current_type": "DC",
+        "quantity": 10
+      }
+    ]
+  },
+  {
+    "ocm_id": 165131,
+    "name": "Elizabeth, NJ",
+    "town": "Elizabeth",
+    "latitude": 40.662915,
+    "longitude": -74.17379,
+    "num_points": 16,
+    "data_quality": 1,
+    "connections": [
+      {
+        "connector_type": "Tesla",
+        "power_kw": 250,
+        "current_type": "DC",
+        "quantity": 16
+      }
+    ]
+  },
+  {
+    "ocm_id": 352934,
+    "name": "The Mills at Jersey Gardens - Tesla Supercharger",
+    "town": "Elizabeth",
+    "latitude": 40.662915,
+    "longitude": -74.17379,
+    "num_points": null,
+    "data_quality": 3,
+    "connections": [
+      {
+        "connector_type": "Tesla",
+        "power_kw": 50,
+        "current_type": "DC",
+        "quantity": 16
+      }
+    ]
+  },
+  {
+    "ocm_id": 102822,
+    "name": "Spectrum",
+    "town": "Staten Island",
+    "latitude": 40.630898,
+    "longitude": -74.168358,
+    "num_points": null,
+    "data_quality": 3,
+    "connections": [
+      {
+        "connector_type": "Type1",
+        "power_kw": 3.7,
+        "current_type": "AC (1-phase)",
+        "quantity": 2
+      }
+    ]
+  },
+  {
+    "ocm_id": 142355,
+    "name": "HD OF SI",
+    "town": "Mariners Harbor",
+    "latitude": 40.626186,
+    "longitude": -74.155136,
+    "num_points": null,
+    "data_quality": 3,
+    "connections": [
+      {
+        "connector_type": "CCS",
+        "power_kw": 40,
+        "current_type": "DC",
+        "quantity": 1
+      }
+    ]
+  },
+  {
+    "ocm_id": 226704,
+    "name": "UPM STATION 1",
+    "town": "Bayonne",
+    "latitude": 40.655056,
+    "longitude": -74.135582,
+    "num_points": null,
+    "data_quality": 3,
+    "connections": [
+      {
+        "connector_type": "Type1",
+        "power_kw": 3.7,
+        "current_type": "AC (1-phase)",
+        "quantity": 2
+      }
+    ]
+  },
+  {
+    "ocm_id": 131489,
+    "name": "Bruno's Bakery and Restaurant",
+    "town": "Staten Island",
+    "latitude": 40.629216,
+    "longitude": -74.111537,
+    "num_points": 2,
+    "data_quality": 1,
+    "connections": [
+      {
+        "connector_type": "Unknown",
+        "power_kw": 10,
+        "current_type": "AC (3-phase)",
+        "quantity": 2
+      }
+    ]
+  },
+  {
+    "ocm_id": 352756,
+    "name": "Bruno's Bakery and Restaurant Forest Ave - Tesla Destination",
+    "town": "Staten Island",
+    "latitude": 40.629216,
+    "longitude": -74.111537,
+    "num_points": null,
+    "data_quality": 3,
+    "connections": [
+      {
+        "connector_type": "Unknown",
+        "power_kw": 3.7,
+        "current_type": "AC (1-phase)",
+        "quantity": 2
+      }
+    ]
+  },
+  {
+    "ocm_id": 131459,
+    "name": "Bruno's Bakery and Restaurant",
+    "town": "Staten Island",
+    "latitude": 40.588091,
+    "longitude": -74.089936,
+    "num_points": 2,
+    "data_quality": 1,
+    "connections": [
+      {
+        "connector_type": "Unknown",
+        "power_kw": 10,
+        "current_type": "AC (3-phase)",
+        "quantity": 2
+      }
+    ]
+  },
+  {
+    "ocm_id": 352579,
+    "name": "Bruno's Bakery and Restaurant Hylan Blvd - Tesla Destination",
+    "town": "Staten Island",
+    "latitude": 40.588091,
+    "longitude": -74.089936,
+    "num_points": null,
+    "data_quality": 3,
+    "connections": [
+      {
+        "connector_type": "Unknown",
+        "power_kw": 3.7,
+        "current_type": "AC (1-phase)",
+        "quantity": 2
+      }
+    ]
+  },
+  {
+    "ocm_id": 110544,
+    "name": "Nissan of Staten Island",
+    "town": "Staten Island",
+    "latitude": 40.581432,
+    "longitude": -74.097694,
+    "num_points": null,
+    "data_quality": 3,
+    "connections": [
+      {
+        "connector_type": "Type1",
+        "power_kw": 3.7,
+        "current_type": "AC (1-phase)",
+        "quantity": 1
+      }
+    ]
+  },
+  {
+    "ocm_id": 226583,
+    "name": "NYC FLEET DPRMBLOT8_2_L3",
+    "town": "Midland Beach",
+    "latitude": 40.572636,
+    "longitude": -74.08616,
+    "num_points": null,
+    "data_quality": 3,
+    "connections": [
+      {
+        "connector_type": "CHAdeMO",
+        "power_kw": 50,
+        "current_type": "DC",
+        "quantity": 1
+      },
+      {
+        "connector_type": "CCS",
+        "power_kw": 50,
+        "current_type": "DC",
+        "quantity": 1
+      },
+      {
+        "connector_type": "Tesla",
+        "power_kw": 50,
+        "current_type": "DC",
+        "quantity": 1
+      }
+    ]
+  },
+  {
+    "ocm_id": 226609,
+    "name": "Staten Island University Hospital (North Side 475 Seaview Ave.)",
+    "town": "Staten Island",
+    "latitude": 40.584709,
+    "longitude": -74.086124,
+    "num_points": null,
+    "data_quality": 3,
+    "connections": [
+      {
+        "connector_type": "Type1",
+        "power_kw": 3.7,
+        "current_type": "AC (1-phase)",
+        "quantity": 8
+      }
+    ]
+  },
+  {
+    "ocm_id": 226611,
+    "name": "320 Mason Ave",
+    "town": "New York",
+    "latitude": 40.584984,
+    "longitude": -74.088044,
+    "num_points": null,
+    "data_quality": 3,
+    "connections": [
+      {
+        "connector_type": "Type1",
+        "power_kw": 3.7,
+        "current_type": "AC (1-phase)",
+        "quantity": 4
+      }
+    ]
+  },
+  {
+    "ocm_id": 269702,
+    "name": "ISLAND SUBARU SUBARU SERV 1",
+    "town": "Staten Island",
+    "latitude": 40.594646,
+    "longitude": -74.082769,
+    "num_points": null,
+    "data_quality": 3,
+    "connections": [
+      {
+        "connector_type": "Type1",
+        "power_kw": 3.7,
+        "current_type": "AC (1-phase)",
+        "quantity": 1
+      }
+    ]
+  },
+  {
+    "ocm_id": 352621,
+    "name": "Honda of Staten Island",
+    "town": "Staten Island",
+    "latitude": 40.59751067999147,
+    "longitude": -74.0836837458115,
+    "num_points": null,
+    "data_quality": 3,
+    "connections": [
+      {
+        "connector_type": "Type1",
+        "power_kw": 3.7,
+        "current_type": "AC (1-phase)",
+        "quantity": 1
+      },
+      {
+        "connector_type": "CCS",
+        "power_kw": 50,
+        "current_type": "DC",
+        "quantity": 1
+      }
+    ]
+  },
+  {
+    "ocm_id": 246473,
+    "name": "Bridge Towers Location 1",
+    "town": "New York",
+    "latitude": 40.605198,
+    "longitude": -74.064384,
+    "num_points": null,
+    "data_quality": 3,
+    "connections": [
+      {
+        "connector_type": "Type1",
+        "power_kw": 3.7,
+        "current_type": "AC (1-phase)",
+        "quantity": 29
+      }
+    ]
+  },
+  {
+    "ocm_id": 226631,
+    "name": "NPS NERO - STIS - Fort Wadsworth - Mechanic Shop - Fuel Station 1",
+    "town": "Staten Island",
+    "latitude": 40.60391,
+    "longitude": -74.058548,
+    "num_points": null,
+    "data_quality": 3,
+    "connections": [
+      {
+        "connector_type": "Unknown",
+        "power_kw": 1.9,
+        "current_type": "AC (1-phase)",
+        "quantity": 1
+      }
+    ]
+  },
+  {
+    "ocm_id": 277128,
+    "name": "VNB NB 1",
+    "town": "Staten Island",
+    "latitude": 40.600894,
+    "longitude": -74.063265,
+    "num_points": null,
+    "data_quality": 3,
+    "connections": [
+      {
+        "connector_type": "Type1",
+        "power_kw": 3.7,
+        "current_type": "AC (1-phase)",
+        "quantity": 1
+      }
+    ]
+  },
+  {
+    "ocm_id": 226600,
+    "name": "NYC FLEET DPROCBRZAC_2_L3",
+    "town": "South Beach",
+    "latitude": 40.582787,
+    "longitude": -74.07527,
+    "num_points": null,
+    "data_quality": 3,
+    "connections": [
+      {
+        "connector_type": "CHAdeMO",
+        "power_kw": 50,
+        "current_type": "DC",
+        "quantity": 1
+      },
+      {
+        "connector_type": "CCS",
+        "power_kw": 50,
+        "current_type": "DC",
+        "quantity": 1
+      }
+    ]
+  },
+  {
+    "ocm_id": 226604,
+    "name": "NYC FLEET DPROCBRZAC_1_L3",
+    "town": "South Beach",
+    "latitude": 40.583011,
+    "longitude": -74.075108,
+    "num_points": null,
+    "data_quality": 3,
+    "connections": [
+      {
+        "connector_type": "CHAdeMO",
+        "power_kw": 50,
+        "current_type": "DC",
+        "quantity": 1
+      },
+      {
+        "connector_type": "CCS",
+        "power_kw": 50,
+        "current_type": "DC",
+        "quantity": 1
+      }
+    ]
+  },
+  {
+    "ocm_id": 263021,
+    "name": "Superior Realty Group",
+    "town": "Brooklyn",
+    "latitude": 40.61517985216326,
+    "longitude": -74.0319846196921,
+    "num_points": null,
+    "data_quality": 3,
+    "connections": [
+      {
+        "connector_type": "Type1",
+        "power_kw": 3.7,
+        "current_type": "AC (1-phase)",
+        "quantity": 4
+      }
+    ]
+  },
+  {
+    "ocm_id": 467118,
+    "name": "20 Cliff St - Outdoor Parking",
+    "town": "Staten Island",
+    "latitude": 40.610999,
+    "longitude": -74.0603285,
+    "num_points": null,
+    "data_quality": 3,
+    "connections": [
+      {
+        "connector_type": "Type1",
+        "power_kw": 3.7,
+        "current_type": "AC (1-phase)",
+        "quantity": 2
+      }
+    ]
+  },
+  {
+    "ocm_id": 142362,
+    "name": "SGE - St. George Courthouse Garage",
+    "town": "Staten Island",
+    "latitude": 40.639469,
+    "longitude": -74.076912,
+    "num_points": null,
+    "data_quality": 3,
+    "connections": [
+      {
+        "connector_type": "Type1",
+        "power_kw": 3.7,
+        "current_type": "AC (1-phase)",
+        "quantity": 3
+      }
+    ]
+  },
+  {
+    "ocm_id": 352804,
+    "name": "Bay Street Landing Home Owners Association (BSL HOA)",
+    "town": "Staten Island",
+    "latitude": 40.63865301141443,
+    "longitude": -74.0749707323156,
+    "num_points": null,
+    "data_quality": 3,
+    "connections": [
+      {
+        "connector_type": "Type1",
+        "power_kw": 3.7,
+        "current_type": "AC (1-phase)",
+        "quantity": 6
+      }
+    ]
+  },
+  {
+    "ocm_id": 226673,
+    "name": "Empire Outlets Garage",
+    "town": "Staten Island",
+    "latitude": 40.644065,
+    "longitude": -74.075153,
+    "num_points": null,
+    "data_quality": 3,
+    "connections": [
+      {
+        "connector_type": "Type1",
+        "power_kw": 3.7,
+        "current_type": "AC (1-phase)",
+        "quantity": 5
+      }
+    ]
+  },
+  {
+    "ocm_id": 79612,
+    "name": "Propark - Madox Apartments",
+    "town": "Jersey City",
+    "latitude": 40.71387,
+    "longitude": -74.04138,
+    "num_points": 1,
+    "data_quality": 1,
+    "connections": [
+      {
+        "connector_type": "Unknown",
+        "power_kw": 13,
+        "current_type": "AC (3-phase)",
+        "quantity": 1
+      }
+    ]
+  },
+  {
+    "ocm_id": 131493,
+    "name": "101 Hudson-Littleman Parking",
+    "town": "Jersey City",
+    "latitude": 40.71585,
+    "longitude": -74.035362,
+    "num_points": 4,
+    "data_quality": 1,
+    "connections": [
+      {
+        "connector_type": "Unknown",
+        "power_kw": 10,
+        "current_type": "AC (3-phase)",
+        "quantity": 4
+      }
+    ]
+  },
+  {
+    "ocm_id": 353291,
+    "name": "101 Hudson-Littleman Parking - Tesla Destination",
+    "town": "Jersey City",
+    "latitude": 40.71585,
+    "longitude": -74.035362,
+    "num_points": null,
+    "data_quality": 3,
+    "connections": [
+      {
+        "connector_type": "Unknown",
+        "power_kw": 3.7,
+        "current_type": "AC (1-phase)",
+        "quantity": 4
+      }
+    ]
+  },
+  {
+    "ocm_id": 294559,
+    "name": "10 Exchange Pl. Garage",
+    "town": "Jersey City",
+    "latitude": 40.71662150647494,
+    "longitude": -74.03390856845364,
+    "num_points": null,
+    "data_quality": 3,
+    "connections": [
+      {
+        "connector_type": "Type1",
+        "power_kw": 3.7,
+        "current_type": "AC (1-phase)",
+        "quantity": 12
+      }
+    ]
+  },
+  {
+    "ocm_id": 62140,
+    "name": "Hyatt Regency Jersey City on the Hudson - Tesla",
+    "town": "Jersey City",
+    "latitude": 40.7171013,
+    "longitude": -74.0317368,
+    "num_points": 2,
+    "data_quality": 3,
+    "connections": [
+      {
+        "connector_type": "Unknown",
+        "power_kw": 16,
+        "current_type": "AC (1-phase)",
+        "quantity": 2
+      }
+    ]
+  },
+  {
+    "ocm_id": 246281,
+    "name": "Hyatt Regency Jersey City on the Hudson - Tesla Destination",
+    "town": "Jersey City",
+    "latitude": 40.716966,
+    "longitude": -74.032769,
+    "num_points": null,
+    "data_quality": 3,
+    "connections": [
+      {
+        "connector_type": "Unknown",
+        "power_kw": 3.7,
+        "current_type": "AC (1-phase)",
+        "quantity": 2
+      }
+    ]
+  },
+  {
+    "ocm_id": 48823,
+    "name": "Crystal Point Garage",
+    "town": "Jersey City",
+    "latitude": 40.7215275250882,
+    "longitude": -74.0318107,
+    "num_points": 5,
+    "data_quality": 1,
+    "connections": [
+      {
+        "connector_type": "Type1",
+        "power_kw": 7,
+        "current_type": "AC (1-phase)",
+        "quantity": 5
+      }
+    ]
+  },
+  {
+    "ocm_id": 115871,
+    "name": "Littleman Parking Crystal Point Garage - Tesla Destination",
+    "town": "Jersey City",
+    "latitude": 40.721293,
+    "longitude": -74.03204,
+    "num_points": null,
+    "data_quality": 3,
+    "connections": [
+      {
+        "connector_type": "Unknown",
+        "power_kw": 3.7,
+        "current_type": "AC (1-phase)",
+        "quantity": 4
+      }
+    ]
+  },
+  {
+    "ocm_id": 277165,
+    "name": "430804  Avalon Cove",
+    "town": "Jersey City",
+    "latitude": 40.7225416,
+    "longitude": -74.0354456,
+    "num_points": null,
+    "data_quality": 3,
+    "connections": [
+      {
+        "connector_type": "Type1",
+        "power_kw": 3.7,
+        "current_type": "AC (1-phase)",
+        "quantity": 4
+      }
+    ]
+  },
+  {
+    "ocm_id": 246286,
+    "name": "Veris Residential",
+    "town": "Jersey City",
+    "latitude": 40.719128,
+    "longitude": -74.033226,
+    "num_points": null,
+    "data_quality": 3,
+    "connections": [
+      {
+        "connector_type": "Type1",
+        "power_kw": 3.7,
+        "current_type": "AC (1-phase)",
+        "quantity": 16
+      }
+    ]
+  },
+  {
+    "ocm_id": 131458,
+    "name": "160 Greene-Littleman Parking",
+    "town": "Jersey City",
+    "latitude": 40.718398,
+    "longitude": -74.035327,
+    "num_points": 4,
+    "data_quality": 1,
+    "connections": [
+      {
+        "connector_type": "Unknown",
+        "power_kw": 10,
+        "current_type": "AC (3-phase)",
+        "quantity": 4
+      }
+    ]
+  },
+  {
+    "ocm_id": 353326,
+    "name": "160 Greene-Littleman Parking - Tesla Destination",
+    "town": "Jersey City",
+    "latitude": 40.718398,
+    "longitude": -74.035327,
+    "num_points": null,
+    "data_quality": 3,
+    "connections": [
+      {
+        "connector_type": "Unknown",
+        "power_kw": 3.7,
+        "current_type": "AC (1-phase)",
+        "quantity": 4
+      }
+    ]
+  },
+  {
+    "ocm_id": 72272,
+    "name": "Modera Lofts",
+    "town": "Jersey City",
+    "latitude": 40.719871,
+    "longitude": -74.0381811,
+    "num_points": null,
+    "data_quality": 3,
+    "connections": [
+      {
+        "connector_type": "Type1",
+        "power_kw": 3,
+        "current_type": "AC (1-phase)",
+        "quantity": 2
+      }
+    ]
+  },
+  {
+    "ocm_id": 353344,
+    "name": "Modera Lofts",
+    "town": "Jersey City",
+    "latitude": 40.719871,
+    "longitude": -74.0381811,
+    "num_points": null,
+    "data_quality": 3,
+    "connections": [
+      {
+        "connector_type": "Type1",
+        "power_kw": 3.7,
+        "current_type": "AC (1-phase)",
+        "quantity": 2
+      }
+    ]
+  },
+  {
+    "ocm_id": 246290,
+    "name": "148 GREENSPOT 5",
+    "town": "Jersey City",
+    "latitude": 40.721395,
+    "longitude": -74.039716,
+    "num_points": null,
+    "data_quality": 3,
+    "connections": [
+      {
+        "connector_type": "Type1",
+        "power_kw": 3.7,
+        "current_type": "AC (1-phase)",
+        "quantity": 2
+      }
+    ]
+  },
+  {
+    "ocm_id": 100178,
+    "name": "Jersey City, NJ – First Street (Valet & Pay to Park)",
+    "town": "Jersey City",
+    "latitude": 40.721595,
+    "longitude": -74.040469,
+    "num_points": 6,
+    "data_quality": 1,
+    "connections": [
+      {
+        "connector_type": "Tesla",
+        "power_kw": 150,
+        "current_type": "DC",
+        "quantity": 6
+      }
+    ]
+  },
+  {
+    "ocm_id": 353368,
+    "name": "160 GREENSPOT 9",
+    "town": "Jersey City",
+    "latitude": 40.721463,
+    "longitude": -74.040446,
+    "num_points": null,
+    "data_quality": 3,
+    "connections": [
+      {
+        "connector_type": "Type1",
+        "power_kw": 3.7,
+        "current_type": "AC (1-phase)",
+        "quantity": 2
+      }
+    ]
+  },
+  {
+    "ocm_id": 91823,
+    "name": "Propark the Morgan At Provost Square",
+    "town": "Jersey City",
+    "latitude": 40.720023,
+    "longitude": -74.040243,
+    "num_points": 3,
+    "data_quality": 1,
+    "connections": [
+      {
+        "connector_type": "Unknown",
+        "power_kw": 16,
+        "current_type": "AC (3-phase)",
+        "quantity": 3
+      }
+    ]
+  },
+  {
+    "ocm_id": 125152,
+    "name": "Littleman Parking 129 Montgomery",
+    "town": "Jersey City",
+    "latitude": 40.716989,
+    "longitude": -74.040043,
+    "num_points": 4,
+    "data_quality": 1,
+    "connections": [
+      {
+        "connector_type": "Unknown",
+        "power_kw": 10,
+        "current_type": "AC (1-phase)",
+        "quantity": 4
+      }
+    ]
+  },
+  {
+    "ocm_id": 353305,
+    "name": "Littleman Parking 129 Montgomery - Tesla Destination",
+    "town": "Jersey City",
+    "latitude": 40.716989,
+    "longitude": -74.040043,
+    "num_points": null,
+    "data_quality": 3,
+    "connections": [
+      {
+        "connector_type": "Unknown",
+        "power_kw": 3.7,
+        "current_type": "AC (1-phase)",
+        "quantity": 4
+      }
+    ]
+  },
+  {
+    "ocm_id": 246283,
+    "name": "PH Urban Renewal, LLC",
+    "town": "Jersey City",
+    "latitude": 40.717549,
+    "longitude": -74.038363,
+    "num_points": null,
+    "data_quality": 3,
+    "connections": [
+      {
+        "connector_type": "Type1",
+        "power_kw": 3.7,
+        "current_type": "AC (1-phase)",
+        "quantity": 24
+      }
+    ]
+  },
+  {
+    "ocm_id": 131461,
+    "name": "135 Greene-Littleman Parking",
+    "town": "Jersey City",
+    "latitude": 40.7174973,
+    "longitude": -74.0367399,
+    "num_points": 4,
+    "data_quality": 1,
+    "connections": [
+      {
+        "connector_type": "Unknown",
+        "power_kw": 10,
+        "current_type": "AC (3-phase)",
+        "quantity": 4
+      }
+    ]
+  },
+  {
+    "ocm_id": 353312,
+    "name": "135 Greene-Littleman Parking - Tesla Destination",
+    "town": "Jersey City",
+    "latitude": 40.717497,
+    "longitude": -74.03674,
+    "num_points": null,
+    "data_quality": 3,
+    "connections": [
+      {
+        "connector_type": "Unknown",
+        "power_kw": 3.7,
+        "current_type": "AC (1-phase)",
+        "quantity": 4
+      }
+    ]
+  },
+  {
+    "ocm_id": 142407,
+    "name": "JERSEYCITY MONTGOMERY2",
+    "town": "Jersey City",
+    "latitude": 40.71709,
+    "longitude": -74.04249,
+    "num_points": null,
+    "data_quality": 3,
+    "connections": [
+      {
+        "connector_type": "Type1",
+        "power_kw": 3.7,
+        "current_type": "AC (1-phase)",
+        "quantity": 2
+      }
+    ]
+  },
+  {
+    "ocm_id": 226817,
+    "name": "Columbus Garage LLC - Tesla Destination",
+    "town": "Jersey City",
+    "latitude": 40.720034,
+    "longitude": -74.044617,
+    "num_points": null,
+    "data_quality": 3,
+    "connections": [
+      {
+        "connector_type": "Unknown",
+        "power_kw": 3.7,
+        "current_type": "AC (1-phase)",
+        "quantity": 9
+      }
+    ]
+  },
+  {
+    "ocm_id": 114128,
+    "name": "Vantage",
+    "town": "Jersey City",
+    "latitude": 40.7133979,
+    "longitude": -74.04439,
+    "num_points": 2,
+    "data_quality": 1,
+    "connections": [
+      {
+        "connector_type": "Unknown",
+        "power_kw": 16,
+        "current_type": "AC (3-phase)",
+        "quantity": 2
+      }
+    ]
+  },
+  {
+    "ocm_id": 115869,
+    "name": "Vantage - Tesla Destination",
+    "town": "Jersey City",
+    "latitude": 40.713398,
+    "longitude": -74.04439,
+    "num_points": null,
+    "data_quality": 3,
+    "connections": [
+      {
+        "connector_type": "Unknown",
+        "power_kw": 3.7,
+        "current_type": "AC (1-phase)",
+        "quantity": 2
+      }
+    ]
+  },
+  {
+    "ocm_id": 282562,
+    "name": "Liberty Science Center",
+    "town": "Jersey City",
+    "latitude": 40.7076871214207,
+    "longitude": -74.0555674462554,
+    "num_points": null,
+    "data_quality": 3,
+    "connections": [
+      {
+        "connector_type": "Type1",
+        "power_kw": 3.7,
+        "current_type": "AC (1-phase)",
+        "quantity": 12
+      }
+    ]
+  },
+  {
+    "ocm_id": 87349,
+    "name": "Propark the Beacon",
+    "town": "Jersey City",
+    "latitude": 40.722203,
+    "longitude": -74.064287,
+    "num_points": 3,
+    "data_quality": 1,
+    "connections": [
+      {
+        "connector_type": "Unknown",
+        "power_kw": 16,
+        "current_type": "AC (3-phase)",
+        "quantity": 2
+      },
+      {
+        "connector_type": "Type1",
+        "power_kw": 6.4,
+        "current_type": "AC (1-phase)",
+        "quantity": 1
+      }
+    ]
+  },
+  {
+    "ocm_id": 353379,
+    "name": "Propark The Beacon - Tesla Destination",
+    "town": "Jersey City",
+    "latitude": 40.722203,
+    "longitude": -74.064287,
+    "num_points": null,
+    "data_quality": 3,
+    "connections": [
+      {
+        "connector_type": "Unknown",
+        "power_kw": 3.7,
+        "current_type": "AC (1-phase)",
+        "quantity": 3
+      }
+    ]
+  },
+  {
+    "ocm_id": 226803,
+    "name": "JERSEYCITY BERRYLANEPARKL2",
+    "town": "Jersey City",
+    "latitude": 40.713074,
+    "longitude": -74.06836,
+    "num_points": null,
+    "data_quality": 3,
+    "connections": [
+      {
+        "connector_type": "Type1",
+        "power_kw": 3.7,
+        "current_type": "AC (1-phase)",
+        "quantity": 2
+      }
+    ]
+  },
+  {
+    "ocm_id": 142399,
+    "name": "New Jersey City University",
+    "town": "Jersey City",
+    "latitude": 40.710309,
+    "longitude": -74.086912,
+    "num_points": null,
+    "data_quality": 3,
+    "connections": [
+      {
+        "connector_type": "Type1",
+        "power_kw": 3.7,
+        "current_type": "AC (1-phase)",
+        "quantity": 5
+      }
+    ]
+  },
+  {
+    "ocm_id": 226788,
+    "name": "JERSEYCITY FULTON AVE LOT2",
+    "town": "Jersey City",
+    "latitude": 40.704683,
+    "longitude": -74.087169,
+    "num_points": null,
+    "data_quality": 3,
+    "connections": [
+      {
+        "connector_type": "Type1",
+        "power_kw": 3.7,
+        "current_type": "AC (1-phase)",
+        "quantity": 2
+      }
+    ]
+  },
+  {
+    "ocm_id": 159682,
+    "name": "JERSEYCITY ANNEX KEARNEY",
+    "town": "Jersey City",
+    "latitude": 40.710438,
+    "longitude": -74.07823,
+    "num_points": null,
+    "data_quality": 3,
+    "connections": [
+      {
+        "connector_type": "Type1",
+        "power_kw": 3.7,
+        "current_type": "AC (1-phase)",
+        "quantity": 2
+      }
+    ]
+  },
+  {
+    "ocm_id": 269727,
+    "name": "HUDSON COUNTY LP LOT A ST1",
+    "town": "Jersey City",
+    "latitude": 40.7294,
+    "longitude": -74.08564,
+    "num_points": null,
+    "data_quality": 3,
+    "connections": [
+      {
+        "connector_type": "Type1",
+        "power_kw": 3.7,
+        "current_type": "AC (1-phase)",
+        "quantity": 2
+      }
+    ]
+  },
+  {
+    "ocm_id": 121255,
+    "name": "HUDSON COUNTY",
+    "town": "Jersey City",
+    "latitude": 40.7240144,
+    "longitude": -74.0841081,
+    "num_points": null,
+    "data_quality": 3,
+    "connections": [
+      {
+        "connector_type": "Type1",
+        "power_kw": 3.7,
+        "current_type": "AC (1-phase)",
+        "quantity": 2
+      }
+    ]
+  },
+  {
+    "ocm_id": 246291,
+    "name": "HUDSON COUNTY LINCOLN PARK 1",
+    "town": "Jersey City",
+    "latitude": 40.722775,
+    "longitude": -74.08558,
+    "num_points": null,
+    "data_quality": 3,
+    "connections": [
+      {
+        "connector_type": "Type1",
+        "power_kw": 3.7,
+        "current_type": "AC (1-phase)",
+        "quantity": 2
+      }
+    ]
+  },
+  {
+    "ocm_id": 246280,
+    "name": "Hudson Nissan",
+    "town": "Jersey City",
+    "latitude": 40.71696,
+    "longitude": -74.09634,
+    "num_points": null,
+    "data_quality": 3,
+    "connections": [
+      {
+        "connector_type": "Type1",
+        "power_kw": 3.7,
+        "current_type": "AC (1-phase)",
+        "quantity": 1
+      }
+    ]
+  },
+  {
+    "ocm_id": 294560,
+    "name": "HUDSON TOYOTA IN SHOP N SIDE",
+    "town": "Jersey City",
+    "latitude": 40.717912,
+    "longitude": -74.096051,
+    "num_points": null,
+    "data_quality": 3,
+    "connections": [
+      {
+        "connector_type": "Type1",
+        "power_kw": 3.7,
+        "current_type": "AC (1-phase)",
+        "quantity": 1
+      }
+    ]
+  },
+  {
+    "ocm_id": 282564,
+    "name": "HUDSON TOYOTA CPE250 #2",
+    "town": "Jersey City",
+    "latitude": 40.717452,
+    "longitude": -74.096006,
+    "num_points": null,
+    "data_quality": 3,
+    "connections": [
+      {
+        "connector_type": "CHAdeMO",
+        "power_kw": 50,
+        "current_type": "DC",
+        "quantity": 1
+      },
+      {
+        "connector_type": "CCS",
+        "power_kw": 50,
+        "current_type": "DC",
+        "quantity": 1
+      }
+    ]
+  },
+  {
+    "ocm_id": 294561,
+    "name": "HUDSON TOYOTA OUTSIDE N SIDE",
+    "town": "Jersey City",
+    "latitude": 40.717967,
+    "longitude": -74.09598,
+    "num_points": null,
+    "data_quality": 3,
+    "connections": [
+      {
+        "connector_type": "Type1",
+        "power_kw": 3.7,
+        "current_type": "AC (1-phase)",
+        "quantity": 1
+      }
+    ]
+  },
+  {
+    "ocm_id": 353426,
+    "name": "Kearny Building 9",
+    "town": "Kearny",
+    "latitude": 40.7271907,
+    "longitude": -74.1043128,
+    "num_points": null,
+    "data_quality": 3,
+    "connections": [
+      {
+        "connector_type": "Type1",
+        "power_kw": 3.7,
+        "current_type": "AC (1-phase)",
+        "quantity": 2
+      },
+      {
+        "connector_type": "CCS",
+        "power_kw": 50,
+        "current_type": "DC",
+        "quantity": 17
+      }
+    ]
+  },
+  {
+    "ocm_id": 294563,
+    "name": "SWTCH Energy Inc.",
+    "town": "Kearny",
+    "latitude": 40.7243,
+    "longitude": -74.1095,
+    "num_points": null,
+    "data_quality": 3,
+    "connections": [
+      {
+        "connector_type": "Type1",
+        "power_kw": 3.7,
+        "current_type": "AC (1-phase)",
+        "quantity": 6
+      }
+    ]
+  },
+  {
+    "ocm_id": 263041,
+    "name": "JERSEYCITY KELLOGG PUB 1",
+    "town": "Jersey City",
+    "latitude": 40.711684,
+    "longitude": -74.102232,
+    "num_points": null,
+    "data_quality": 3,
+    "connections": [
+      {
+        "connector_type": "Type1",
+        "power_kw": 3.7,
+        "current_type": "AC (1-phase)",
+        "quantity": 2
+      }
+    ]
+  },
+  {
+    "ocm_id": 263039,
+    "name": "JERSEYCITY KELLOGG PUB 2",
+    "town": "Jersey City",
+    "latitude": 40.711569,
+    "longitude": -74.102108,
+    "num_points": null,
+    "data_quality": 3,
+    "connections": [
+      {
+        "connector_type": "Type1",
+        "power_kw": 3.7,
+        "current_type": "AC (1-phase)",
+        "quantity": 2
+      }
+    ]
+  },
+  {
+    "ocm_id": 294541,
+    "name": "EDGE APTS CHARGER 2",
+    "town": "Bayonne",
+    "latitude": 40.662281,
+    "longitude": -74.112756,
+    "num_points": null,
+    "data_quality": 3,
+    "connections": [
+      {
+        "connector_type": "Type1",
+        "power_kw": 3.7,
+        "current_type": "AC (1-phase)",
+        "quantity": 2
+      }
+    ]
+  },
+  {
+    "ocm_id": 294540,
+    "name": "EDGE APTS CHARGER 1",
+    "town": "Bayonne",
+    "latitude": 40.661877,
+    "longitude": -74.112359,
+    "num_points": null,
+    "data_quality": 3,
+    "connections": [
+      {
+        "connector_type": "Type1",
+        "power_kw": 3.7,
+        "current_type": "AC (1-phase)",
+        "quantity": 2
+      }
+    ]
+  },
+  {
+    "ocm_id": 142377,
+    "name": "IKEA - Elizabeth",
+    "town": "Elizabeth",
+    "latitude": 40.674678,
+    "longitude": -74.169738,
+    "num_points": null,
+    "data_quality": 3,
+    "connections": [
+      {
+        "connector_type": "Type1",
+        "power_kw": 3.7,
+        "current_type": "AC (1-phase)",
+        "quantity": 2
+      }
+    ]
+  },
+  {
+    "ocm_id": 353015,
+    "name": "IKEA USA ELIZABETH 1",
+    "town": "Elizabeth",
+    "latitude": 40.67468,
+    "longitude": -74.169726,
+    "num_points": null,
+    "data_quality": 3,
+    "connections": [
+      {
+        "connector_type": "Type1",
+        "power_kw": 3.7,
+        "current_type": "AC (1-phase)",
+        "quantity": 1
+      }
+    ]
+  },
+  {
+    "ocm_id": 282558,
+    "name": "MAHER MMR1",
+    "town": "Elizabeth",
+    "latitude": 40.673354,
+    "longitude": -74.156373,
+    "num_points": null,
+    "data_quality": 3,
+    "connections": [
+      {
+        "connector_type": "Type1",
+        "power_kw": 3.7,
+        "current_type": "AC (1-phase)",
+        "quantity": 2
+      }
+    ]
+  },
+  {
+    "ocm_id": 353002,
+    "name": "Wawa Elizabeth #8320",
+    "town": "Elizabeth",
+    "latitude": 40.6734159,
+    "longitude": -74.2000922,
+    "num_points": null,
+    "data_quality": 3,
+    "connections": [
+      {
+        "connector_type": "CHAdeMO",
+        "power_kw": 50,
+        "current_type": "DC",
+        "quantity": 1
+      },
+      {
+        "connector_type": "CCS",
+        "power_kw": 50,
+        "current_type": "DC",
+        "quantity": 1
+      }
+    ]
+  },
+  {
+    "ocm_id": 352995,
+    "name": "Wawa - Tesla Supercharger",
+    "town": "Elizabeth",
+    "latitude": 40.672446,
+    "longitude": -74.19959,
+    "num_points": null,
+    "data_quality": 3,
+    "connections": [
+      {
+        "connector_type": "CCS",
+        "power_kw": 50,
+        "current_type": "DC",
+        "quantity": 1
+      },
+      {
+        "connector_type": "Tesla",
+        "power_kw": 50,
+        "current_type": "DC",
+        "quantity": 1
+      }
+    ]
+  },
+  {
+    "ocm_id": 226752,
+    "name": "Stop and Shop Elizabeth",
+    "town": "Elizabeth",
+    "latitude": 40.681815,
+    "longitude": -74.206827,
+    "num_points": null,
+    "data_quality": 3,
+    "connections": [
+      {
+        "connector_type": "Type1",
+        "power_kw": 3.7,
+        "current_type": "AC (1-phase)",
+        "quantity": 2
+      }
+    ]
+  },
+  {
+    "ocm_id": 277153,
+    "name": "The Avion",
+    "town": "Elizabeth",
+    "latitude": 40.6820877,
+    "longitude": -74.1957269,
+    "num_points": null,
+    "data_quality": 3,
+    "connections": [
+      {
+        "connector_type": "Type1",
+        "power_kw": 3.7,
+        "current_type": "AC (1-phase)",
+        "quantity": 4
+      }
+    ]
+  },
+  {
+    "ocm_id": 263034,
+    "name": "SHOP1 TOYOTA SERVICE",
+    "town": "Hillside",
+    "latitude": 40.699219,
+    "longitude": -74.2152,
+    "num_points": null,
+    "data_quality": 3,
+    "connections": [
+      {
+        "connector_type": "Type1",
+        "power_kw": 3.7,
+        "current_type": "AC (1-phase)",
+        "quantity": 2
+      }
+    ]
+  },
+  {
+    "ocm_id": 353193,
+    "name": "UAL EMPLOYEE 737 LOT STN 3",
+    "town": "Newark",
+    "latitude": 40.704349,
+    "longitude": -74.185698,
+    "num_points": null,
+    "data_quality": 3,
+    "connections": [
+      {
+        "connector_type": "Type1",
+        "power_kw": 3.7,
+        "current_type": "AC (1-phase)",
+        "quantity": 2
+      }
+    ]
+  },
+  {
+    "ocm_id": 353150,
+    "name": "PANYNJ EWR P4 STATION5",
+    "town": "Newark",
+    "latitude": 40.69647,
+    "longitude": -74.183691,
+    "num_points": null,
+    "data_quality": 3,
+    "connections": [
+      {
+        "connector_type": "Type1",
+        "power_kw": 3.7,
+        "current_type": "AC (1-phase)",
+        "quantity": 2
+      }
+    ]
+  },
+  {
+    "ocm_id": 142391,
+    "name": "PANYNJ EWR P4 STATION7",
+    "town": "Newark",
+    "latitude": 40.696413,
+    "longitude": -74.183656,
+    "num_points": null,
+    "data_quality": 3,
+    "connections": [
+      {
+        "connector_type": "Type1",
+        "power_kw": 3.7,
+        "current_type": "AC (1-phase)",
+        "quantity": 2
+      }
+    ]
+  },
+  {
+    "ocm_id": 353152,
+    "name": "PANYNJ EWR P4 STATION6",
+    "town": "Newark",
+    "latitude": 40.696494,
+    "longitude": -74.18357,
+    "num_points": null,
+    "data_quality": 3,
+    "connections": [
+      {
+        "connector_type": "Type1",
+        "power_kw": 3.7,
+        "current_type": "AC (1-phase)",
+        "quantity": 1
+      }
+    ]
+  },
+  {
+    "ocm_id": 226764,
+    "name": "PANYNJ EWR CONRAC 4",
+    "town": "Newark",
+    "latitude": 40.689611,
+    "longitude": -74.189699,
+    "num_points": null,
+    "data_quality": 3,
+    "connections": [
+      {
+        "connector_type": "Type1",
+        "power_kw": 3.7,
+        "current_type": "AC (1-phase)",
+        "quantity": 2
+      }
+    ]
+  },
+  {
+    "ocm_id": 226762,
+    "name": "PANYNJ EWR CONRAC 14",
+    "town": "Newark",
+    "latitude": 40.689524,
+    "longitude": -74.189726,
+    "num_points": null,
+    "data_quality": 3,
+    "connections": [
+      {
+        "connector_type": "Type1",
+        "power_kw": 3.7,
+        "current_type": "AC (1-phase)",
+        "quantity": 2
+      }
+    ]
+  },
+  {
+    "ocm_id": 277154,
+    "name": "Newark, NJ - Lindbergh Road Supercharger",
+    "town": "Newark",
+    "latitude": 40.691573,
+    "longitude": -74.184322,
+    "num_points": 8,
+    "data_quality": 3,
+    "connections": [
+      {
+        "connector_type": "Tesla",
+        "power_kw": 250,
+        "current_type": "DC",
+        "quantity": 8
+      }
+    ]
+  },
+  {
+    "ocm_id": 226834,
+    "name": "NEWARK BOARD OF NWK BOE SING ST",
+    "town": "Newark",
+    "latitude": 40.727516,
+    "longitude": -74.195755,
+    "num_points": null,
+    "data_quality": 3,
+    "connections": [
+      {
+        "connector_type": "Type1",
+        "power_kw": 3.7,
+        "current_type": "AC (1-phase)",
+        "quantity": 1
+      }
+    ]
+  },
+  {
+    "ocm_id": 294566,
+    "name": "ESSEX COUNTY 320 UNIVERSITY",
+    "town": "Newark",
+    "latitude": 40.735974,
+    "longitude": -74.176574,
+    "num_points": null,
+    "data_quality": 3,
+    "connections": [
+      {
+        "connector_type": "Type1",
+        "power_kw": 3.7,
+        "current_type": "AC (1-phase)",
+        "quantity": 2
+      }
+    ]
+  },
+  {
+    "ocm_id": 353542,
+    "name": "ESSEX COUNTY OFF NETWORK2",
+    "town": "Newark",
+    "latitude": 40.737226,
+    "longitude": -74.181196,
+    "num_points": null,
+    "data_quality": 3,
+    "connections": [
+      {
+        "connector_type": "Type1",
+        "power_kw": 3.7,
+        "current_type": "AC (1-phase)",
+        "quantity": 2
+      }
+    ]
+  },
+  {
+    "ocm_id": 246312,
+    "name": "County of Essex Hall of Records & Veterans Court House",
+    "town": "Newark",
+    "latitude": 40.736315,
+    "longitude": -74.180924,
+    "num_points": null,
+    "data_quality": 3,
+    "connections": [
+      {
+        "connector_type": "Type1",
+        "power_kw": 3.7,
+        "current_type": "AC (1-phase)",
+        "quantity": 6
+      }
+    ]
+  },
+  {
+    "ocm_id": 62146,
+    "name": "ESSEX COUNTY",
+    "town": "Newark",
+    "latitude": 40.7372381,
+    "longitude": -74.1825513,
+    "num_points": null,
+    "data_quality": 3,
+    "connections": [
+      {
+        "connector_type": "Type1",
+        "power_kw": 3.7,
+        "current_type": "AC (1-phase)",
+        "quantity": 2
+      }
+    ]
+  },
+  {
+    "ocm_id": 353540,
+    "name": "ESSEX COUNTY ADMIN DC 1",
+    "town": "Newark",
+    "latitude": 40.7372,
+    "longitude": -74.18202,
+    "num_points": null,
+    "data_quality": 3,
+    "connections": [
+      {
+        "connector_type": "CHAdeMO",
+        "power_kw": 50,
+        "current_type": "DC",
+        "quantity": 1
+      },
+      {
+        "connector_type": "CCS",
+        "power_kw": 50,
+        "current_type": "DC",
+        "quantity": 1
+      }
+    ]
+  },
+  {
+    "ocm_id": 282570,
+    "name": "ESSEX COUNTY EMPLOY LOT DC1",
+    "town": "Newark",
+    "latitude": 40.739313,
+    "longitude": -74.179883,
+    "num_points": null,
+    "data_quality": 3,
+    "connections": [
+      {
+        "connector_type": "CHAdeMO",
+        "power_kw": 50,
+        "current_type": "DC",
+        "quantity": 1
+      },
+      {
+        "connector_type": "CCS",
+        "power_kw": 50,
+        "current_type": "DC",
+        "quantity": 1
+      }
+    ]
+  },
+  {
+    "ocm_id": 353564,
+    "name": "ESSEX COUNTY #5",
+    "town": "Newark",
+    "latitude": 40.739013,
+    "longitude": -74.181706,
+    "num_points": null,
+    "data_quality": 3,
+    "connections": [
+      {
+        "connector_type": "Type1",
+        "power_kw": 3.7,
+        "current_type": "AC (1-phase)",
+        "quantity": 2
+      }
+    ]
+  },
+  {
+    "ocm_id": 226852,
+    "name": "ESSEX COUNTY #4",
+    "town": "Newark",
+    "latitude": 40.739091,
+    "longitude": -74.18168,
+    "num_points": null,
+    "data_quality": 3,
+    "connections": [
+      {
+        "connector_type": "Type1",
+        "power_kw": 3.7,
+        "current_type": "AC (1-phase)",
+        "quantity": 2
+      }
+    ]
+  },
+  {
+    "ocm_id": 353568,
+    "name": "ESSEX COUNTY #1",
+    "town": "Newark",
+    "latitude": 40.739129,
+    "longitude": -74.181671,
+    "num_points": null,
+    "data_quality": 3,
+    "connections": [
+      {
+        "connector_type": "Type1",
+        "power_kw": 3.7,
+        "current_type": "AC (1-phase)",
+        "quantity": 2
+      }
+    ]
+  },
+  {
+    "ocm_id": 226849,
+    "name": "ESSEX COUNTY #3",
+    "town": "Newark",
+    "latitude": 40.73895,
+    "longitude": -74.181735,
+    "num_points": null,
+    "data_quality": 3,
+    "connections": [
+      {
+        "connector_type": "Type1",
+        "power_kw": 3.7,
+        "current_type": "AC (1-phase)",
+        "quantity": 2
+      }
+    ]
+  },
+  {
+    "ocm_id": 353620,
+    "name": "NJIT-STPG Park Garage - Tesla Destination",
+    "town": "Newark",
+    "latitude": 40.743067,
+    "longitude": -74.182128,
+    "num_points": null,
+    "data_quality": 3,
+    "connections": [
+      {
+        "connector_type": "Unknown",
+        "power_kw": 3.7,
+        "current_type": "AC (1-phase)",
+        "quantity": 8
+      }
+    ]
+  },
+  {
+    "ocm_id": 282571,
+    "name": "Newark Urby",
+    "town": "Newark",
+    "latitude": 40.7396209,
+    "longitude": -74.1733563,
+    "num_points": null,
+    "data_quality": 3,
+    "connections": [
+      {
+        "connector_type": "Type1",
+        "power_kw": 3.7,
+        "current_type": "AC (1-phase)",
+        "quantity": 2
+      }
+    ]
+  },
+  {
+    "ocm_id": 115873,
+    "name": "One Theater Square",
+    "town": "Newark",
+    "latitude": 40.738989,
+    "longitude": -74.167338,
+    "num_points": null,
+    "data_quality": 3,
+    "connections": [
+      {
+        "connector_type": "Type1",
+        "power_kw": 3.7,
+        "current_type": "AC (1-phase)",
+        "quantity": 3
+      }
+    ]
+  },
+  {
+    "ocm_id": 353563,
+    "name": "One Theater Square",
+    "town": "Newark",
+    "latitude": 40.738989,
+    "longitude": -74.167338,
+    "num_points": null,
+    "data_quality": 3,
+    "connections": [
+      {
+        "connector_type": "Type1",
+        "power_kw": 3.7,
+        "current_type": "AC (1-phase)",
+        "quantity": 3
+      }
+    ]
+  },
+  {
+    "ocm_id": 246315,
+    "name": "East Park Street Hospitality Urban Renewal Inc. - dba TRYP BY WYNDHAM",
+    "town": "Newark",
+    "latitude": 40.738323,
+    "longitude": -74.1679201,
+    "num_points": null,
+    "data_quality": 3,
+    "connections": [
+      {
+        "connector_type": "Type1",
+        "power_kw": 3.7,
+        "current_type": "AC (1-phase)",
+        "quantity": 2
+      }
+    ]
+  },
+  {
+    "ocm_id": 263051,
+    "name": "Robert Treat Hotel - Tesla Destination",
+    "town": "Newark",
+    "latitude": 40.738496,
+    "longitude": -74.167206,
+    "num_points": null,
+    "data_quality": 3,
+    "connections": [
+      {
+        "connector_type": "Unknown",
+        "power_kw": 3.7,
+        "current_type": "AC (1-phase)",
+        "quantity": 8
+      }
+    ]
+  },
+  {
+    "ocm_id": 467179,
+    "name": "ICONIQ 777 McCarter - Iconiq Garage 2nd Floor",
+    "town": "Newark",
+    "latitude": 40.733906,
+    "longitude": -74.166803,
+    "num_points": null,
+    "data_quality": 3,
+    "connections": [
+      {
+        "connector_type": "Type1",
+        "power_kw": 3.7,
+        "current_type": "AC (1-phase)",
+        "quantity": 8
+      }
+    ]
+  },
+  {
+    "ocm_id": 159688,
+    "name": "HQ1",
+    "town": "Newark",
+    "latitude": 40.734657,
+    "longitude": -74.16184,
+    "num_points": null,
+    "data_quality": 3,
+    "connections": [
+      {
+        "connector_type": "Type1",
+        "power_kw": 3.7,
+        "current_type": "AC (1-phase)",
+        "quantity": 1
+      }
+    ]
+  },
+  {
+    "ocm_id": 159691,
+    "name": "VERMELLA HARRIS",
+    "town": "Harrison",
+    "latitude": 40.735935,
+    "longitude": -74.154854,
+    "num_points": null,
+    "data_quality": 3,
+    "connections": [
+      {
+        "connector_type": "Type1",
+        "power_kw": 3.7,
+        "current_type": "AC (1-phase)",
+        "quantity": 2
+      }
+    ]
+  },
+  {
+    "ocm_id": 159690,
+    "name": "VERMELLA HARRIS VH 1",
+    "town": "Harrison",
+    "latitude": 40.735767,
+    "longitude": -74.15482,
+    "num_points": null,
+    "data_quality": 3,
+    "connections": [
+      {
+        "connector_type": "Type1",
+        "power_kw": 3.7,
+        "current_type": "AC (1-phase)",
+        "quantity": 2
+      }
+    ]
+  },
+  {
+    "ocm_id": 294568,
+    "name": "THE WYLDES 137",
+    "town": "Harrison",
+    "latitude": 40.736372,
+    "longitude": -74.153572,
+    "num_points": null,
+    "data_quality": 3,
+    "connections": [
+      {
+        "connector_type": "Type1",
+        "power_kw": 3.7,
+        "current_type": "AC (1-phase)",
+        "quantity": 1
+      }
+    ]
+  },
+  {
+    "ocm_id": 294567,
+    "name": "THE WYLDES 71",
+    "town": "Harrison",
+    "latitude": 40.736254,
+    "longitude": -74.153572,
+    "num_points": null,
+    "data_quality": 3,
+    "connections": [
+      {
+        "connector_type": "Type1",
+        "power_kw": 3.7,
+        "current_type": "AC (1-phase)",
+        "quantity": 1
+      }
+    ]
+  },
+  {
+    "ocm_id": 353453,
+    "name": "124 Polk St",
+    "town": "Newark",
+    "latitude": 40.72867,
+    "longitude": -74.15581,
+    "num_points": null,
+    "data_quality": 3,
+    "connections": [
+      {
+        "connector_type": "Type1",
+        "power_kw": 3.7,
+        "current_type": "AC (1-phase)",
+        "quantity": 1
+      }
+    ]
+  },
+  {
+    "ocm_id": 226837,
+    "name": "Ferry Plaza (UBP) (Newark, NJ)",
+    "town": "Newark",
+    "latitude": 40.72841,
+    "longitude": -74.1513,
+    "num_points": 4,
+    "data_quality": 3,
+    "connections": [
+      {
+        "connector_type": "CCS",
+        "power_kw": 350,
+        "current_type": "DC",
+        "quantity": 4
+      }
+    ]
+  },
+  {
+    "ocm_id": 467168,
+    "name": "Seabra Foods - Tesla Supercharger",
+    "town": "Newark",
+    "latitude": 40.727656,
+    "longitude": -74.15031,
+    "num_points": null,
+    "data_quality": 3,
+    "connections": [
+      {
+        "connector_type": "Tesla",
+        "power_kw": 50,
+        "current_type": "DC",
+        "quantity": 16
+      }
+    ]
+  },
+  {
+    "ocm_id": 142401,
+    "name": "Ramada Plaza Newark",
+    "town": "Newark",
+    "latitude": 40.712865,
+    "longitude": -74.165663,
+    "num_points": null,
+    "data_quality": 3,
+    "connections": [
+      {
+        "connector_type": "CHAdeMO",
+        "power_kw": 40,
+        "current_type": "DC",
+        "quantity": 1
+      },
+      {
+        "connector_type": "CCS",
+        "power_kw": 40,
+        "current_type": "DC",
+        "quantity": 1
+      }
+    ]
+  },
+  {
+    "ocm_id": 353260,
+    "name": "Holiday Inn Newark Intl Airport North",
+    "town": "Newark",
+    "latitude": 40.71307878682381,
+    "longitude": -74.16648231896055,
+    "num_points": null,
+    "data_quality": 3,
+    "connections": [
+      {
+        "connector_type": "CHAdeMO",
+        "power_kw": 50,
+        "current_type": "DC",
+        "quantity": 1
+      },
+      {
+        "connector_type": "CCS",
+        "power_kw": 50,
+        "current_type": "DC",
+        "quantity": 1
+      }
+    ]
+  },
+  {
+    "ocm_id": 57357,
+    "name": "PARKING LOT",
+    "town": "Newark",
+    "latitude": 40.7098571,
+    "longitude": -74.1534233,
+    "num_points": null,
+    "data_quality": 3,
+    "connections": [
+      {
+        "connector_type": "Type1",
+        "power_kw": 3.7,
+        "current_type": "AC (1-phase)",
+        "quantity": 2
+      }
+    ]
+  },
+  {
+    "ocm_id": 294569,
+    "name": "Fabuwood Cabinetry",
+    "town": "Newark",
+    "latitude": 40.73767379834314,
+    "longitude": -74.12930480640905,
+    "num_points": null,
+    "data_quality": 3,
+    "connections": [
+      {
+        "connector_type": "Type1",
+        "power_kw": 3.7,
+        "current_type": "AC (1-phase)",
+        "quantity": 7
+      }
+    ]
+  },
+  {
+    "ocm_id": 246335,
+    "name": "Walmart 5447 - Kearny, NJ",
+    "town": "Kearny",
+    "latitude": 40.74863,
+    "longitude": -74.13629,
+    "num_points": 5,
+    "data_quality": 3,
+    "connections": [
+      {
+        "connector_type": "Type1",
+        "power_kw": 7,
+        "current_type": "AC (1-phase)",
+        "quantity": 1
+      },
+      {
+        "connector_type": "CHAdeMO",
+        "power_kw": 50,
+        "current_type": "DC",
+        "quantity": 1
+      },
+      {
+        "connector_type": "CCS",
+        "power_kw": 350,
+        "current_type": "DC",
+        "quantity": 3
+      }
+    ]
+  },
+  {
+    "ocm_id": 118004,
+    "name": "Kearny, NJ Supercharger",
+    "town": "Kearny",
+    "latitude": 40.749014,
+    "longitude": -74.135578,
+    "num_points": 8,
+    "data_quality": 1,
+    "connections": [
+      {
+        "connector_type": "Tesla",
+        "power_kw": 150,
+        "current_type": "DC",
+        "quantity": 8
+      }
+    ]
+  },
+  {
+    "ocm_id": 353706,
+    "name": "Wawa - Tesla Supercharger",
+    "town": "Kearny",
+    "latitude": 40.749014,
+    "longitude": -74.135578,
+    "num_points": null,
+    "data_quality": 3,
+    "connections": [
+      {
+        "connector_type": "Tesla",
+        "power_kw": 50,
+        "current_type": "DC",
+        "quantity": 8
+      }
+    ]
+  },
+  {
+    "ocm_id": 353693,
+    "name": "Kearny - Harrison Ave - Tesla Supercharger",
+    "town": "Kearny",
+    "latitude": 40.748102,
+    "longitude": -74.135407,
+    "num_points": null,
+    "data_quality": 3,
+    "connections": [
+      {
+        "connector_type": "CCS",
+        "power_kw": 50,
+        "current_type": "DC",
+        "quantity": 1
+      },
+      {
+        "connector_type": "Tesla",
+        "power_kw": 50,
+        "current_type": "DC",
+        "quantity": 1
+      }
+    ]
+  },
+  {
+    "ocm_id": 353860,
+    "name": "EV REQUIRED T2881 STATION 3",
+    "town": "Kearny",
+    "latitude": 40.760188,
+    "longitude": -74.15879,
+    "num_points": null,
+    "data_quality": 3,
+    "connections": [
+      {
+        "connector_type": "Type1",
+        "power_kw": 3.7,
+        "current_type": "AC (1-phase)",
+        "quantity": 2
+      }
+    ]
+  },
+  {
+    "ocm_id": 226899,
+    "name": "RUSSO VE 3",
+    "town": "Kearny",
+    "latitude": 40.755558,
+    "longitude": -74.160575,
+    "num_points": null,
+    "data_quality": 3,
+    "connections": [
+      {
+        "connector_type": "Type1",
+        "power_kw": 3.7,
+        "current_type": "AC (1-phase)",
+        "quantity": 2
+      }
+    ]
+  },
+  {
+    "ocm_id": 294579,
+    "name": "RUSSO VE 2",
+    "town": "Kearny",
+    "latitude": 40.755843,
+    "longitude": -74.161866,
+    "num_points": null,
+    "data_quality": 3,
+    "connections": [
+      {
+        "connector_type": "Type1",
+        "power_kw": 3.7,
+        "current_type": "AC (1-phase)",
+        "quantity": 2
+      }
+    ]
+  },
+  {
+    "ocm_id": 277180,
+    "name": "EV REQUIRED T2881 STATION 8",
+    "town": "Kearny",
+    "latitude": 40.759862,
+    "longitude": -74.159246,
+    "num_points": null,
+    "data_quality": 3,
+    "connections": [
+      {
+        "connector_type": "Type1",
+        "power_kw": 3.7,
+        "current_type": "AC (1-phase)",
+        "quantity": 2
+      }
+    ]
+  },
+  {
+    "ocm_id": 277181,
+    "name": "EV REQUIRED T2881 STATION 4",
+    "town": "Kearny",
+    "latitude": 40.760111,
+    "longitude": -74.15939,
+    "num_points": null,
+    "data_quality": 3,
+    "connections": [
+      {
+        "connector_type": "Type1",
+        "power_kw": 3.7,
+        "current_type": "AC (1-phase)",
+        "quantity": 2
+      }
+    ]
+  },
+  {
+    "ocm_id": 353622,
+    "name": "Rite Aid - Tesla Supercharger",
+    "town": "Harrison",
+    "latitude": 40.74339523,
+    "longitude": -74.15444883,
+    "num_points": null,
+    "data_quality": 3,
+    "connections": [
+      {
+        "connector_type": "CCS",
+        "power_kw": 50,
+        "current_type": "DC",
+        "quantity": 1
+      },
+      {
+        "connector_type": "Tesla",
+        "power_kw": 50,
+        "current_type": "DC",
+        "quantity": 1
+      }
+    ]
+  },
+  {
+    "ocm_id": 226866,
+    "name": "THE EDDY STATION 1",
+    "town": "Harrison",
+    "latitude": 40.741954,
+    "longitude": -74.162394,
+    "num_points": null,
+    "data_quality": 3,
+    "connections": [
+      {
+        "connector_type": "Type1",
+        "power_kw": 3.7,
+        "current_type": "AC (1-phase)",
+        "quantity": 2
+      }
+    ]
+  },
+  {
+    "ocm_id": 353648,
+    "name": "BNE MASTER HARRISON 2",
+    "town": "Harrison",
+    "latitude": 40.745221,
+    "longitude": -74.164255,
+    "num_points": null,
+    "data_quality": 3,
+    "connections": [
+      {
+        "connector_type": "Type1",
+        "power_kw": 3.7,
+        "current_type": "AC (1-phase)",
+        "quantity": 2
+      }
+    ]
+  },
+  {
+    "ocm_id": 121256,
+    "name": "BNE MASTER",
+    "town": "Harrison",
+    "latitude": 40.745121,
+    "longitude": -74.164553,
+    "num_points": null,
+    "data_quality": 3,
+    "connections": [
+      {
+        "connector_type": "Type1",
+        "power_kw": 3.7,
+        "current_type": "AC (1-phase)",
+        "quantity": 4
+      }
+    ]
+  },
+  {
+    "ocm_id": 226893,
+    "name": "IBN Construction",
+    "town": "Newark",
+    "latitude": 40.749746,
+    "longitude": -74.168617,
+    "num_points": null,
+    "data_quality": 3,
+    "connections": [
+      {
+        "connector_type": "Type1",
+        "power_kw": 3.7,
+        "current_type": "AC (1-phase)",
+        "quantity": 2
+      }
+    ]
+  },
+  {
+    "ocm_id": 353672,
+    "name": "The Envy - Garage",
+    "town": "Newark",
+    "latitude": 40.7467898,
+    "longitude": -74.1823435,
+    "num_points": null,
+    "data_quality": 3,
+    "connections": [
+      {
+        "connector_type": "Type1",
+        "power_kw": 3.7,
+        "current_type": "AC (1-phase)",
+        "quantity": 4
+      }
+    ]
+  },
+  {
+    "ocm_id": 353696,
+    "name": "The Arbol - Garage - Ground Floor",
+    "town": "Newark",
+    "latitude": 40.7483259,
+    "longitude": -74.1785377,
+    "num_points": null,
+    "data_quality": 3,
+    "connections": [
+      {
+        "connector_type": "Type1",
+        "power_kw": 3.7,
+        "current_type": "AC (1-phase)",
+        "quantity": 4
+      }
+    ]
+  },
+  {
+    "ocm_id": 353885,
+    "name": "Lake St Apartments",
+    "town": "Newark",
+    "latitude": 40.76158113106898,
+    "longitude": -74.17830254865554,
+    "num_points": null,
+    "data_quality": 3,
+    "connections": [
+      {
+        "connector_type": "Type1",
+        "power_kw": 3.7,
+        "current_type": "AC (1-phase)",
+        "quantity": 2
+      }
+    ]
+  },
+  {
+    "ocm_id": 226925,
+    "name": "ESSEX COUNTY ESSEX CTY PS1",
+    "town": "East Orange",
+    "latitude": 40.762493,
+    "longitude": -74.21597,
+    "num_points": null,
+    "data_quality": 3,
+    "connections": [
+      {
+        "connector_type": "Type1",
+        "power_kw": 3.7,
+        "current_type": "AC (1-phase)",
+        "quantity": 2
+      }
+    ]
+  },
+  {
+    "ocm_id": 277195,
+    "name": "Grove Crossing",
+    "town": "Bloomfield",
+    "latitude": 40.7815402,
+    "longitude": -74.1949195,
+    "num_points": null,
+    "data_quality": 3,
+    "connections": [
+      {
+        "connector_type": "Type1",
+        "power_kw": 3.7,
+        "current_type": "AC (1-phase)",
+        "quantity": 2
+      }
+    ]
+  },
+  {
+    "ocm_id": 226993,
+    "name": "Stop and Shop 800 - Bloomfield",
+    "town": "Bloomfield",
+    "latitude": 40.783208,
+    "longitude": -74.184526,
+    "num_points": null,
+    "data_quality": 3,
+    "connections": [
+      {
+        "connector_type": "Type1",
+        "power_kw": 3.7,
+        "current_type": "AC (1-phase)",
+        "quantity": 2
+      }
+    ]
+  },
+  {
+    "ocm_id": 226997,
+    "name": "CMMC PARKING DK CMMC DOCTOR DK",
+    "town": "Belleville",
+    "latitude": 40.78508,
+    "longitude": -74.17567,
+    "num_points": null,
+    "data_quality": 3,
+    "connections": [
+      {
+        "connector_type": "Type1",
+        "power_kw": 3.7,
+        "current_type": "AC (1-phase)",
+        "quantity": 2
+      }
+    ]
+  },
+  {
+    "ocm_id": 282588,
+    "name": "ESSEX COUNTY BRANCH BROOK PA",
+    "town": "Newark",
+    "latitude": 40.78444,
+    "longitude": -74.17432,
+    "num_points": null,
+    "data_quality": 3,
+    "connections": [
+      {
+        "connector_type": "Type1",
+        "power_kw": 3.7,
+        "current_type": "AC (1-phase)",
+        "quantity": 2
+      }
+    ]
+  },
+  {
+    "ocm_id": 227012,
+    "name": "UBP Bloomfield Crossing (Bloomfield, NJ)",
+    "town": "Bloomfield",
+    "latitude": 40.79687,
+    "longitude": -74.17895,
+    "num_points": null,
+    "data_quality": 3,
+    "connections": [
+      {
+        "connector_type": "CCS",
+        "power_kw": 150,
+        "current_type": "DC",
+        "quantity": 4
+      }
+    ]
+  },
+  {
+    "ocm_id": 227020,
+    "name": "Garden Homes - Oakes Pond at Bloomfield",
+    "town": "Bloomfield",
+    "latitude": 40.801254,
+    "longitude": -74.189563,
+    "num_points": null,
+    "data_quality": 3,
+    "connections": [
+      {
+        "connector_type": "Type1",
+        "power_kw": 3.7,
+        "current_type": "AC (1-phase)",
+        "quantity": 2
+      }
+    ]
+  },
+  {
+    "ocm_id": 354245,
+    "name": "L710 BBLOM STATION 1",
+    "town": "Bloomfield",
+    "latitude": 40.789218,
+    "longitude": -74.194224,
+    "num_points": null,
+    "data_quality": 3,
+    "connections": [
+      {
+        "connector_type": "Type1",
+        "power_kw": 3.7,
+        "current_type": "AC (1-phase)",
+        "quantity": 2
+      }
+    ]
+  },
+  {
+    "ocm_id": 14096,
+    "name": "Lynnes Nissan City",
+    "town": "Bloomfield",
+    "latitude": 40.784797,
+    "longitude": -74.193494,
+    "num_points": null,
+    "data_quality": 3,
+    "connections": [
+      {
+        "connector_type": "Type1",
+        "power_kw": 3.7,
+        "current_type": "AC (1-phase)",
+        "quantity": 2
+      },
+      {
+        "connector_type": "CHAdeMO",
+        "power_kw": 50,
+        "current_type": "DC",
+        "quantity": 1
+      },
+      {
+        "connector_type": "CCS",
+        "power_kw": 40,
+        "current_type": "AC (1-phase)",
+        "quantity": 1
+      }
+    ]
+  },
+  {
+    "ocm_id": 227000,
+    "name": "Lynnes Subaru",
+    "town": "Bloomfield",
+    "latitude": 40.7873919,
+    "longitude": -74.1967359,
+    "num_points": null,
+    "data_quality": 3,
+    "connections": [
+      {
+        "connector_type": "Type1",
+        "power_kw": 3.7,
+        "current_type": "AC (1-phase)",
+        "quantity": 1
+      }
+    ]
+  },
+  {
+    "ocm_id": 28445,
+    "name": "BMW BLOOMFIELD",
+    "town": "Bloomfield",
+    "latitude": 40.7892417,
+    "longitude": -74.194571,
+    "num_points": null,
+    "data_quality": 3,
+    "connections": [
+      {
+        "connector_type": "Type1",
+        "power_kw": 3.7,
+        "current_type": "AC (1-phase)",
+        "quantity": 1
+      }
+    ]
+  },
+  {
+    "ocm_id": 227004,
+    "name": "Township of Bloomfield - Municipal Lot",
+    "town": "Bloomfield",
+    "latitude": 40.791094,
+    "longitude": -74.195825,
+    "num_points": null,
+    "data_quality": 3,
+    "connections": [
+      {
+        "connector_type": "Type1",
+        "power_kw": 3.7,
+        "current_type": "AC (1-phase)",
+        "quantity": 6
+      }
+    ]
+  },
+  {
+    "ocm_id": 159711,
+    "name": "BLOOMFIELD GLENWOOD ST 2",
+    "town": "Bloomfield",
+    "latitude": 40.792942,
+    "longitude": -74.198814,
+    "num_points": null,
+    "data_quality": 3,
+    "connections": [
+      {
+        "connector_type": "Type1",
+        "power_kw": 3.7,
+        "current_type": "AC (1-phase)",
+        "quantity": 1
+      }
+    ]
+  },
+  {
+    "ocm_id": 269743,
+    "name": "ESSEX COUNTY GLENFIELD ST1",
+    "town": "Montclair",
+    "latitude": 40.804676,
+    "longitude": -74.21198,
+    "num_points": null,
+    "data_quality": 3,
+    "connections": [
+      {
+        "connector_type": "Type1",
+        "power_kw": 3.7,
+        "current_type": "AC (1-phase)",
+        "quantity": 2
+      }
+    ]
+  },
+  {
+    "ocm_id": 227055,
+    "name": "OBUR STATION 2",
+    "town": "Montclair",
+    "latitude": 40.8131,
+    "longitude": -74.205,
+    "num_points": null,
+    "data_quality": 3,
+    "connections": [
+      {
+        "connector_type": "Type1",
+        "power_kw": 3.7,
+        "current_type": "AC (1-phase)",
+        "quantity": 2
+      }
+    ]
+  },
+  {
+    "ocm_id": 246461,
+    "name": "OBUR STATION 1",
+    "town": "Glen Ridge",
+    "latitude": 40.812763,
+    "longitude": -74.203545,
+    "num_points": null,
+    "data_quality": 3,
+    "connections": [
+      {
+        "connector_type": "Type1",
+        "power_kw": 3.7,
+        "current_type": "AC (1-phase)",
+        "quantity": 2
+      }
+    ]
+  },
+  {
+    "ocm_id": 227054,
+    "name": "OBUR STATION 3",
+    "town": "Montclair",
+    "latitude": 40.81276,
+    "longitude": -74.20414,
+    "num_points": null,
+    "data_quality": 3,
+    "connections": [
+      {
+        "connector_type": "Type1",
+        "power_kw": 3.7,
+        "current_type": "AC (1-phase)",
+        "quantity": 2
+      }
+    ]
+  },
+  {
+    "ocm_id": 282597,
+    "name": "Montclair Township Parking Utility Fullerton Lot",
+    "town": "Montclair",
+    "latitude": 40.8144871,
+    "longitude": -74.2173216,
+    "num_points": null,
+    "data_quality": 3,
+    "connections": [
+      {
+        "connector_type": "Type1",
+        "power_kw": 3.7,
+        "current_type": "AC (1-phase)",
+        "quantity": 2
+      }
+    ]
+  },
+  {
+    "ocm_id": 159714,
+    "name": "Montclair Municipal Town Hall",
+    "town": "Montclair",
+    "latitude": 40.817315,
+    "longitude": -74.215388,
+    "num_points": null,
+    "data_quality": 3,
+    "connections": [
+      {
+        "connector_type": "Type1",
+        "power_kw": 3.7,
+        "current_type": "AC (1-phase)",
+        "quantity": 2
+      }
+    ]
+  },
+  {
+    "ocm_id": 28461,
+    "name": "Brassworks on Grove",
+    "town": "Montclair",
+    "latitude": 40.814101,
+    "longitude": -74.2078,
+    "num_points": null,
+    "data_quality": 3,
+    "connections": [
+      {
+        "connector_type": "Type1",
+        "power_kw": 3.7,
+        "current_type": "AC (1-phase)",
+        "quantity": 1
+      }
+    ]
+  },
+  {
+    "ocm_id": 159719,
+    "name": "MKA M.S. CAMPUS",
+    "town": "Montclair",
+    "latitude": 40.827281,
+    "longitude": -74.216416,
+    "num_points": null,
+    "data_quality": 3,
+    "connections": [
+      {
+        "connector_type": "Type1",
+        "power_kw": 3.7,
+        "current_type": "AC (1-phase)",
+        "quantity": 2
+      }
+    ]
+  },
+  {
+    "ocm_id": 277205,
+    "name": "JCM LIVING JCM NUTLEY",
+    "town": "Nutley",
+    "latitude": 40.808323,
+    "longitude": -74.154826,
+    "num_points": null,
+    "data_quality": 3,
+    "connections": [
+      {
+        "connector_type": "Type1",
+        "power_kw": 3.7,
+        "current_type": "AC (1-phase)",
+        "quantity": 2
+      }
+    ]
+  },
+  {
+    "ocm_id": 28458,
+    "name": "THREE COUNTY VW",
+    "town": "Lyndhurst",
+    "latitude": 40.80805,
+    "longitude": -74.13685,
+    "num_points": null,
+    "data_quality": 3,
+    "connections": [
+      {
+        "connector_type": "Type1",
+        "power_kw": 3,
+        "current_type": "AC (1-phase)",
+        "quantity": 2
+      }
+    ]
+  },
+  {
+    "ocm_id": 354383,
+    "name": "Central Medical Supply - Parking Lot",
+    "town": "Nutley",
+    "latitude": 40.808754,
+    "longitude": -74.142575,
+    "num_points": null,
+    "data_quality": 3,
+    "connections": [
+      {
+        "connector_type": "Type1",
+        "power_kw": 3.7,
+        "current_type": "AC (1-phase)",
+        "quantity": 2
+      }
+    ]
+  },
+  {
+    "ocm_id": 227024,
+    "name": "Stop and Shop 819 - Lyndurst",
+    "town": "Lyndhurst",
+    "latitude": 40.803801,
+    "longitude": -74.118242,
+    "num_points": null,
+    "data_quality": 3,
+    "connections": [
+      {
+        "connector_type": "Type1",
+        "power_kw": 3.7,
+        "current_type": "AC (1-phase)",
+        "quantity": 2
+      }
+    ]
+  },
+  {
+    "ocm_id": 227029,
+    "name": "SIKA HQ SIKAEVSTATION 1",
+    "town": "Lyndhurst",
+    "latitude": 40.805778,
+    "longitude": -74.10831,
+    "num_points": null,
+    "data_quality": 3,
+    "connections": [
+      {
+        "connector_type": "Type1",
+        "power_kw": 3.7,
+        "current_type": "AC (1-phase)",
+        "quantity": 2
+      }
+    ]
+  },
+  {
+    "ocm_id": 142492,
+    "name": "The Winston at Lyndhurst",
+    "town": "Lyndhurst",
+    "latitude": 40.8023357,
+    "longitude": -74.0960077,
+    "num_points": null,
+    "data_quality": 3,
+    "connections": [
+      {
+        "connector_type": "Type1",
+        "power_kw": 3.7,
+        "current_type": "AC (1-phase)",
+        "quantity": 4
+      }
+    ]
+  },
+  {
+    "ocm_id": 354356,
+    "name": "Metropolitan Center",
+    "town": "East Rutherford",
+    "latitude": 40.80625,
+    "longitude": -74.07767,
+    "num_points": null,
+    "data_quality": 3,
+    "connections": [
+      {
+        "connector_type": "Type1",
+        "power_kw": 3.7,
+        "current_type": "AC (1-phase)",
+        "quantity": 4
+      }
+    ]
+  },
+  {
+    "ocm_id": 246456,
+    "name": "MET CENTER STATION 1",
+    "town": "East Rutherford",
+    "latitude": 40.806244,
+    "longitude": -74.0794,
+    "num_points": null,
+    "data_quality": 3,
+    "connections": [
+      {
+        "connector_type": "Type1",
+        "power_kw": 3.7,
+        "current_type": "AC (1-phase)",
+        "quantity": 2
+      }
+    ]
+  },
+  {
+    "ocm_id": 67403,
+    "name": "HILTON ML PLAZA MEADOWLANDS 01",
+    "town": "East Rutherford",
+    "latitude": 40.805031,
+    "longitude": -74.07776,
+    "num_points": null,
+    "data_quality": 3,
+    "connections": [
+      {
+        "connector_type": "CCS",
+        "power_kw": 40,
+        "current_type": "DC",
+        "quantity": 1
+      }
+    ]
+  },
+  {
+    "ocm_id": 226961,
+    "name": "DCS",
+    "town": "Secaucus",
+    "latitude": 40.771667,
+    "longitude": -74.078616,
+    "num_points": null,
+    "data_quality": 3,
+    "connections": [
+      {
+        "connector_type": "Type1",
+        "power_kw": 3.7,
+        "current_type": "AC (1-phase)",
+        "quantity": 4
+      }
+    ]
+  },
+  {
+    "ocm_id": 226841,
+    "name": "HUDSON COUNTY SKYWAY GC PS1",
+    "town": "Jersey City",
+    "latitude": 40.733324,
+    "longitude": -74.091869,
+    "num_points": null,
+    "data_quality": 3,
+    "connections": [
+      {
+        "connector_type": "Type1",
+        "power_kw": 3.7,
+        "current_type": "AC (1-phase)",
+        "quantity": 2
+      }
+    ]
+  },
+  {
+    "ocm_id": 277185,
+    "name": "SRIV - BLDG. I",
+    "town": "Secaucus",
+    "latitude": 40.7646961,
+    "longitude": -74.0837854,
+    "num_points": null,
+    "data_quality": 3,
+    "connections": [
+      {
+        "connector_type": "Type1",
+        "power_kw": 3.7,
+        "current_type": "AC (1-phase)",
+        "quantity": 2
+      }
+    ]
+  },
+  {
+    "ocm_id": 277184,
+    "name": "SRIV - BLDG. J",
+    "town": "Secaucus",
+    "latitude": 40.7641645,
+    "longitude": -74.0836729,
+    "num_points": null,
+    "data_quality": 3,
+    "connections": [
+      {
+        "connector_type": "Type1",
+        "power_kw": 3.7,
+        "current_type": "AC (1-phase)",
+        "quantity": 3
+      }
+    ]
+  },
+  {
+    "ocm_id": 294585,
+    "name": "ERIV - BLDG. A",
+    "town": "Secaucus",
+    "latitude": 40.7630617,
+    "longitude": -74.0801476,
+    "num_points": null,
+    "data_quality": 3,
+    "connections": [
+      {
+        "connector_type": "Type1",
+        "power_kw": 3.7,
+        "current_type": "AC (1-phase)",
+        "quantity": 1
+      }
+    ]
+  },
+  {
+    "ocm_id": 277182,
+    "name": "PSTA - BLDG. K",
+    "town": "Secaucus",
+    "latitude": 40.7626247,
+    "longitude": -74.0813389,
+    "num_points": null,
+    "data_quality": 3,
+    "connections": [
+      {
+        "connector_type": "Type1",
+        "power_kw": 3.7,
+        "current_type": "AC (1-phase)",
+        "quantity": 2
+      }
+    ]
+  },
+  {
+    "ocm_id": 277183,
+    "name": "RSTA - BLDG. C",
+    "town": "Secaucus",
+    "latitude": 40.76399268,
+    "longitude": -74.08047077,
+    "num_points": null,
+    "data_quality": 3,
+    "connections": [
+      {
+        "connector_type": "Type1",
+        "power_kw": 3.7,
+        "current_type": "AC (1-phase)",
+        "quantity": 2
+      }
+    ]
+  },
+  {
+    "ocm_id": 277186,
+    "name": "WRIV - BLDG. D",
+    "town": "Secaucus",
+    "latitude": 40.7659108,
+    "longitude": -74.0823332,
+    "num_points": null,
+    "data_quality": 3,
+    "connections": [
+      {
+        "connector_type": "Type1",
+        "power_kw": 3.7,
+        "current_type": "AC (1-phase)",
+        "quantity": 2
+      }
+    ]
+  },
+  {
+    "ocm_id": 113125,
+    "name": "PANYNJ",
+    "town": "Jersey City",
+    "latitude": 40.731712,
+    "longitude": -74.060969,
+    "num_points": null,
+    "data_quality": 3,
+    "connections": [
+      {
+        "connector_type": "Type1",
+        "power_kw": 3,
+        "current_type": "AC (1-phase)",
+        "quantity": 4
+      }
+    ]
+  },
+  {
+    "ocm_id": 353481,
+    "name": "PANYNJ JSTC STATION 2",
+    "town": "Jersey City",
+    "latitude": 40.732169,
+    "longitude": -74.062443,
+    "num_points": null,
+    "data_quality": 3,
+    "connections": [
+      {
+        "connector_type": "Type1",
+        "power_kw": 3.7,
+        "current_type": "AC (1-phase)",
+        "quantity": 2
+      }
+    ]
+  },
+  {
+    "ocm_id": 282567,
+    "name": "HUDSON COUNTY HCIA FLEET ST6",
+    "town": "Jersey City",
+    "latitude": 40.726641,
+    "longitude": -74.058888,
+    "num_points": null,
+    "data_quality": 3,
+    "connections": [
+      {
+        "connector_type": "Type1",
+        "power_kw": 3.7,
+        "current_type": "AC (1-phase)",
+        "quantity": 1
+      }
+    ]
+  },
+  {
+    "ocm_id": 226884,
+    "name": "JERSEYCITY LENGORDPARKL2",
+    "town": "Jersey City",
+    "latitude": 40.74584,
+    "longitude": -74.058846,
+    "num_points": null,
+    "data_quality": 3,
+    "connections": [
+      {
+        "connector_type": "Type1",
+        "power_kw": 3.7,
+        "current_type": "AC (1-phase)",
+        "quantity": 2
+      }
+    ]
+  },
+  {
+    "ocm_id": 226872,
+    "name": "JERSEYCITY RIVERVIEW PARK",
+    "town": "Jersey City",
+    "latitude": 40.743721,
+    "longitude": -74.043112,
+    "num_points": null,
+    "data_quality": 3,
+    "connections": [
+      {
+        "connector_type": "Type1",
+        "power_kw": 3.7,
+        "current_type": "AC (1-phase)",
+        "quantity": 2
+      }
+    ]
+  },
+  {
+    "ocm_id": 353550,
+    "name": "Hoboken NJ 651 Observer Highway DCFC",
+    "town": "Hoboken",
+    "latitude": 40.737549,
+    "longitude": -74.041882,
+    "num_points": null,
+    "data_quality": 3,
+    "connections": [
+      {
+        "connector_type": "CCS",
+        "power_kw": 50,
+        "current_type": "DC",
+        "quantity": 2
+      }
+    ]
+  },
+  {
+    "ocm_id": 125172,
+    "name": "Sylvan Parking 837 Jersey Avenue",
+    "town": "Jersey City",
+    "latitude": 40.734819,
+    "longitude": -74.045186,
+    "num_points": 4,
+    "data_quality": 1,
+    "connections": [
+      {
+        "connector_type": "Unknown",
+        "power_kw": 10,
+        "current_type": "AC (1-phase)",
+        "quantity": 4
+      }
+    ]
+  },
+  {
+    "ocm_id": 353510,
+    "name": "Sylvan Parking 837 Jersey Avenue - Tesla Destination",
+    "town": "Jersey City",
+    "latitude": 40.734819,
+    "longitude": -74.045186,
+    "num_points": null,
+    "data_quality": 3,
+    "connections": [
+      {
+        "connector_type": "Unknown",
+        "power_kw": 3.7,
+        "current_type": "AC (1-phase)",
+        "quantity": 4
+      }
+    ]
+  },
+  {
+    "ocm_id": 159689,
+    "name": "BNE MASTER",
+    "town": "Jersey City",
+    "latitude": 40.735438,
+    "longitude": -74.047445,
+    "num_points": null,
+    "data_quality": 3,
+    "connections": [
+      {
+        "connector_type": "Type1",
+        "power_kw": 3.7,
+        "current_type": "AC (1-phase)",
+        "quantity": 4
+      }
+    ]
+  },
+  {
+    "ocm_id": 226833,
+    "name": "JERSEYCITY ENOSJONESPARK",
+    "town": "Jersey City",
+    "latitude": 40.7275,
+    "longitude": -74.05121,
+    "num_points": null,
+    "data_quality": 3,
+    "connections": [
+      {
+        "connector_type": "Type1",
+        "power_kw": 3.7,
+        "current_type": "AC (1-phase)",
+        "quantity": 2
+      }
+    ]
+  },
+  {
+    "ocm_id": 353461,
+    "name": "HAMILTON GREENSPOT 10",
+    "town": "Jersey City",
+    "latitude": 40.729541,
+    "longitude": -74.050149,
+    "num_points": null,
+    "data_quality": 3,
+    "connections": [
+      {
+        "connector_type": "Type1",
+        "power_kw": 3.7,
+        "current_type": "AC (1-phase)",
+        "quantity": 2
+      }
+    ]
+  },
+  {
+    "ocm_id": 96706,
+    "name": "HAMILTON",
+    "town": "Jersey City",
+    "latitude": 40.7295593,
+    "longitude": -74.0503014,
+    "num_points": null,
+    "data_quality": 3,
+    "connections": [
+      {
+        "connector_type": "Type1",
+        "power_kw": 3.7,
+        "current_type": "AC (1-phase)",
+        "quantity": 2
+      }
+    ]
+  },
+  {
+    "ocm_id": 125167,
+    "name": "Sylvan Parking 273 15th Street",
+    "town": "Jersey City",
+    "latitude": 40.732825,
+    "longitude": -74.045472,
+    "num_points": 4,
+    "data_quality": 1,
+    "connections": [
+      {
+        "connector_type": "Unknown",
+        "power_kw": 10,
+        "current_type": "AC (1-phase)",
+        "quantity": 4
+      }
+    ]
+  },
+  {
+    "ocm_id": 353491,
+    "name": "Sylvan Parking 273 15th Street - Tesla Destination",
+    "town": "Jersey City",
+    "latitude": 40.732825,
+    "longitude": -74.045472,
+    "num_points": null,
+    "data_quality": 3,
+    "connections": [
+      {
+        "connector_type": "Unknown",
+        "power_kw": 3.7,
+        "current_type": "AC (1-phase)",
+        "quantity": 4
+      }
+    ]
+  },
+  {
+    "ocm_id": 353490,
+    "name": "315 15th St - Garage",
+    "town": "Jersey City",
+    "latitude": 40.732825,
+    "longitude": -74.046194,
+    "num_points": null,
+    "data_quality": 3,
+    "connections": [
+      {
+        "connector_type": "Type1",
+        "power_kw": 3.7,
+        "current_type": "AC (1-phase)",
+        "quantity": 7
+      }
+    ]
+  },
+  {
+    "ocm_id": 353442,
+    "name": "Simon Newport Centre (Jersey City, NJ)",
+    "town": "Jersey City",
+    "latitude": 40.72806,
+    "longitude": -74.03922,
+    "num_points": null,
+    "data_quality": 3,
+    "connections": [
+      {
+        "connector_type": "CCS",
+        "power_kw": 50,
+        "current_type": "DC",
+        "quantity": 6
+      }
+    ]
+  },
+  {
+    "ocm_id": 100556,
+    "name": "Jersey City, NJ - Mall Drive West (Pay to Park)",
+    "town": "Jersey City",
+    "latitude": 40.727344,
+    "longitude": -74.039834,
+    "num_points": 20,
+    "data_quality": 1,
+    "connections": [
+      {
+        "connector_type": "Tesla",
+        "power_kw": 72,
+        "current_type": "DC",
+        "quantity": 20
+      }
+    ]
+  },
+  {
+    "ocm_id": 246294,
+    "name": "Newport Centre Mall",
+    "town": "Jersey City",
+    "latitude": 40.7273791,
+    "longitude": -74.0386831,
+    "num_points": null,
+    "data_quality": 3,
+    "connections": [
+      {
+        "connector_type": "Type1",
+        "power_kw": 3.7,
+        "current_type": "AC (1-phase)",
+        "quantity": 1
+      },
+      {
+        "connector_type": "CHAdeMO",
+        "power_kw": 50,
+        "current_type": "DC",
+        "quantity": 1
+      },
+      {
+        "connector_type": "CCS",
+        "power_kw": 50,
+        "current_type": "DC",
+        "quantity": 1
+      }
+    ]
+  },
+  {
+    "ocm_id": 142420,
+    "name": "Central Parking - Newport Town Square Garage",
+    "town": "Jersey City",
+    "latitude": 40.727176,
+    "longitude": -74.03324,
+    "num_points": null,
+    "data_quality": 3,
+    "connections": [
+      {
+        "connector_type": "Type1",
+        "power_kw": 3.7,
+        "current_type": "AC (1-phase)",
+        "quantity": 2
+      }
+    ]
+  },
+  {
+    "ocm_id": 467169,
+    "name": "Newport River Market Garage - Newport River Market Garage",
+    "town": "Jersey City",
+    "latitude": 40.7293463,
+    "longitude": -74.0328982,
+    "num_points": null,
+    "data_quality": 3,
+    "connections": [
+      {
+        "connector_type": "Type1",
+        "power_kw": 3.7,
+        "current_type": "AC (1-phase)",
+        "quantity": 1
+      }
+    ]
+  },
+  {
+    "ocm_id": 353450,
+    "name": "EV 01 EV 03 STATION1",
+    "town": "Jersey City",
+    "latitude": 40.728462,
+    "longitude": -74.033917,
+    "num_points": null,
+    "data_quality": 3,
+    "connections": [
+      {
+        "connector_type": "CHAdeMO",
+        "power_kw": 50,
+        "current_type": "DC",
+        "quantity": 1
+      },
+      {
+        "connector_type": "CCS",
+        "power_kw": 50,
+        "current_type": "DC",
+        "quantity": 1
+      }
+    ]
+  },
+  {
+    "ocm_id": 246299,
+    "name": "EV 01 STATION 2",
+    "town": "Jersey City",
+    "latitude": 40.728912,
+    "longitude": -74.03404,
+    "num_points": null,
+    "data_quality": 3,
+    "connections": [
+      {
+        "connector_type": "Type1",
+        "power_kw": 3.7,
+        "current_type": "AC (1-phase)",
+        "quantity": 2
+      }
+    ]
+  },
+  {
+    "ocm_id": 467173,
+    "name": "Bisby Garage - Zipcar Rentals and Bisby Garage",
+    "town": "Jersey City",
+    "latitude": 40.732143,
+    "longitude": -74.0321459,
+    "num_points": null,
+    "data_quality": 3,
+    "connections": [
+      {
+        "connector_type": "Type1",
+        "power_kw": 3.7,
+        "current_type": "AC (1-phase)",
+        "quantity": 21
+      }
+    ]
+  },
+  {
+    "ocm_id": 142424,
+    "name": "River Market Garage",
+    "town": "Jersey City",
+    "latitude": 40.730225,
+    "longitude": -74.032749,
+    "num_points": null,
+    "data_quality": 3,
+    "connections": [
+      {
+        "connector_type": "Type1",
+        "power_kw": 3.7,
+        "current_type": "AC (1-phase)",
+        "quantity": 1
+      }
+    ]
+  },
+  {
+    "ocm_id": 113124,
+    "name": "Central Parking - 25 Park Lane S",
+    "town": "Jersey City",
+    "latitude": 40.730872,
+    "longitude": -74.030469,
+    "num_points": null,
+    "data_quality": 3,
+    "connections": [
+      {
+        "connector_type": "Type1",
+        "power_kw": 3.7,
+        "current_type": "AC (1-phase)",
+        "quantity": 4
+      }
+    ]
+  },
+  {
+    "ocm_id": 353545,
+    "name": "DT&P HOBOKEN DC2",
+    "town": "Hoboken",
+    "latitude": 40.737291,
+    "longitude": -74.036935,
+    "num_points": null,
+    "data_quality": 3,
+    "connections": [
+      {
+        "connector_type": "CHAdeMO",
+        "power_kw": 50,
+        "current_type": "DC",
+        "quantity": 1
+      },
+      {
+        "connector_type": "CCS",
+        "power_kw": 50,
+        "current_type": "DC",
+        "quantity": 1
+      }
+    ]
+  },
+  {
+    "ocm_id": 353543,
+    "name": "DT&P HOBOKEN DC1",
+    "town": "Hoboken",
+    "latitude": 40.737278,
+    "longitude": -74.036988,
+    "num_points": null,
+    "data_quality": 3,
+    "connections": [
+      {
+        "connector_type": "CHAdeMO",
+        "power_kw": 50,
+        "current_type": "DC",
+        "quantity": 1
+      },
+      {
+        "connector_type": "CCS",
+        "power_kw": 50,
+        "current_type": "DC",
+        "quantity": 1
+      }
+    ]
+  },
+  {
+    "ocm_id": 226864,
+    "name": "DT&P MIDTOWN GAR PS3",
+    "town": "Hoboken",
+    "latitude": 40.741856,
+    "longitude": -74.03474,
+    "num_points": null,
+    "data_quality": 3,
+    "connections": [
+      {
+        "connector_type": "Type1",
+        "power_kw": 3.7,
+        "current_type": "AC (1-phase)",
+        "quantity": 2
+      }
+    ]
+  },
+  {
+    "ocm_id": 467188,
+    "name": "Hoboken NJ 114 Washington Street DCFC",
+    "town": "Hoboken",
+    "latitude": 40.738012,
+    "longitude": -74.030831,
+    "num_points": null,
+    "data_quality": 3,
+    "connections": [
+      {
+        "connector_type": "CCS",
+        "power_kw": 50,
+        "current_type": "DC",
+        "quantity": 2
+      }
+    ]
+  },
+  {
+    "ocm_id": 226847,
+    "name": "DT&P 1ST & WASH PS1",
+    "town": "Hoboken",
+    "latitude": 40.737427,
+    "longitude": -74.03049,
+    "num_points": null,
+    "data_quality": 3,
+    "connections": [
+      {
+        "connector_type": "Type1",
+        "power_kw": 3.7,
+        "current_type": "AC (1-phase)",
+        "quantity": 2
+      }
+    ]
+  },
+  {
+    "ocm_id": 353609,
+    "name": "207 4th Street Hoboken NJ 07030",
+    "town": "Hoboken",
+    "latitude": 40.741686,
+    "longitude": -74.031832,
+    "num_points": null,
+    "data_quality": 3,
+    "connections": [
+      {
+        "connector_type": "Type1",
+        "power_kw": 3.7,
+        "current_type": "AC (1-phase)",
+        "quantity": 2
+      }
+    ]
+  },
+  {
+    "ocm_id": 282576,
+    "name": "Hoboken NJ 346 10th Street Columbus Park",
+    "town": "Hoboken",
+    "latitude": 40.749391,
+    "longitude": -74.032485,
+    "num_points": null,
+    "data_quality": 3,
+    "connections": [
+      {
+        "connector_type": "Type1",
+        "power_kw": 3.7,
+        "current_type": "AC (1-phase)",
+        "quantity": 2
+      }
+    ]
+  },
+  {
+    "ocm_id": 294578,
+    "name": "Hoboken NJ 471 12th St Northwest Resiliency Park",
+    "town": "Hoboken",
+    "latitude": 40.752042,
+    "longitude": -74.033519,
+    "num_points": null,
+    "data_quality": 3,
+    "connections": [
+      {
+        "connector_type": "Type1",
+        "power_kw": 3.7,
+        "current_type": "AC (1-phase)",
+        "quantity": 1
+      }
+    ]
+  },
+  {
+    "ocm_id": 353733,
+    "name": "DORIC APARTMENT PUBLIC CHARGER",
+    "town": "Union City",
+    "latitude": 40.752028,
+    "longitude": -74.037227,
+    "num_points": null,
+    "data_quality": 3,
+    "connections": [
+      {
+        "connector_type": "Type1",
+        "power_kw": 3.7,
+        "current_type": "AC (1-phase)",
+        "quantity": 2
+      }
+    ]
+  },
+  {
+    "ocm_id": 282573,
+    "name": "Hoboken NJ 720 Monroe Street DCFC",
+    "town": "Hoboken",
+    "latitude": 40.747778,
+    "longitude": -74.0375,
+    "num_points": null,
+    "data_quality": 3,
+    "connections": [
+      {
+        "connector_type": "CCS",
+        "power_kw": 50,
+        "current_type": "DC",
+        "quantity": 2
+      }
+    ]
+  },
+  {
+    "ocm_id": 353688,
+    "name": "800 Madison St",
+    "town": "Hoboken",
+    "latitude": 40.747835420402,
+    "longitude": -74.0366512184151,
+    "num_points": null,
+    "data_quality": 3,
+    "connections": [
+      {
+        "connector_type": "Type1",
+        "power_kw": 3.7,
+        "current_type": "AC (1-phase)",
+        "quantity": 1
+      }
+    ]
+  },
+  {
+    "ocm_id": 226890,
+    "name": "JERSEYCITY CENTRAL AVE",
+    "town": "Jersey City",
+    "latitude": 40.748273,
+    "longitude": -74.047725,
+    "num_points": null,
+    "data_quality": 3,
+    "connections": [
+      {
+        "connector_type": "Type1",
+        "power_kw": 3.7,
+        "current_type": "AC (1-phase)",
+        "quantity": 2
+      }
+    ]
+  },
+  {
+    "ocm_id": 353786,
+    "name": "Tower Lenox CPU LLC",
+    "town": "Union City",
+    "latitude": 40.75633331062273,
+    "longitude": -74.04275300347432,
+    "num_points": null,
+    "data_quality": 3,
+    "connections": [
+      {
+        "connector_type": "Type1",
+        "power_kw": 3.7,
+        "current_type": "AC (1-phase)",
+        "quantity": 18
+      }
+    ]
+  },
+  {
+    "ocm_id": 294583,
+    "name": "NBPA LIBERTY L2 (2)",
+    "town": "North Bergen",
+    "latitude": 40.759991,
+    "longitude": -74.050012,
+    "num_points": null,
+    "data_quality": 3,
+    "connections": [
+      {
+        "connector_type": "Type1",
+        "power_kw": 3.7,
+        "current_type": "AC (1-phase)",
+        "quantity": 2
+      }
+    ]
+  },
+  {
+    "ocm_id": 294584,
+    "name": "NBPA LIBERTY L2 (1)",
+    "town": "North Bergen",
+    "latitude": 40.760003,
+    "longitude": -74.050057,
+    "num_points": null,
+    "data_quality": 3,
+    "connections": [
+      {
+        "connector_type": "Type1",
+        "power_kw": 3.7,
+        "current_type": "AC (1-phase)",
+        "quantity": 2
+      }
+    ]
+  },
+  {
+    "ocm_id": 294577,
+    "name": "Hoboken NJ 1270 Adams Street",
+    "town": "Hoboken",
+    "latitude": 40.7529,
+    "longitude": -74.033009,
+    "num_points": null,
+    "data_quality": 3,
+    "connections": [
+      {
+        "connector_type": "Type1",
+        "power_kw": 3.7,
+        "current_type": "AC (1-phase)",
+        "quantity": 1
+      }
+    ]
+  },
+  {
+    "ocm_id": 226896,
+    "name": "DT&P 1301 JEFFERSON",
+    "town": "Hoboken",
+    "latitude": 40.75347,
+    "longitude": -74.03328,
+    "num_points": null,
+    "data_quality": 3,
+    "connections": [
+      {
+        "connector_type": "Type1",
+        "power_kw": 3.7,
+        "current_type": "AC (1-phase)",
+        "quantity": 2
+      }
+    ]
+  },
+  {
+    "ocm_id": 226975,
+    "name": "North Bergen, NJ",
+    "town": "North Bergen",
+    "latitude": 40.775401,
+    "longitude": -74.034631,
+    "num_points": 12,
+    "data_quality": 3,
+    "connections": [
+      {
+        "connector_type": "Tesla",
+        "power_kw": 250,
+        "current_type": "DC",
+        "quantity": 12
+      }
+    ]
+  },
+  {
+    "ocm_id": 354188,
+    "name": "NBPA ADMIN LEVEL 2",
+    "town": "North Bergen",
+    "latitude": 40.78185,
+    "longitude": -74.033657,
+    "num_points": null,
+    "data_quality": 3,
+    "connections": [
+      {
+        "connector_type": "Type1",
+        "power_kw": 3.7,
+        "current_type": "AC (1-phase)",
+        "quantity": 2
+      }
+    ]
+  },
+  {
+    "ocm_id": 226972,
+    "name": "North Bergen, NJ - John F. Kennedy Boulevard",
+    "town": "North Bergen",
+    "latitude": 40.773883,
+    "longitude": -74.038139,
+    "num_points": 8,
+    "data_quality": 3,
+    "connections": [
+      {
+        "connector_type": "Tesla",
+        "power_kw": 250,
+        "current_type": "DC",
+        "quantity": 8
+      }
+    ]
+  },
+  {
+    "ocm_id": 497275,
+    "name": "Alexander Hamilton Travel Plaza",
+    "town": "Secacus",
+    "latitude": 40.76998282547885,
+    "longitude": -74.06462742624433,
+    "num_points": 4,
+    "data_quality": 1,
+    "connections": [
+      {
+        "connector_type": "CCS",
+        "power_kw": 350,
+        "current_type": "DC",
+        "quantity": 4
+      },
+      {
+        "connector_type": "Tesla",
+        "power_kw": 350,
+        "current_type": "DC",
+        "quantity": 4
+      }
+    ]
+  },
+  {
+    "ocm_id": 354134,
+    "name": "Equinix - Tesla Destination",
+    "town": "Secaucus",
+    "latitude": 40.7773,
+    "longitude": -74.069557,
+    "num_points": null,
+    "data_quality": 3,
+    "connections": [
+      {
+        "connector_type": "Unknown",
+        "power_kw": 3.7,
+        "current_type": "AC (1-phase)",
+        "quantity": 2
+      }
+    ]
+  },
+  {
+    "ocm_id": 142484,
+    "name": "Town of Secaucus Police",
+    "town": "Secaucus",
+    "latitude": 40.788043,
+    "longitude": -74.055384,
+    "num_points": null,
+    "data_quality": 3,
+    "connections": [
+      {
+        "connector_type": "Type1",
+        "power_kw": 3.7,
+        "current_type": "AC (1-phase)",
+        "quantity": 1
+      }
+    ]
+  },
+  {
+    "ocm_id": 102854,
+    "name": "SECAUCUS PUBLIC LIBRARY",
+    "town": "Secaucus",
+    "latitude": 40.793752,
+    "longitude": -74.059168,
+    "num_points": null,
+    "data_quality": 3,
+    "connections": [
+      {
+        "connector_type": "Type1",
+        "power_kw": 3.7,
+        "current_type": "AC (1-phase)",
+        "quantity": 1
+      }
+    ]
+  },
+  {
+    "ocm_id": 94382,
+    "name": "SECAUCUS MUNICIPAL LOT",
+    "town": "Secaucus",
+    "latitude": 40.79902,
+    "longitude": -74.058645,
+    "num_points": null,
+    "data_quality": 3,
+    "connections": [
+      {
+        "connector_type": "Type1",
+        "power_kw": 3.7,
+        "current_type": "AC (1-phase)",
+        "quantity": 1
+      }
+    ]
+  },
+  {
+    "ocm_id": 113130,
+    "name": "SECAUCUS RECREATION CENT",
+    "town": "Secaucus",
+    "latitude": 40.799955,
+    "longitude": -74.047792,
+    "num_points": null,
+    "data_quality": 3,
+    "connections": [
+      {
+        "connector_type": "Type1",
+        "power_kw": 3.7,
+        "current_type": "AC (1-phase)",
+        "quantity": 1
+      }
+    ]
+  },
+  {
+    "ocm_id": 354234,
+    "name": "100 Plaza Dr",
+    "town": "Secaucus",
+    "latitude": 40.7866934,
+    "longitude": -74.04604359999999,
+    "num_points": null,
+    "data_quality": 3,
+    "connections": [
+      {
+        "connector_type": "Type1",
+        "power_kw": 3.7,
+        "current_type": "AC (1-phase)",
+        "quantity": 4
+      }
+    ]
+  },
+  {
+    "ocm_id": 94379,
+    "name": "Residence Inn - Secaucus Meadowlands",
+    "town": "Secaucus",
+    "latitude": 40.786973,
+    "longitude": -74.046449,
+    "num_points": null,
+    "data_quality": 3,
+    "connections": [
+      {
+        "connector_type": "Type1",
+        "power_kw": 3.7,
+        "current_type": "AC (1-phase)",
+        "quantity": 2
+      }
+    ]
+  },
+  {
+    "ocm_id": 227007,
+    "name": "Walmart 3520 - Secaucus, NJ",
+    "town": "Secaucus",
+    "latitude": 40.79215,
+    "longitude": -74.04193,
+    "num_points": 3,
+    "data_quality": 3,
+    "connections": [
+      {
+        "connector_type": "Type1",
+        "power_kw": 7,
+        "current_type": "AC (1-phase)",
+        "quantity": 1
+      },
+      {
+        "connector_type": "CCS",
+        "power_kw": 350,
+        "current_type": "DC",
+        "quantity": 3
+      }
+    ]
+  },
+  {
+    "ocm_id": 467239,
+    "name": "SWTCH Energy",
+    "town": "North Bergen",
+    "latitude": 40.7996641,
+    "longitude": -74.022211,
+    "num_points": null,
+    "data_quality": 3,
+    "connections": [
+      {
+        "connector_type": "Type1",
+        "power_kw": 3.7,
+        "current_type": "AC (1-phase)",
+        "quantity": 4
+      }
+    ]
+  },
+  {
+    "ocm_id": 227014,
+    "name": "Mcguire Buick GMC",
+    "town": "NORTH BERGEN",
+    "latitude": 40.798183,
+    "longitude": -74.015989,
+    "num_points": null,
+    "data_quality": 3,
+    "connections": [
+      {
+        "connector_type": "CCS",
+        "power_kw": 40,
+        "current_type": "DC",
+        "quantity": 1
+      }
+    ]
+  },
+  {
+    "ocm_id": 294593,
+    "name": "WEST NEW YORK 57TH GARAGE #2",
+    "town": "West New York",
+    "latitude": 40.786807,
+    "longitude": -74.01686,
+    "num_points": null,
+    "data_quality": 3,
+    "connections": [
+      {
+        "connector_type": "Type1",
+        "power_kw": 3.7,
+        "current_type": "AC (1-phase)",
+        "quantity": 2
+      }
+    ]
+  },
+  {
+    "ocm_id": 294592,
+    "name": "WEST NEW YORK 57TH GARAGE #1",
+    "town": "West New York",
+    "latitude": 40.786693,
+    "longitude": -74.016924,
+    "num_points": null,
+    "data_quality": 3,
+    "connections": [
+      {
+        "connector_type": "Type1",
+        "power_kw": 3.7,
+        "current_type": "AC (1-phase)",
+        "quantity": 2
+      }
+    ]
+  },
+  {
+    "ocm_id": 142481,
+    "name": "RIVERBEND 1 RIVERBEND",
+    "town": "West New York",
+    "latitude": 40.779675,
+    "longitude": -74.01007,
+    "num_points": null,
+    "data_quality": 3,
+    "connections": [
+      {
+        "connector_type": "Type1",
+        "power_kw": 3.7,
+        "current_type": "AC (1-phase)",
+        "quantity": 1
+      }
+    ]
+  },
+  {
+    "ocm_id": 354202,
+    "name": "WEST NEW YORK 51ST GARAGE #4",
+    "town": "West New York",
+    "latitude": 40.783559,
+    "longitude": -74.021115,
+    "num_points": null,
+    "data_quality": 3,
+    "connections": [
+      {
+        "connector_type": "Type1",
+        "power_kw": 3.7,
+        "current_type": "AC (1-phase)",
+        "quantity": 2
+      }
+    ]
+  },
+  {
+    "ocm_id": 277201,
+    "name": "430805  Avalon North Bergen",
+    "town": "North Bergen",
+    "latitude": 40.78896551,
+    "longitude": -74.02401003,
+    "num_points": null,
+    "data_quality": 3,
+    "connections": [
+      {
+        "connector_type": "Type1",
+        "power_kw": 3.7,
+        "current_type": "AC (1-phase)",
+        "quantity": 4
+      }
+    ]
+  },
+  {
+    "ocm_id": 354228,
+    "name": "NBPA 1435 51ST L2",
+    "town": "North Bergen",
+    "latitude": 40.786407,
+    "longitude": -74.027874,
+    "num_points": null,
+    "data_quality": 3,
+    "connections": [
+      {
+        "connector_type": "Type1",
+        "power_kw": 3.7,
+        "current_type": "AC (1-phase)",
+        "quantity": 2
+      }
+    ]
+  },
+  {
+    "ocm_id": 467226,
+    "name": "NBPA 46TH ST.",
+    "town": "North Bergen",
+    "latitude": 40.784824,
+    "longitude": -74.026386,
+    "num_points": null,
+    "data_quality": 3,
+    "connections": [
+      {
+        "connector_type": "Type1",
+        "power_kw": 3.7,
+        "current_type": "AC (1-phase)",
+        "quantity": 2
+      }
+    ]
+  },
+  {
+    "ocm_id": 294589,
+    "name": "Union City - 36th Street Garage",
+    "town": "Union City",
+    "latitude": 40.7738743,
+    "longitude": -74.0283334,
+    "num_points": null,
+    "data_quality": 3,
+    "connections": [
+      {
+        "connector_type": "Type1",
+        "power_kw": 3.7,
+        "current_type": "AC (1-phase)",
+        "quantity": 2
+      }
+    ]
+  },
+  {
+    "ocm_id": 159698,
+    "name": "Whole Foods Market Weehawken",
+    "town": "Weehawken",
+    "latitude": 40.761544,
+    "longitude": -74.023127,
+    "num_points": null,
+    "data_quality": 3,
+    "connections": [
+      {
+        "connector_type": "Type1",
+        "power_kw": 3.7,
+        "current_type": "AC (1-phase)",
+        "quantity": 2
+      }
+    ]
+  },
+  {
+    "ocm_id": 67378,
+    "name": "Parkright - Tesla",
+    "town": "New York",
+    "latitude": 40.7620919,
+    "longitude": -73.9997459,
+    "num_points": 2,
+    "data_quality": 3,
+    "connections": [
+      {
+        "connector_type": "Unknown",
+        "power_kw": 8,
+        "current_type": "AC (1-phase)",
+        "quantity": 2
+      }
+    ]
+  },
+  {
+    "ocm_id": 353889,
+    "name": "Sky Apts - Garage 1st Floor",
+    "town": "New York",
+    "latitude": 40.761949,
+    "longitude": -73.99888,
+    "num_points": null,
+    "data_quality": 3,
+    "connections": [
+      {
+        "connector_type": "Type1",
+        "power_kw": 3.7,
+        "current_type": "AC (1-phase)",
+        "quantity": 20
+      }
+    ]
+  },
+  {
+    "ocm_id": 67376,
+    "name": "Quik Park - Tesla",
+    "town": "New York",
+    "latitude": 40.7607168,
+    "longitude": -73.9988815,
+    "num_points": 2,
+    "data_quality": 3,
+    "connections": [
+      {
+        "connector_type": "Unknown",
+        "power_kw": 8,
+        "current_type": "AC (1-phase)",
+        "quantity": 2
+      }
+    ]
+  },
+  {
+    "ocm_id": 353875,
+    "name": "555 W 42nd St",
+    "town": "New York",
+    "latitude": 40.76087,
+    "longitude": -73.99774,
+    "num_points": null,
+    "data_quality": 3,
+    "connections": [
+      {
+        "connector_type": "Type1",
+        "power_kw": 3.7,
+        "current_type": "AC (1-phase)",
+        "quantity": 4
+      }
+    ]
+  },
+  {
+    "ocm_id": 353827,
+    "name": "MPG Parking",
+    "town": "New York",
+    "latitude": 40.758967,
+    "longitude": -73.995189,
+    "num_points": null,
+    "data_quality": 3,
+    "connections": [
+      {
+        "connector_type": "Type1",
+        "power_kw": 3.7,
+        "current_type": "AC (1-phase)",
+        "quantity": 2
+      }
+    ]
+  },
+  {
+    "ocm_id": 28423,
+    "name": "CARCHARGING",
+    "town": "New York",
+    "latitude": 40.759041,
+    "longitude": -73.994972,
+    "num_points": null,
+    "data_quality": 3,
+    "connections": [
+      {
+        "connector_type": "Unknown",
+        "power_kw": 1,
+        "current_type": "AC (1-phase)",
+        "quantity": 1
+      },
+      {
+        "connector_type": "Type1",
+        "power_kw": 3,
+        "current_type": "AC (1-phase)",
+        "quantity": 2
+      }
+    ]
+  },
+  {
+    "ocm_id": 226922,
+    "name": "Gotham Parking",
+    "town": "New York",
+    "latitude": 40.762307,
+    "longitude": -73.996615,
+    "num_points": null,
+    "data_quality": 3,
+    "connections": [
+      {
+        "connector_type": "Type1",
+        "power_kw": 3.7,
+        "current_type": "AC (1-phase)",
+        "quantity": 2
+      }
+    ]
+  },
+  {
+    "ocm_id": 353895,
+    "name": "550 W. 45th St.",
+    "town": "New York",
+    "latitude": 40.7624,
+    "longitude": -73.99635,
+    "num_points": null,
+    "data_quality": 3,
+    "connections": [
+      {
+        "connector_type": "Type1",
+        "power_kw": 3.7,
+        "current_type": "AC (1-phase)",
+        "quantity": 4
+      }
+    ]
+  },
+  {
+    "ocm_id": 246376,
+    "name": "Verizon - Manhattan",
+    "town": "Manhattan",
+    "latitude": 40.764495,
+    "longitude": -73.996651,
+    "num_points": null,
+    "data_quality": 3,
+    "connections": [
+      {
+        "connector_type": "Type1",
+        "power_kw": 3.7,
+        "current_type": "AC (1-phase)",
+        "quantity": 2
+      }
+    ]
+  },
+  {
+    "ocm_id": 246360,
+    "name": "Manhattan Plaza",
+    "town": "New York",
+    "latitude": 40.759223,
+    "longitude": -73.992703,
+    "num_points": null,
+    "data_quality": 3,
+    "connections": [
+      {
+        "connector_type": "Type1",
+        "power_kw": 3.7,
+        "current_type": "AC (1-phase)",
+        "quantity": 1
+      }
+    ]
+  },
+  {
+    "ocm_id": 353822,
+    "name": "Gravity Charging Center",
+    "town": "New York",
+    "latitude": 40.75878,
+    "longitude": -73.99293,
+    "num_points": null,
+    "data_quality": 3,
+    "connections": [
+      {
+        "connector_type": "CCS",
+        "power_kw": 50,
+        "current_type": "DC",
+        "quantity": 1
+      },
+      {
+        "connector_type": "Tesla",
+        "power_kw": 50,
+        "current_type": "DC",
+        "quantity": 1
+      }
+    ]
+  },
+  {
+    "ocm_id": 81687,
+    "name": "GGMC Parking 350 W 43RD Street Garage",
+    "town": "New York",
+    "latitude": 40.758586,
+    "longitude": -73.991341,
+    "num_points": 2,
+    "data_quality": 1,
+    "connections": [
+      {
+        "connector_type": "Unknown",
+        "power_kw": 8,
+        "current_type": "AC (1-phase)",
+        "quantity": 2
+      }
+    ]
+  },
+  {
+    "ocm_id": 142450,
+    "name": "Port Authority Bus Terminal",
+    "town": "New York",
+    "latitude": 40.756892,
+    "longitude": -73.991771,
+    "num_points": null,
+    "data_quality": 3,
+    "connections": [
+      {
+        "connector_type": "Type1",
+        "power_kw": 3.7,
+        "current_type": "AC (1-phase)",
+        "quantity": 1
+      }
+    ]
+  },
+  {
+    "ocm_id": 109242,
+    "name": "Glenwood Belmont Parking",
+    "town": "New York",
+    "latitude": 40.760098,
+    "longitude": -73.988828,
+    "num_points": 1,
+    "data_quality": 1,
+    "connections": [
+      {
+        "connector_type": "Unknown",
+        "power_kw": 8,
+        "current_type": "AC (1-phase)",
+        "quantity": 1
+      }
+    ]
+  },
+  {
+    "ocm_id": 353856,
+    "name": "Glenwood Belmont Parking - Tesla Destination",
+    "town": "New York",
+    "latitude": 40.760098,
+    "longitude": -73.988828,
+    "num_points": null,
+    "data_quality": 3,
+    "connections": [
+      {
+        "connector_type": "Unknown",
+        "power_kw": 3.7,
+        "current_type": "AC (1-phase)",
+        "quantity": 2
+      }
+    ]
+  },
+  {
+    "ocm_id": 81807,
+    "name": "Quik Park 1133 Garage LLC",
+    "town": "New York",
+    "latitude": 40.755856,
+    "longitude": -73.984313,
+    "num_points": 2,
+    "data_quality": 1,
+    "connections": [
+      {
+        "connector_type": "Unknown",
+        "power_kw": 16,
+        "current_type": "AC (3-phase)",
+        "quantity": 2
+      }
+    ]
+  },
+  {
+    "ocm_id": 246355,
+    "name": "DOCK STATION 10",
+    "town": "New York",
+    "latitude": 40.757839,
+    "longitude": -73.984391,
+    "num_points": null,
+    "data_quality": 3,
+    "connections": [
+      {
+        "connector_type": "Type1",
+        "power_kw": 3.7,
+        "current_type": "AC (1-phase)",
+        "quantity": 1
+      }
+    ]
+  },
+  {
+    "ocm_id": 82066,
+    "name": "Quik Park 285 W 50th Street LLC",
+    "town": "New York",
+    "latitude": 40.762411,
+    "longitude": -73.984495,
+    "num_points": 2,
+    "data_quality": 1,
+    "connections": [
+      {
+        "connector_type": "Unknown",
+        "power_kw": 8,
+        "current_type": "AC (1-phase)",
+        "quantity": 2
+      }
+    ]
+  },
+  {
+    "ocm_id": 28425,
+    "name": "CARCHARGING",
+    "town": "New York",
+    "latitude": 40.761376,
+    "longitude": -73.985273,
+    "num_points": null,
+    "data_quality": 3,
+    "connections": [
+      {
+        "connector_type": "Type1",
+        "power_kw": 3,
+        "current_type": "AC (1-phase)",
+        "quantity": 1
+      }
+    ]
+  },
+  {
+    "ocm_id": 353879,
+    "name": "CARCHARGING GMC 225 W 49 #1",
+    "town": "New York",
+    "latitude": 40.761376,
+    "longitude": -73.985273,
+    "num_points": null,
+    "data_quality": 3,
+    "connections": [
+      {
+        "connector_type": "Type1",
+        "power_kw": 3.7,
+        "current_type": "AC (1-phase)",
+        "quantity": 1
+      }
+    ]
+  },
+  {
+    "ocm_id": 353883,
+    "name": "225 W 49th St",
+    "town": "New York",
+    "latitude": 40.76154,
+    "longitude": -73.98518,
+    "num_points": null,
+    "data_quality": 3,
+    "connections": [
+      {
+        "connector_type": "Type1",
+        "power_kw": 3.7,
+        "current_type": "AC (1-phase)",
+        "quantity": 4
+      }
+    ]
+  },
+  {
+    "ocm_id": 113993,
+    "name": "Icon Parking 235 W 48th",
+    "town": "Manhattan",
+    "latitude": 40.76073,
+    "longitude": -73.985995,
+    "num_points": 4,
+    "data_quality": 1,
+    "connections": [
+      {
+        "connector_type": "Unknown",
+        "power_kw": 6,
+        "current_type": "AC (1-phase)",
+        "quantity": 4
+      }
+    ]
+  },
+  {
+    "ocm_id": 353871,
+    "name": "Icon Parking 235 W 48th - Tesla Destination",
+    "town": "Manhattan",
+    "latitude": 40.76073,
+    "longitude": -73.985995,
+    "num_points": null,
+    "data_quality": 3,
+    "connections": [
+      {
+        "connector_type": "Unknown",
+        "power_kw": 3.7,
+        "current_type": "AC (1-phase)",
+        "quantity": 4
+      }
+    ]
+  },
+  {
+    "ocm_id": 353913,
+    "name": "Icon Mercury Parking",
+    "town": "New York",
+    "latitude": 40.76324463,
+    "longitude": -73.98864745,
+    "num_points": null,
+    "data_quality": 3,
+    "connections": [
+      {
+        "connector_type": "Type1",
+        "power_kw": 3.7,
+        "current_type": "AC (1-phase)",
+        "quantity": 1
+      }
+    ]
+  },
+  {
+    "ocm_id": 353905,
+    "name": "311 W 50th St.",
+    "town": "New York",
+    "latitude": 40.76293,
+    "longitude": -73.98729,
+    "num_points": null,
+    "data_quality": 3,
+    "connections": [
+      {
+        "connector_type": "Type1",
+        "power_kw": 3.7,
+        "current_type": "AC (1-phase)",
+        "quantity": 4
+      }
+    ]
+  },
+  {
+    "ocm_id": 353931,
+    "name": "301 W 53rd St.",
+    "town": "New York",
+    "latitude": 40.76458,
+    "longitude": -73.98504,
+    "num_points": null,
+    "data_quality": 3,
+    "connections": [
+      {
+        "connector_type": "Type1",
+        "power_kw": 3.7,
+        "current_type": "AC (1-phase)",
+        "quantity": 4
+      }
+    ]
+  },
+  {
+    "ocm_id": 353919,
+    "name": "900 8th Ave - Garage 1st and 2nd Floor",
+    "town": "New York",
+    "latitude": 40.76416,
+    "longitude": -73.984372,
+    "num_points": null,
+    "data_quality": 3,
+    "connections": [
+      {
+        "connector_type": "Type1",
+        "power_kw": 3.7,
+        "current_type": "AC (1-phase)",
+        "quantity": 33
+      }
+    ]
+  },
+  {
+    "ocm_id": 81772,
+    "name": "Champion Parking W 57th Street",
+    "town": "New York",
+    "latitude": 40.76696,
+    "longitude": -73.983569,
+    "num_points": 2,
+    "data_quality": 1,
+    "connections": [
+      {
+        "connector_type": "Unknown",
+        "power_kw": 8,
+        "current_type": "AC (1-phase)",
+        "quantity": 2
+      }
+    ]
+  },
+  {
+    "ocm_id": 81645,
+    "name": "Icon Parking 330 W 58th Street",
+    "town": "New York",
+    "latitude": 40.767879,
+    "longitude": -73.983656,
+    "num_points": 2,
+    "data_quality": 1,
+    "connections": [
+      {
+        "connector_type": "Unknown",
+        "power_kw": 8,
+        "current_type": "AC (1-phase)",
+        "quantity": 2
+      }
+    ]
+  },
+  {
+    "ocm_id": 246392,
+    "name": "Coliseum Park Apts - Central Parking",
+    "town": "New York",
+    "latitude": 40.768432,
+    "longitude": -73.984033,
+    "num_points": null,
+    "data_quality": 3,
+    "connections": [
+      {
+        "connector_type": "Type1",
+        "power_kw": 3.7,
+        "current_type": "AC (1-phase)",
+        "quantity": 1
+      }
+    ]
+  },
+  {
+    "ocm_id": 246393,
+    "name": "Manhattan Parking Group",
+    "town": "New York",
+    "latitude": 40.768721,
+    "longitude": -73.983487,
+    "num_points": null,
+    "data_quality": 3,
+    "connections": [
+      {
+        "connector_type": "Type1",
+        "power_kw": 3.7,
+        "current_type": "AC (1-phase)",
+        "quantity": 1
+      }
+    ]
+  },
+  {
+    "ocm_id": 90695,
+    "name": "Rapidpark 411 W 55th Street",
+    "town": "New York",
+    "latitude": 40.766971,
+    "longitude": -73.987441,
+    "num_points": 2,
+    "data_quality": 1,
+    "connections": [
+      {
+        "connector_type": "Unknown",
+        "power_kw": 16,
+        "current_type": "AC (3-phase)",
+        "quantity": 2
+      }
+    ]
+  },
+  {
+    "ocm_id": 28432,
+    "name": "CARCHARGING",
+    "town": "New York",
+    "latitude": 40.768257,
+    "longitude": -73.989087,
+    "num_points": null,
+    "data_quality": 3,
+    "connections": [
+      {
+        "connector_type": "Unknown",
+        "power_kw": 1,
+        "current_type": "AC (1-phase)",
+        "quantity": 1
+      },
+      {
+        "connector_type": "Type1",
+        "power_kw": 3,
+        "current_type": "AC (1-phase)",
+        "quantity": 2
+      }
+    ]
+  },
+  {
+    "ocm_id": 353995,
+    "name": "The Westport",
+    "town": "New York",
+    "latitude": 40.768211,
+    "longitude": -73.989479,
+    "num_points": null,
+    "data_quality": 3,
+    "connections": [
+      {
+        "connector_type": "Type1",
+        "power_kw": 3.7,
+        "current_type": "AC (1-phase)",
+        "quantity": 2
+      }
+    ]
+  },
+  {
+    "ocm_id": 226945,
+    "name": "MB MANHATTAN MB MANHATTANDC1",
+    "town": "New York",
+    "latitude": 40.768066,
+    "longitude": -73.992778,
+    "num_points": null,
+    "data_quality": 3,
+    "connections": [
+      {
+        "connector_type": "CHAdeMO",
+        "power_kw": 50,
+        "current_type": "DC",
+        "quantity": 1
+      },
+      {
+        "connector_type": "CCS",
+        "power_kw": 50,
+        "current_type": "DC",
+        "quantity": 1
+      }
+    ]
+  },
+  {
+    "ocm_id": 226943,
+    "name": "MB MANHATTAN MB MANHATTANDC2",
+    "town": "New York",
+    "latitude": 40.768058,
+    "longitude": -73.992735,
+    "num_points": null,
+    "data_quality": 3,
+    "connections": [
+      {
+        "connector_type": "CHAdeMO",
+        "power_kw": 50,
+        "current_type": "DC",
+        "quantity": 1
+      },
+      {
+        "connector_type": "CCS",
+        "power_kw": 50,
+        "current_type": "DC",
+        "quantity": 1
+      }
+    ]
+  },
+  {
+    "ocm_id": 92532,
+    "name": "MTP 625 W 57th Street",
+    "town": "New York",
+    "latitude": 40.77108,
+    "longitude": -73.993142,
+    "num_points": 3,
+    "data_quality": 1,
+    "connections": [
+      {
+        "connector_type": "Unknown",
+        "power_kw": 16,
+        "current_type": "AC (3-phase)",
+        "quantity": 3
+      }
+    ]
+  },
+  {
+    "ocm_id": 82179,
+    "name": "MTP Parking, the Helena",
+    "town": "New York",
+    "latitude": 40.770709,
+    "longitude": -73.991725,
+    "num_points": 2,
+    "data_quality": 1,
+    "connections": [
+      {
+        "connector_type": "Unknown",
+        "power_kw": 8,
+        "current_type": "AC (1-phase)",
+        "quantity": 2
+      }
+    ]
+  },
+  {
+    "ocm_id": 226967,
+    "name": "WATERLINE 2W STATION 2",
+    "town": "New York",
+    "latitude": 40.7733,
+    "longitude": -73.991532,
+    "num_points": null,
+    "data_quality": 3,
+    "connections": [
+      {
+        "connector_type": "Type1",
+        "power_kw": 3.7,
+        "current_type": "AC (1-phase)",
+        "quantity": 2
+      }
+    ]
+  },
+  {
+    "ocm_id": 354069,
+    "name": "1 WATERLINE STATION#2",
+    "town": "New York",
+    "latitude": 40.772952,
+    "longitude": -73.992622,
+    "num_points": null,
+    "data_quality": 3,
+    "connections": [
+      {
+        "connector_type": "Type1",
+        "power_kw": 3.7,
+        "current_type": "AC (1-phase)",
+        "quantity": 2
+      }
+    ]
+  },
+  {
+    "ocm_id": 354072,
+    "name": "1 WATERLINE STATION#3",
+    "town": "New York",
+    "latitude": 40.773005,
+    "longitude": -73.992868,
+    "num_points": null,
+    "data_quality": 3,
+    "connections": [
+      {
+        "connector_type": "Type1",
+        "power_kw": 3.7,
+        "current_type": "AC (1-phase)",
+        "quantity": 2
+      }
+    ]
+  },
+  {
+    "ocm_id": 226964,
+    "name": "1 WATERLINE STATION#7",
+    "town": "New York",
+    "latitude": 40.772839,
+    "longitude": -73.992493,
+    "num_points": null,
+    "data_quality": 3,
+    "connections": [
+      {
+        "connector_type": "Type1",
+        "power_kw": 3.7,
+        "current_type": "AC (1-phase)",
+        "quantity": 2
+      }
+    ]
+  },
+  {
+    "ocm_id": 246417,
+    "name": "Quik Park 40 Riverside Blvd - Tesla Destination",
+    "town": "New York",
+    "latitude": 40.77373,
+    "longitude": -73.989713,
+    "num_points": null,
+    "data_quality": 3,
+    "connections": [
+      {
+        "connector_type": "Unknown",
+        "power_kw": 3.7,
+        "current_type": "AC (1-phase)",
+        "quantity": 3
+      }
+    ]
+  },
+  {
+    "ocm_id": 81542,
+    "name": "Icon 80 Riverside BLVD",
+    "town": "New York",
+    "latitude": 40.775374,
+    "longitude": -73.989687,
+    "num_points": 2,
+    "data_quality": 1,
+    "connections": [
+      {
+        "connector_type": "Unknown",
+        "power_kw": 8,
+        "current_type": "AC (1-phase)",
+        "quantity": 2
+      }
+    ]
+  },
+  {
+    "ocm_id": 81716,
+    "name": "Icon 299 Peal Street Seaport Parking",
+    "town": "New York",
+    "latitude": 40.775374,
+    "longitude": -73.989687,
+    "num_points": 2,
+    "data_quality": 1,
+    "connections": [
+      {
+        "connector_type": "Unknown",
+        "power_kw": 6,
+        "current_type": "AC (1-phase)",
+        "quantity": 2
+      }
+    ]
+  },
+  {
+    "ocm_id": 82296,
+    "name": "Icon Parking 100 Riverside Blvd.",
+    "town": "New York",
+    "latitude": 40.775474,
+    "longitude": -73.989763,
+    "num_points": 2,
+    "data_quality": 1,
+    "connections": [
+      {
+        "connector_type": "Unknown",
+        "power_kw": 8,
+        "current_type": "AC (1-phase)",
+        "quantity": 2
+      }
+    ]
+  },
+  {
+    "ocm_id": 81928,
+    "name": "Icon Parking 101 West End Ave",
+    "town": "New York",
+    "latitude": 40.775065,
+    "longitude": -73.988572,
+    "num_points": 2,
+    "data_quality": 1,
+    "connections": [
+      {
+        "connector_type": "Unknown",
+        "power_kw": 8,
+        "current_type": "AC (1-phase)",
+        "quantity": 2
+      }
+    ]
+  },
+  {
+    "ocm_id": 67388,
+    "name": "Icon Parking - Tesla",
+    "town": "New York",
+    "latitude": 40.775111,
+    "longitude": -73.9886025,
+    "num_points": 2,
+    "data_quality": 3,
+    "connections": [
+      {
+        "connector_type": "Unknown",
+        "power_kw": 10,
+        "current_type": "AC (1-phase)",
+        "quantity": 2
+      }
+    ]
+  },
+  {
+    "ocm_id": 28435,
+    "name": "Roosevelt Hospital Garage",
+    "town": "New York",
+    "latitude": 40.77079,
+    "longitude": -73.988508,
+    "num_points": null,
+    "data_quality": 3,
+    "connections": [
+      {
+        "connector_type": "Unknown",
+        "power_kw": 1.9,
+        "current_type": "AC (1-phase)",
+        "quantity": 1
+      },
+      {
+        "connector_type": "Type1",
+        "power_kw": 3.7,
+        "current_type": "AC (1-phase)",
+        "quantity": 1
+      }
+    ]
+  },
+  {
+    "ocm_id": 79929,
+    "name": "GGMC Parking Alfred",
+    "town": "New York",
+    "latitude": 40.771555,
+    "longitude": -73.986428,
+    "num_points": 1,
+    "data_quality": 1,
+    "connections": [
+      {
+        "connector_type": "Unknown",
+        "power_kw": 8,
+        "current_type": "AC (1-phase)",
+        "quantity": 1
+      }
+    ]
+  },
+  {
+    "ocm_id": 246402,
+    "name": "44 W 62nd St.",
+    "town": "New York",
+    "latitude": 40.7708,
+    "longitude": -73.98323,
+    "num_points": null,
+    "data_quality": 3,
+    "connections": [
+      {
+        "connector_type": "Type1",
+        "power_kw": 3.7,
+        "current_type": "AC (1-phase)",
+        "quantity": 4
+      }
+    ]
+  },
+  {
+    "ocm_id": 82148,
+    "name": "Icon Parking 160 W 66th Street",
+    "town": "New York",
+    "latitude": 40.774541,
+    "longitude": -73.983977,
+    "num_points": 2,
+    "data_quality": 1,
+    "connections": [
+      {
+        "connector_type": "Unknown",
+        "power_kw": 8,
+        "current_type": "AC (1-phase)",
+        "quantity": 2
+      }
+    ]
+  },
+  {
+    "ocm_id": 246426,
+    "name": "Icon Parking OMNI - Tesla Destination",
+    "town": "New York",
+    "latitude": 40.77592,
+    "longitude": -73.98313,
+    "num_points": null,
+    "data_quality": 3,
+    "connections": [
+      {
+        "connector_type": "Unknown",
+        "power_kw": 3.7,
+        "current_type": "AC (1-phase)",
+        "quantity": 3
+      }
+    ]
+  },
+  {
+    "ocm_id": 354121,
+    "name": "303 W 66th St Apts - 303 W 66th RMA",
+    "town": "New York",
+    "latitude": 40.776554,
+    "longitude": -73.9876401,
+    "num_points": null,
+    "data_quality": 3,
+    "connections": [
+      {
+        "connector_type": "Type1",
+        "power_kw": 3.7,
+        "current_type": "AC (1-phase)",
+        "quantity": 10
+      }
+    ]
+  },
+  {
+    "ocm_id": 67394,
+    "name": "Quik Park - Tesla",
+    "town": "New York",
+    "latitude": 40.7784889,
+    "longitude": -73.9882723,
+    "num_points": 2,
+    "data_quality": 3,
+    "connections": [
+      {
+        "connector_type": "Unknown",
+        "power_kw": 16,
+        "current_type": "AC (1-phase)",
+        "quantity": 2
+      }
+    ]
+  },
+  {
+    "ocm_id": 67395,
+    "name": "Icon Parking - Tesla",
+    "town": "New York",
+    "latitude": 40.7796752,
+    "longitude": -73.9873963,
+    "num_points": 2,
+    "data_quality": 3,
+    "connections": [
+      {
+        "connector_type": "Unknown",
+        "power_kw": 8,
+        "current_type": "AC (1-phase)",
+        "quantity": 2
+      }
+    ]
+  },
+  {
+    "ocm_id": 67393,
+    "name": "ParkIt - Tesla",
+    "town": "New York",
+    "latitude": 40.7779493,
+    "longitude": -73.9853955,
+    "num_points": 2,
+    "data_quality": 3,
+    "connections": [
+      {
+        "connector_type": "Unknown",
+        "power_kw": 8,
+        "current_type": "AC (1-phase)",
+        "quantity": 2
+      }
+    ]
+  },
+  {
+    "ocm_id": 246435,
+    "name": "Energy Plus Site 8",
+    "town": "New York",
+    "latitude": 40.781104,
+    "longitude": -73.984478,
+    "num_points": null,
+    "data_quality": 3,
+    "connections": [
+      {
+        "connector_type": "Type1",
+        "power_kw": 3.7,
+        "current_type": "AC (1-phase)",
+        "quantity": 1
+      }
+    ]
+  },
+  {
+    "ocm_id": 354176,
+    "name": "300 West End Ave - Basement Garage",
+    "town": "New York",
+    "latitude": 40.781139,
+    "longitude": -73.983118,
+    "num_points": null,
+    "data_quality": 3,
+    "connections": [
+      {
+        "connector_type": "Type1",
+        "power_kw": 3.7,
+        "current_type": "AC (1-phase)",
+        "quantity": 14
+      }
+    ]
+  },
+  {
+    "ocm_id": 467224,
+    "name": "LM NORTH PUBLIC CAP PUBLIC 1",
+    "town": "West New York",
+    "latitude": 40.783032,
+    "longitude": -74.00586,
+    "num_points": null,
+    "data_quality": 3,
+    "connections": [
+      {
+        "connector_type": "Type1",
+        "power_kw": 3.7,
+        "current_type": "AC (1-phase)",
+        "quantity": 2
+      }
+    ]
+  },
+  {
+    "ocm_id": 226990,
+    "name": "LM NORTH PUBLIC CAP PUBLIC 3",
+    "town": "West New York",
+    "latitude": 40.782533,
+    "longitude": -74.005419,
+    "num_points": null,
+    "data_quality": 3,
+    "connections": [
+      {
+        "connector_type": "Type1",
+        "power_kw": 3.7,
+        "current_type": "AC (1-phase)",
+        "quantity": 2
+      }
+    ]
+  },
+  {
+    "ocm_id": 467233,
+    "name": "GALAXY TOWERS GALAXYSTATION1",
+    "town": "Guttenberg",
+    "latitude": 40.789774,
+    "longitude": -74.000428,
+    "num_points": null,
+    "data_quality": 3,
+    "connections": [
+      {
+        "connector_type": "Type1",
+        "power_kw": 3.7,
+        "current_type": "AC (1-phase)",
+        "quantity": 2
+      }
+    ]
+  },
+  {
+    "ocm_id": 227002,
+    "name": "GALAXY TOWERS GALAXYSTATION3",
+    "town": "Guttenberg",
+    "latitude": 40.790502,
+    "longitude": -74.00078,
+    "num_points": null,
+    "data_quality": 3,
+    "connections": [
+      {
+        "connector_type": "Type1",
+        "power_kw": 3.7,
+        "current_type": "AC (1-phase)",
+        "quantity": 2
+      }
+    ]
+  },
+  {
+    "ocm_id": 125159,
+    "name": "Icon Parking 175 W 90th Street",
+    "town": "Manhattan",
+    "latitude": 40.790046,
+    "longitude": -73.972531,
+    "num_points": 4,
+    "data_quality": 1,
+    "connections": [
+      {
+        "connector_type": "Unknown",
+        "power_kw": 10,
+        "current_type": "AC (1-phase)",
+        "quantity": 4
+      }
+    ]
+  },
+  {
+    "ocm_id": 354251,
+    "name": "Icon Parking 175 W 90th Street - Tesla Destination",
+    "town": "Manhattan",
+    "latitude": 40.790046,
+    "longitude": -73.972531,
+    "num_points": null,
+    "data_quality": 3,
+    "connections": [
+      {
+        "connector_type": "Unknown",
+        "power_kw": 3.7,
+        "current_type": "AC (1-phase)",
+        "quantity": 4
+      }
+    ]
+  },
+  {
+    "ocm_id": 28444,
+    "name": "CARCHARGING",
+    "town": "New York",
+    "latitude": 40.7892181,
+    "longitude": -73.9749593,
+    "num_points": null,
+    "data_quality": 3,
+    "connections": [
+      {
+        "connector_type": "Unknown",
+        "power_kw": 1,
+        "current_type": "AC (1-phase)",
+        "quantity": 1
+      },
+      {
+        "connector_type": "Type1",
+        "power_kw": 3,
+        "current_type": "AC (1-phase)",
+        "quantity": 1
+      }
+    ]
+  },
+  {
+    "ocm_id": 246441,
+    "name": "160 W 84th St",
+    "town": "Manhattan",
+    "latitude": 40.786312,
+    "longitude": -73.97569,
+    "num_points": null,
+    "data_quality": 3,
+    "connections": [
+      {
+        "connector_type": "Type1",
+        "power_kw": 3.7,
+        "current_type": "AC (1-phase)",
+        "quantity": 2
+      }
+    ]
+  },
+  {
+    "ocm_id": 82348,
+    "name": "Ipark Nyc 88th Street Garage",
+    "town": "New York",
+    "latitude": 40.788008,
+    "longitude": -73.971611,
+    "num_points": 2,
+    "data_quality": 1,
+    "connections": [
+      {
+        "connector_type": "Unknown",
+        "power_kw": 8,
+        "current_type": "AC (1-phase)",
+        "quantity": 2
+      }
+    ]
+  },
+  {
+    "ocm_id": 81482,
+    "name": "Icon Parking 225 W 83 Street",
+    "town": "New York",
+    "latitude": 40.786099,
+    "longitude": -73.977303,
+    "num_points": 2,
+    "data_quality": 1,
+    "connections": [
+      {
+        "connector_type": "Unknown",
+        "power_kw": 8,
+        "current_type": "AC (1-phase)",
+        "quantity": 2
+      }
+    ]
+  },
+  {
+    "ocm_id": 74556,
+    "name": "Rapidpark - Tesla",
+    "town": "Manhattan",
+    "latitude": 40.7850015,
+    "longitude": -73.982032,
+    "num_points": 2,
+    "data_quality": 3,
+    "connections": [
+      {
+        "connector_type": "Unknown",
+        "power_kw": 16,
+        "current_type": "AC (1-phase)",
+        "quantity": 2
+      }
+    ]
+  },
+  {
+    "ocm_id": 90432,
+    "name": "Rapidpark 254 W 79th Street",
+    "town": "New York",
+    "latitude": 40.78411,
+    "longitude": -73.980641,
+    "num_points": 2,
+    "data_quality": 1,
+    "connections": [
+      {
+        "connector_type": "Unknown",
+        "power_kw": 16,
+        "current_type": "AC (3-phase)",
+        "quantity": 2
+      }
+    ]
+  },
+  {
+    "ocm_id": 226986,
+    "name": "125 W 76th Street",
+    "town": "New York",
+    "latitude": 40.7803975,
+    "longitude": -73.9777289,
+    "num_points": null,
+    "data_quality": 3,
+    "connections": [
+      {
+        "connector_type": "Type1",
+        "power_kw": 3.7,
+        "current_type": "AC (1-phase)",
+        "quantity": 2
+      }
+    ]
+  },
+  {
+    "ocm_id": 103288,
+    "name": "New York, NY - W 75th Street (Valet & Pay to Park)",
+    "town": "New York",
+    "latitude": 40.780976,
+    "longitude": -73.980414,
+    "num_points": 4,
+    "data_quality": 1,
+    "connections": [
+      {
+        "connector_type": "Tesla",
+        "power_kw": 72,
+        "current_type": "DC",
+        "quantity": 4
+      }
+    ]
+  },
+  {
+    "ocm_id": 354172,
+    "name": "W 75th Parking Garage - Tesla Supercharger",
+    "town": "New York",
+    "latitude": 40.780976,
+    "longitude": -73.980414,
+    "num_points": null,
+    "data_quality": 3,
+    "connections": [
+      {
+        "connector_type": "Tesla",
+        "power_kw": 50,
+        "current_type": "DC",
+        "quantity": 4
+      }
+    ]
+  },
+  {
+    "ocm_id": 81805,
+    "name": "Champion Parking W 76th Street",
+    "town": "New York",
+    "latitude": 40.781547,
+    "longitude": -73.980475,
+    "num_points": 2,
+    "data_quality": 1,
+    "connections": [
+      {
+        "connector_type": "Unknown",
+        "power_kw": 8,
+        "current_type": "AC (1-phase)",
+        "quantity": 2
+      }
+    ]
+  },
+  {
+    "ocm_id": 100578,
+    "name": "Champion Parking 74 LLC",
+    "town": "New York",
+    "latitude": 40.780027,
+    "longitude": -73.982823,
+    "num_points": 2,
+    "data_quality": 1,
+    "connections": [
+      {
+        "connector_type": "Unknown",
+        "power_kw": 13,
+        "current_type": "AC (3-phase)",
+        "quantity": 2
+      }
+    ]
+  },
+  {
+    "ocm_id": 354163,
+    "name": "Champion Parking 74 LLC - Tesla Destination",
+    "town": "New York",
+    "latitude": 40.780027,
+    "longitude": -73.982823,
+    "num_points": null,
+    "data_quality": 3,
+    "connections": [
+      {
+        "connector_type": "Unknown",
+        "power_kw": 3.7,
+        "current_type": "AC (1-phase)",
+        "quantity": 3
+      }
+    ]
+  },
+  {
+    "ocm_id": 458439,
+    "name": "Highrise Parking",
+    "town": "New York",
+    "latitude": 40.777905,
+    "longitude": -73.982299,
+    "num_points": null,
+    "data_quality": 3,
+    "connections": [
+      {
+        "connector_type": "Type1",
+        "power_kw": 3.7,
+        "current_type": "AC (1-phase)",
+        "quantity": 1
+      }
+    ]
+  },
+  {
+    "ocm_id": 246428,
+    "name": "Lincoln Square Garage",
+    "town": "New York",
+    "latitude": 40.776152,
+    "longitude": -73.98282,
+    "num_points": null,
+    "data_quality": 3,
+    "connections": [
+      {
+        "connector_type": "Type1",
+        "power_kw": 3.7,
+        "current_type": "AC (1-phase)",
+        "quantity": 1
+      }
+    ]
+  },
+  {
+    "ocm_id": 91852,
+    "name": "GMC Copley Parking",
+    "town": "New York",
+    "latitude": 40.775283,
+    "longitude": -73.981627,
+    "num_points": 3,
+    "data_quality": 1,
+    "connections": [
+      {
+        "connector_type": "Unknown",
+        "power_kw": 16,
+        "current_type": "AC (3-phase)",
+        "quantity": 3
+      }
+    ]
+  },
+  {
+    "ocm_id": 246421,
+    "name": "ANSONIA",
+    "town": "New York",
+    "latitude": 40.77493,
+    "longitude": -73.980969,
+    "num_points": null,
+    "data_quality": 3,
+    "connections": [
+      {
+        "connector_type": "Type1",
+        "power_kw": 3.7,
+        "current_type": "AC (1-phase)",
+        "quantity": 5
+      }
+    ]
+  },
+  {
+    "ocm_id": 87270,
+    "name": "Rapidpark 15 W 72ND Street",
+    "town": "New York",
+    "latitude": 40.776813,
+    "longitude": -73.977083,
+    "num_points": 2,
+    "data_quality": 1,
+    "connections": [
+      {
+        "connector_type": "Unknown",
+        "power_kw": 10,
+        "current_type": "AC (1-phase)",
+        "quantity": 2
+      }
+    ]
+  },
+  {
+    "ocm_id": 354182,
+    "name": "AMNH-PARKING STATION 4",
+    "town": "New York",
+    "latitude": 40.781478,
+    "longitude": -73.974009,
+    "num_points": null,
+    "data_quality": 3,
+    "connections": [
+      {
+        "connector_type": "Type1",
+        "power_kw": 3.7,
+        "current_type": "AC (1-phase)",
+        "quantity": 2
+      }
+    ]
+  },
+  {
+    "ocm_id": 354180,
+    "name": "AMNH-PARKING STATION 2",
+    "town": "New York",
+    "latitude": 40.781414,
+    "longitude": -73.973682,
+    "num_points": null,
+    "data_quality": 3,
+    "connections": [
+      {
+        "connector_type": "Type1",
+        "power_kw": 3.7,
+        "current_type": "AC (1-phase)",
+        "quantity": 2
+      }
+    ]
+  },
+  {
+    "ocm_id": 354184,
+    "name": "AMNH-PARKING STATION 3",
+    "town": "New York",
+    "latitude": 40.781511,
+    "longitude": -73.973807,
+    "num_points": null,
+    "data_quality": 3,
+    "connections": [
+      {
+        "connector_type": "Type1",
+        "power_kw": 3.7,
+        "current_type": "AC (1-phase)",
+        "quantity": 2
+      }
+    ]
+  },
+  {
+    "ocm_id": 90430,
+    "name": "MPG 923 5th Ave",
+    "town": "New York",
+    "latitude": 40.773004,
+    "longitude": -73.966152,
+    "num_points": 2,
+    "data_quality": 1,
+    "connections": [
+      {
+        "connector_type": "Unknown",
+        "power_kw": 16,
+        "current_type": "AC (3-phase)",
+        "quantity": 2
+      }
+    ]
+  },
+  {
+    "ocm_id": 92265,
+    "name": "Rapidpark 35 E 75th Street",
+    "town": "New York",
+    "latitude": 40.77364,
+    "longitude": -73.963722,
+    "num_points": 2,
+    "data_quality": 1,
+    "connections": [
+      {
+        "connector_type": "Unknown",
+        "power_kw": 16,
+        "current_type": "AC (3-phase)",
+        "quantity": 2
+      }
+    ]
+  },
+  {
+    "ocm_id": 79854,
+    "name": "The Carlyle Hotel, A Rosewood Hotel",
+    "town": "New York",
+    "latitude": 40.77438,
+    "longitude": -73.963157,
+    "num_points": 1,
+    "data_quality": 1,
+    "connections": [
+      {
+        "connector_type": "Unknown",
+        "power_kw": 8,
+        "current_type": "AC (1-phase)",
+        "quantity": 1
+      }
+    ]
+  },
+  {
+    "ocm_id": 79624,
+    "name": "GGMC Parking 51-53 E 76th St Carlyle Hotel",
+    "town": "New York",
+    "latitude": 40.774207,
+    "longitude": -73.96282,
+    "num_points": 1,
+    "data_quality": 1,
+    "connections": [
+      {
+        "connector_type": "Unknown",
+        "power_kw": 8,
+        "current_type": "AC (1-phase)",
+        "quantity": 1
+      }
+    ]
+  },
+  {
+    "ocm_id": 354068,
+    "name": "NYC Parking 155 East 76th Street Garage Corp.",
+    "town": "New York",
+    "latitude": 40.77292688873804,
+    "longitude": -73.95955810985014,
+    "num_points": null,
+    "data_quality": 3,
+    "connections": [
+      {
+        "connector_type": "Type1",
+        "power_kw": 3.7,
+        "current_type": "AC (1-phase)",
+        "quantity": 6
+      }
+    ]
+  },
+  {
+    "ocm_id": 354084,
+    "name": "165 E 77 ST Garage",
+    "town": "Manhattan",
+    "latitude": 40.773528,
+    "longitude": -73.959538,
+    "num_points": null,
+    "data_quality": 3,
+    "connections": [
+      {
+        "connector_type": "Type1",
+        "power_kw": 3.7,
+        "current_type": "AC (1-phase)",
+        "quantity": 1
+      }
+    ]
+  },
+  {
+    "ocm_id": 246419,
+    "name": "101 E 78th St",
+    "town": "New York",
+    "latitude": 40.774878,
+    "longitude": -73.960671,
+    "num_points": null,
+    "data_quality": 3,
+    "connections": [
+      {
+        "connector_type": "Type1",
+        "power_kw": 3.7,
+        "current_type": "AC (1-phase)",
+        "quantity": 2
+      }
+    ]
+  },
+  {
+    "ocm_id": 67391,
+    "name": "GGMC Parking - Tesla",
+    "town": "New York",
+    "latitude": 40.7760455,
+    "longitude": -73.9619154,
+    "num_points": 2,
+    "data_quality": 3,
+    "connections": [
+      {
+        "connector_type": "Unknown",
+        "power_kw": 8,
+        "current_type": "AC (1-phase)",
+        "quantity": 2
+      }
+    ]
+  },
+  {
+    "ocm_id": 92293,
+    "name": "Rapidpark 920 Park Avenue",
+    "town": "New York",
+    "latitude": 40.776574,
+    "longitude": -73.96047,
+    "num_points": 2,
+    "data_quality": 1,
+    "connections": [
+      {
+        "connector_type": "Unknown",
+        "power_kw": 16,
+        "current_type": "AC (3-phase)",
+        "quantity": 2
+      }
+    ]
+  },
+  {
+    "ocm_id": 81977,
+    "name": "Ipark Nyc 1025 83RD",
+    "town": "New York",
+    "latitude": 40.779211,
+    "longitude": -73.960949,
+    "num_points": 2,
+    "data_quality": 1,
+    "connections": [
+      {
+        "connector_type": "Unknown",
+        "power_kw": 8,
+        "current_type": "AC (1-phase)",
+        "quantity": 2
+      }
+    ]
+  },
+  {
+    "ocm_id": 246436,
+    "name": "11 East 86th Street",
+    "town": "New York",
+    "latitude": 40.78147,
+    "longitude": -73.95986,
+    "num_points": null,
+    "data_quality": 3,
+    "connections": [
+      {
+        "connector_type": "Type1",
+        "power_kw": 3.7,
+        "current_type": "AC (1-phase)",
+        "quantity": 2
+      }
+    ]
+  },
+  {
+    "ocm_id": 82130,
+    "name": "Rapidpark 600 Columbus Ave",
+    "town": "New York",
+    "latitude": 40.78859,
+    "longitude": -73.97118,
+    "num_points": 2,
+    "data_quality": 1,
+    "connections": [
+      {
+        "connector_type": "Unknown",
+        "power_kw": 8,
+        "current_type": "AC (1-phase)",
+        "quantity": 2
+      }
+    ]
+  },
+  {
+    "ocm_id": 105344,
+    "name": "Rapidpark 600 Columbus Ave",
+    "town": "New York",
+    "latitude": 40.788614,
+    "longitude": -73.97118,
+    "num_points": 2,
+    "data_quality": 1,
+    "connections": [
+      {
+        "connector_type": "Unknown",
+        "power_kw": 10,
+        "current_type": "AC (1-phase)",
+        "quantity": 2
+      }
+    ]
+  },
+  {
+    "ocm_id": 246443,
+    "name": "West 90th Garage Corp",
+    "town": "New York",
+    "latitude": 40.789298,
+    "longitude": -73.970535,
+    "num_points": null,
+    "data_quality": 3,
+    "connections": [
+      {
+        "connector_type": "Type1",
+        "power_kw": 3.7,
+        "current_type": "AC (1-phase)",
+        "quantity": 6
+      }
+    ]
+  },
+  {
+    "ocm_id": 227001,
+    "name": "4 W 93rd St",
+    "town": "New York",
+    "latitude": 40.789958,
+    "longitude": -73.966488,
+    "num_points": null,
+    "data_quality": 3,
+    "connections": [
+      {
+        "connector_type": "Type1",
+        "power_kw": 3.7,
+        "current_type": "AC (1-phase)",
+        "quantity": 2
+      }
+    ]
+  },
+  {
+    "ocm_id": 354253,
+    "name": "Mt Sinai Gustave Levy Pl - Garage",
+    "town": "New York",
+    "latitude": 40.7901,
+    "longitude": -73.9537,
+    "num_points": null,
+    "data_quality": 3,
+    "connections": [
+      {
+        "connector_type": "Type1",
+        "power_kw": 3.7,
+        "current_type": "AC (1-phase)",
+        "quantity": 30
+      }
+    ]
+  },
+  {
+    "ocm_id": 92336,
+    "name": "Icon Parking 1056 5th Avenue",
+    "town": "New York",
+    "latitude": 40.782031,
+    "longitude": -73.959484,
+    "num_points": 2,
+    "data_quality": 1,
+    "connections": [
+      {
+        "connector_type": "Unknown",
+        "power_kw": 16,
+        "current_type": "AC (3-phase)",
+        "quantity": 2
+      }
+    ]
+  },
+  {
+    "ocm_id": 81581,
+    "name": "Champion Parking 90 LLC",
+    "town": "New York",
+    "latitude": 40.783085,
+    "longitude": -73.956304,
+    "num_points": 2,
+    "data_quality": 1,
+    "connections": [
+      {
+        "connector_type": "Unknown",
+        "power_kw": 16,
+        "current_type": "AC (3-phase)",
+        "quantity": 2
+      }
+    ]
+  },
+  {
+    "ocm_id": 354174,
+    "name": "The Carlton - Basement",
+    "town": "New York",
+    "latitude": 40.78104,
+    "longitude": -73.956345,
+    "num_points": null,
+    "data_quality": 3,
+    "connections": [
+      {
+        "connector_type": "Type1",
+        "power_kw": 3.7,
+        "current_type": "AC (1-phase)",
+        "quantity": 10
+      }
+    ]
+  },
+  {
+    "ocm_id": 67398,
+    "name": "GGMC Parking - Tesla",
+    "town": "New York",
+    "latitude": 40.7855606,
+    "longitude": -73.9546989,
+    "num_points": 2,
+    "data_quality": 3,
+    "connections": [
+      {
+        "connector_type": "Unknown",
+        "power_kw": 8,
+        "current_type": "AC (1-phase)",
+        "quantity": 2
+      }
+    ]
+  },
+  {
+    "ocm_id": 97585,
+    "name": "GGMC Ruppert Car Park",
+    "town": "New York",
+    "latitude": 40.78098,
+    "longitude": -73.951145,
+    "num_points": 2,
+    "data_quality": 1,
+    "connections": [
+      {
+        "connector_type": "Unknown",
+        "power_kw": 8,
+        "current_type": "AC (1-phase)",
+        "quantity": 2
+      }
+    ]
+  },
+  {
+    "ocm_id": 354173,
+    "name": "GGMC Ruppert Car Park - Tesla Destination",
+    "town": "New York",
+    "latitude": 40.78098,
+    "longitude": -73.951145,
+    "num_points": null,
+    "data_quality": 3,
+    "connections": [
+      {
+        "connector_type": "Unknown",
+        "power_kw": 3.7,
+        "current_type": "AC (1-phase)",
+        "quantity": 3
+      }
+    ]
+  },
+  {
+    "ocm_id": 354191,
+    "name": "245 E 90th - Garage",
+    "town": "New York",
+    "latitude": 40.782305,
+    "longitude": -73.951186,
+    "num_points": null,
+    "data_quality": 3,
+    "connections": [
+      {
+        "connector_type": "Type1",
+        "power_kw": 3.7,
+        "current_type": "AC (1-phase)",
+        "quantity": 10
+      }
+    ]
+  },
+  {
+    "ocm_id": 82055,
+    "name": "GGMC Yorkville Car Park",
+    "town": "New York",
+    "latitude": 40.782212,
+    "longitude": -73.95023,
+    "num_points": 2,
+    "data_quality": 1,
+    "connections": [
+      {
+        "connector_type": "Unknown",
+        "power_kw": 8,
+        "current_type": "AC (1-phase)",
+        "quantity": 2
+      }
+    ]
+  },
+  {
+    "ocm_id": 354186,
+    "name": "Knickerbocker Plaza Car Park - Lower Level",
+    "town": "New York",
+    "latitude": 40.781785,
+    "longitude": -73.949642,
+    "num_points": null,
+    "data_quality": 3,
+    "connections": [
+      {
+        "connector_type": "Type1",
+        "power_kw": 3.7,
+        "current_type": "AC (1-phase)",
+        "quantity": 10
+      }
+    ]
+  },
+  {
+    "ocm_id": 246438,
+    "name": "231 E 94th Street",
+    "town": "New York",
+    "latitude": 40.78351,
+    "longitude": -73.94888,
+    "num_points": null,
+    "data_quality": 3,
+    "connections": [
+      {
+        "connector_type": "Type1",
+        "power_kw": 3.7,
+        "current_type": "AC (1-phase)",
+        "quantity": 4
+      }
+    ]
+  },
+  {
+    "ocm_id": 82304,
+    "name": "Ipark Nyc the Carnegie Garage",
+    "town": "New York",
+    "latitude": 40.783536,
+    "longitude": -73.949507,
+    "num_points": 2,
+    "data_quality": 1,
+    "connections": [
+      {
+        "connector_type": "Unknown",
+        "power_kw": 8,
+        "current_type": "AC (1-phase)",
+        "quantity": 2
+      }
+    ]
+  },
+  {
+    "ocm_id": 354210,
+    "name": "Highgate - Garage",
+    "town": "New York",
+    "latitude": 40.784219,
+    "longitude": -73.950323,
+    "num_points": null,
+    "data_quality": 3,
+    "connections": [
+      {
+        "connector_type": "Type1",
+        "power_kw": 3.7,
+        "current_type": "AC (1-phase)",
+        "quantity": 8
+      }
+    ]
+  },
+  {
+    "ocm_id": 246440,
+    "name": "Carnegie Hill",
+    "town": "New York",
+    "latitude": 40.784865,
+    "longitude": -73.948526,
+    "num_points": null,
+    "data_quality": 3,
+    "connections": [
+      {
+        "connector_type": "Type1",
+        "power_kw": 3.7,
+        "current_type": "AC (1-phase)",
+        "quantity": 2
+      }
+    ]
+  },
+  {
+    "ocm_id": 84422,
+    "name": "Ipark 1510 Lex Garage Corp.",
+    "town": "New York",
+    "latitude": 40.787402,
+    "longitude": -73.950546,
+    "num_points": 3,
+    "data_quality": 1,
+    "connections": [
+      {
+        "connector_type": "Unknown",
+        "power_kw": 16,
+        "current_type": "AC (3-phase)",
+        "quantity": 3
+      }
+    ]
+  },
+  {
+    "ocm_id": 246442,
+    "name": "1510 Lex Garage",
+    "town": "New York",
+    "latitude": 40.786732,
+    "longitude": -73.950411,
+    "num_points": null,
+    "data_quality": 3,
+    "connections": [
+      {
+        "connector_type": "Type1",
+        "power_kw": 3.7,
+        "current_type": "AC (1-phase)",
+        "quantity": 1
+      }
+    ]
+  },
+  {
+    "ocm_id": 92304,
+    "name": "MPG 266 E 97 St",
+    "town": "New York",
+    "latitude": 40.785296,
+    "longitude": -73.947487,
+    "num_points": 2,
+    "data_quality": 1,
+    "connections": [
+      {
+        "connector_type": "Unknown",
+        "power_kw": 16,
+        "current_type": "AC (3-phase)",
+        "quantity": 2
+      }
+    ]
+  },
+  {
+    "ocm_id": 92299,
+    "name": "Rapidpark 340 94th Street",
+    "town": "New York",
+    "latitude": 40.782091,
+    "longitude": -73.946029,
+    "num_points": 2,
+    "data_quality": 1,
+    "connections": [
+      {
+        "connector_type": "Unknown",
+        "power_kw": 16,
+        "current_type": "AC (3-phase)",
+        "quantity": 2
+      }
+    ]
+  },
+  {
+    "ocm_id": 104918,
+    "name": "MPG 340 East 93RD",
+    "town": "New York",
+    "latitude": 40.781413,
+    "longitude": -73.946377,
+    "num_points": 2,
+    "data_quality": 1,
+    "connections": [
+      {
+        "connector_type": "Unknown",
+        "power_kw": 10,
+        "current_type": "AC (1-phase)",
+        "quantity": 2
+      }
+    ]
+  },
+  {
+    "ocm_id": 354178,
+    "name": "MPG 340 East 93rd - Tesla Destination",
+    "town": "New York",
+    "latitude": 40.781413,
+    "longitude": -73.946377,
+    "num_points": null,
+    "data_quality": 3,
+    "connections": [
+      {
+        "connector_type": "Unknown",
+        "power_kw": 3.7,
+        "current_type": "AC (1-phase)",
+        "quantity": 3
+      }
+    ]
+  },
+  {
+    "ocm_id": 354137,
+    "name": "The Andover - Garage",
+    "town": "New York",
+    "latitude": 40.777778,
+    "longitude": -73.946111,
+    "num_points": null,
+    "data_quality": 3,
+    "connections": [
+      {
+        "connector_type": "Type1",
+        "power_kw": 3.7,
+        "current_type": "AC (1-phase)",
+        "quantity": 20
+      }
+    ]
+  },
+  {
+    "ocm_id": 354126,
+    "name": "Rivers Bend - Garage",
+    "town": "New York",
+    "latitude": 40.776952,
+    "longitude": -73.946235,
+    "num_points": null,
+    "data_quality": 3,
+    "connections": [
+      {
+        "connector_type": "Type1",
+        "power_kw": 3.7,
+        "current_type": "AC (1-phase)",
+        "quantity": 20
+      }
+    ]
+  },
+  {
+    "ocm_id": 67392,
+    "name": "Icon Parking - Tesla",
+    "town": "New York",
+    "latitude": 40.7762739,
+    "longitude": -73.9444162,
+    "num_points": 2,
+    "data_quality": 3,
+    "connections": [
+      {
+        "connector_type": "Unknown",
+        "power_kw": 8,
+        "current_type": "AC (1-phase)",
+        "quantity": 2
+      }
+    ]
+  },
+  {
+    "ocm_id": 246425,
+    "name": "170 E End Ave",
+    "town": "New York",
+    "latitude": 40.775792,
+    "longitude": -73.944015,
+    "num_points": null,
+    "data_quality": 3,
+    "connections": [
+      {
+        "connector_type": "Type1",
+        "power_kw": 3.7,
+        "current_type": "AC (1-phase)",
+        "quantity": 2
+      }
+    ]
+  },
+  {
+    "ocm_id": 246429,
+    "name": "200 East End Ave",
+    "town": "New York",
+    "latitude": 40.77729,
+    "longitude": -73.94355,
+    "num_points": null,
+    "data_quality": 3,
+    "connections": [
+      {
+        "connector_type": "Type1",
+        "power_kw": 3.7,
+        "current_type": "AC (1-phase)",
+        "quantity": 4
+      }
+    ]
+  },
+  {
+    "ocm_id": 354061,
+    "name": "One Gracie Terrace - Basement Level 1 and 2",
+    "town": "New York",
+    "latitude": 40.77245,
+    "longitude": -73.945767,
+    "num_points": null,
+    "data_quality": 3,
+    "connections": [
+      {
+        "connector_type": "Type1",
+        "power_kw": 3.7,
+        "current_type": "AC (1-phase)",
+        "quantity": 10
+      }
+    ]
+  },
+  {
+    "ocm_id": 246409,
+    "name": "imPark 611 E 83rd Street - Tesla Destination",
+    "town": "New York",
+    "latitude": 40.772681,
+    "longitude": -73.945488,
+    "num_points": null,
+    "data_quality": 3,
+    "connections": [
+      {
+        "connector_type": "Unknown",
+        "power_kw": 3.7,
+        "current_type": "AC (1-phase)",
+        "quantity": 3
+      }
+    ]
+  },
+  {
+    "ocm_id": 226973,
+    "name": "110 East End Ave",
+    "town": "New York",
+    "latitude": 40.77447,
+    "longitude": -73.94599,
+    "num_points": null,
+    "data_quality": 3,
+    "connections": [
+      {
+        "connector_type": "Type1",
+        "power_kw": 3.7,
+        "current_type": "AC (1-phase)",
+        "quantity": 4
+      }
+    ]
+  },
+  {
+    "ocm_id": 67385,
+    "name": "Champion Parking - Tesla",
+    "town": "New York",
+    "latitude": 40.772805,
+    "longitude": -73.946965,
+    "num_points": 2,
+    "data_quality": 3,
+    "connections": [
+      {
+        "connector_type": "Unknown",
+        "power_kw": 16,
+        "current_type": "AC (1-phase)",
+        "quantity": 2
+      }
+    ]
+  },
+  {
+    "ocm_id": 81860,
+    "name": "Champion Parking 60 East End Avenue",
+    "town": "New York",
+    "latitude": 40.772712,
+    "longitude": -73.947045,
+    "num_points": 2,
+    "data_quality": 1,
+    "connections": [
+      {
+        "connector_type": "Unknown",
+        "power_kw": 8,
+        "current_type": "AC (1-phase)",
+        "quantity": 2
+      }
+    ]
+  },
+  {
+    "ocm_id": 246408,
+    "name": "55 East End Ave",
+    "town": "New York",
+    "latitude": 40.772,
+    "longitude": -73.94639,
+    "num_points": null,
+    "data_quality": 3,
+    "connections": [
+      {
+        "connector_type": "Type1",
+        "power_kw": 3.7,
+        "current_type": "AC (1-phase)",
+        "quantity": 6
+      }
+    ]
+  },
+  {
+    "ocm_id": 85067,
+    "name": "Ipark 530 E 80th Street",
+    "town": "New York",
+    "latitude": 40.771382,
+    "longitude": -73.948344,
+    "num_points": 2,
+    "data_quality": 1,
+    "connections": [
+      {
+        "connector_type": "Unknown",
+        "power_kw": 8,
+        "current_type": "AC (1-phase)",
+        "quantity": 2
+      }
+    ]
+  },
+  {
+    "ocm_id": 354060,
+    "name": "The Lucerne - First Floor - Garage 1st Floor",
+    "town": "New York",
+    "latitude": 40.772356,
+    "longitude": -73.95332,
+    "num_points": null,
+    "data_quality": 3,
+    "connections": [
+      {
+        "connector_type": "Type1",
+        "power_kw": 3.7,
+        "current_type": "AC (1-phase)",
+        "quantity": 20
+      }
+    ]
+  },
+  {
+    "ocm_id": 82366,
+    "name": "GGMC Parking 415 E 79th",
+    "town": "New York",
+    "latitude": 40.771918,
+    "longitude": -73.951679,
+    "num_points": 2,
+    "data_quality": 1,
+    "connections": [
+      {
+        "connector_type": "Unknown",
+        "power_kw": 13,
+        "current_type": "AC (3-phase)",
+        "quantity": 2
+      }
+    ]
+  },
+  {
+    "ocm_id": 90356,
+    "name": "Impark 422 E 79th Street",
+    "town": "New York",
+    "latitude": 40.771879,
+    "longitude": -73.951627,
+    "num_points": 2,
+    "data_quality": 1,
+    "connections": [
+      {
+        "connector_type": "Unknown",
+        "power_kw": 16,
+        "current_type": "AC (3-phase)",
+        "quantity": 2
+      }
+    ]
+  },
+  {
+    "ocm_id": 82002,
+    "name": "Ipark Nyc E 80th Street",
+    "town": "New York",
+    "latitude": 40.77331,
+    "longitude": -73.952621,
+    "num_points": 2,
+    "data_quality": 1,
+    "connections": [
+      {
+        "connector_type": "Unknown",
+        "power_kw": 8,
+        "current_type": "AC (1-phase)",
+        "quantity": 2
+      }
+    ]
+  },
+  {
+    "ocm_id": 354086,
+    "name": "330 E 80th St - Garage",
+    "town": "New York",
+    "latitude": 40.773622,
+    "longitude": -73.95325,
+    "num_points": null,
+    "data_quality": 3,
+    "connections": [
+      {
+        "connector_type": "Type1",
+        "power_kw": 3.7,
+        "current_type": "AC (1-phase)",
+        "quantity": 25
+      }
+    ]
+  },
+  {
+    "ocm_id": 81695,
+    "name": "Quik Park 82ND Street LLC",
+    "town": "New York",
+    "latitude": 40.774511,
+    "longitude": -73.952039,
+    "num_points": 2,
+    "data_quality": 1,
+    "connections": [
+      {
+        "connector_type": "Unknown",
+        "power_kw": 16,
+        "current_type": "AC (3-phase)",
+        "quantity": 2
+      }
+    ]
+  },
+  {
+    "ocm_id": 67387,
+    "name": "Quik Park - Tesla",
+    "town": "New York",
+    "latitude": 40.7743149,
+    "longitude": -73.9519209,
+    "num_points": 2,
+    "data_quality": 3,
+    "connections": [
+      {
+        "connector_type": "Unknown",
+        "power_kw": 8,
+        "current_type": "AC (1-phase)",
+        "quantity": 2
+      }
+    ]
+  },
+  {
+    "ocm_id": 105379,
+    "name": "Rapidpark 351 East 83RD",
+    "town": "New York",
+    "latitude": 40.775123,
+    "longitude": -73.951193,
+    "num_points": 2,
+    "data_quality": 1,
+    "connections": [
+      {
+        "connector_type": "Unknown",
+        "power_kw": 10,
+        "current_type": "AC (1-phase)",
+        "quantity": 2
+      }
+    ]
+  },
+  {
+    "ocm_id": 354101,
+    "name": "Rapidpark 351 East 83rd - Tesla Destination",
+    "town": "New York",
+    "latitude": 40.775123,
+    "longitude": -73.951193,
+    "num_points": null,
+    "data_quality": 3,
+    "connections": [
+      {
+        "connector_type": "Unknown",
+        "power_kw": 3.7,
+        "current_type": "AC (1-phase)",
+        "quantity": 3
+      }
+    ]
+  },
+  {
+    "ocm_id": 67390,
+    "name": "Quik Park - Tesla",
+    "town": "New York",
+    "latitude": 40.7759802,
+    "longitude": -73.9479174,
+    "num_points": 2,
+    "data_quality": 3,
+    "connections": [
+      {
+        "connector_type": "Unknown",
+        "power_kw": 16,
+        "current_type": "AC (1-phase)",
+        "quantity": 2
+      }
+    ]
+  },
+  {
+    "ocm_id": 67389,
+    "name": "CARCHARGING",
+    "town": "New York",
+    "latitude": 40.775377,
+    "longitude": -73.950411,
+    "num_points": null,
+    "data_quality": 3,
+    "connections": [
+      {
+        "connector_type": "Type1",
+        "power_kw": 3,
+        "current_type": "AC (1-phase)",
+        "quantity": 2
+      }
+    ]
+  },
+  {
+    "ocm_id": 114886,
+    "name": "Ipark 400 E 85th St",
+    "town": "Manhattan",
+    "latitude": 40.7759529,
+    "longitude": -73.949738,
+    "num_points": 4,
+    "data_quality": 1,
+    "connections": [
+      {
+        "connector_type": "Unknown",
+        "power_kw": 10,
+        "current_type": "AC (1-phase)",
+        "quantity": 4
+      }
+    ]
+  },
+  {
+    "ocm_id": 354111,
+    "name": "iPark 400 E 85th St - Tesla Destination",
+    "town": "Manhattan",
+    "latitude": 40.775953,
+    "longitude": -73.949738,
+    "num_points": null,
+    "data_quality": 3,
+    "connections": [
+      {
+        "connector_type": "Unknown",
+        "power_kw": 3.7,
+        "current_type": "AC (1-phase)",
+        "quantity": 4
+      }
+    ]
+  },
+  {
+    "ocm_id": 354129,
+    "name": "Fairmount Tenants Group - Garage",
+    "town": "New York",
+    "latitude": 40.777035,
+    "longitude": -73.948773,
+    "num_points": null,
+    "data_quality": 3,
+    "connections": [
+      {
+        "connector_type": "Type1",
+        "power_kw": 3.7,
+        "current_type": "AC (1-phase)",
+        "quantity": 12
+      }
+    ]
+  },
+  {
+    "ocm_id": 354125,
+    "name": "141 E 89th St - Garage",
+    "town": "New York",
+    "latitude": 40.776897,
+    "longitude": -73.948795,
+    "num_points": null,
+    "data_quality": 3,
+    "connections": [
+      {
+        "connector_type": "Type1",
+        "power_kw": 3.7,
+        "current_type": "AC (1-phase)",
+        "quantity": 6
+      }
+    ]
+  },
+  {
+    "ocm_id": 354152,
+    "name": "Citizen 360 Condominium",
+    "town": "New York",
+    "latitude": 40.77873,
+    "longitude": -73.94838,
+    "num_points": null,
+    "data_quality": 3,
+    "connections": [
+      {
+        "connector_type": "Type1",
+        "power_kw": 3.7,
+        "current_type": "AC (1-phase)",
+        "quantity": 1
+      }
+    ]
+  },
+  {
+    "ocm_id": 458440,
+    "name": "Icon Parking - Claridge 87 Parking",
+    "town": "New York",
+    "latitude": 40.7796871,
+    "longitude": -73.952595,
+    "num_points": null,
+    "data_quality": 3,
+    "connections": [
+      {
+        "connector_type": "Type1",
+        "power_kw": 3.7,
+        "current_type": "AC (1-phase)",
+        "quantity": 1
+      }
+    ]
+  },
+  {
+    "ocm_id": 92049,
+    "name": "GMC Parking Narragansett",
+    "town": "New York",
+    "latitude": 40.7758,
+    "longitude": -73.95087,
+    "num_points": 2,
+    "data_quality": 1,
+    "connections": [
+      {
+        "connector_type": "Unknown",
+        "power_kw": 16,
+        "current_type": "AC (3-phase)",
+        "quantity": 2
+      }
+    ]
+  },
+  {
+    "ocm_id": 246433,
+    "name": "171 E 84th St.",
+    "town": "New York",
+    "latitude": 40.77798,
+    "longitude": -73.95555,
+    "num_points": null,
+    "data_quality": 3,
+    "connections": [
+      {
+        "connector_type": "Type1",
+        "power_kw": 3.7,
+        "current_type": "AC (1-phase)",
+        "quantity": 4
+      }
+    ]
+  },
+  {
+    "ocm_id": 263059,
+    "name": "Central Parking - 115 E 87th St",
+    "town": "New York",
+    "latitude": 40.780678,
+    "longitude": -73.956269,
+    "num_points": null,
+    "data_quality": 3,
+    "connections": [
+      {
+        "connector_type": "Type1",
+        "power_kw": 3.7,
+        "current_type": "AC (1-phase)",
+        "quantity": 2
+      }
+    ]
+  },
+  {
+    "ocm_id": 354151,
+    "name": "113 East 84th Street",
+    "town": "New York",
+    "latitude": 40.77866,
+    "longitude": -73.95739,
+    "num_points": null,
+    "data_quality": 3,
+    "connections": [
+      {
+        "connector_type": "Type1",
+        "power_kw": 3.7,
+        "current_type": "AC (1-phase)",
+        "quantity": 4
+      }
+    ]
+  },
+  {
+    "ocm_id": 354160,
+    "name": "118 E 86th Street",
+    "town": "New York",
+    "latitude": 40.77968,
+    "longitude": -73.95657,
+    "num_points": null,
+    "data_quality": 3,
+    "connections": [
+      {
+        "connector_type": "Type1",
+        "power_kw": 3.7,
+        "current_type": "AC (1-phase)",
+        "quantity": 4
+      }
+    ]
+  },
+  {
+    "ocm_id": 81962,
+    "name": "Ipark 41 E 85th Street",
+    "town": "Manhattan",
+    "latitude": 40.779876,
+    "longitude": -73.958579,
+    "num_points": 2,
+    "data_quality": 1,
+    "connections": [
+      {
+        "connector_type": "Unknown",
+        "power_kw": 16,
+        "current_type": "AC (3-phase)",
+        "quantity": 2
+      }
+    ]
+  },
+  {
+    "ocm_id": 354139,
+    "name": "CHHA2 Garages LLC",
+    "town": "Manhattan",
+    "latitude": 40.777924,
+    "longitude": -73.957245,
+    "num_points": null,
+    "data_quality": 3,
+    "connections": [
+      {
+        "connector_type": "Type1",
+        "power_kw": 3.7,
+        "current_type": "AC (1-phase)",
+        "quantity": 4
+      }
+    ]
+  },
+  {
+    "ocm_id": 246431,
+    "name": "Duford Studios",
+    "town": "New York",
+    "latitude": 40.777737,
+    "longitude": -73.957413,
+    "num_points": null,
+    "data_quality": 3,
+    "connections": [
+      {
+        "connector_type": "Type1",
+        "power_kw": 3.7,
+        "current_type": "AC (1-phase)",
+        "quantity": 1
+      }
+    ]
+  },
+  {
+    "ocm_id": 81493,
+    "name": "GMC 111 E 82ND St",
+    "town": "New York",
+    "latitude": 40.77735,
+    "longitude": -73.958352,
+    "num_points": 2,
+    "data_quality": 1,
+    "connections": [
+      {
+        "connector_type": "Unknown",
+        "power_kw": 8,
+        "current_type": "AC (1-phase)",
+        "quantity": 2
+      }
+    ]
+  },
+  {
+    "ocm_id": 28437,
+    "name": "CARCHARGING",
+    "town": "New York",
+    "latitude": 40.774703,
+    "longitude": -73.956695,
+    "num_points": null,
+    "data_quality": 3,
+    "connections": [
+      {
+        "connector_type": "Type1",
+        "power_kw": 3,
+        "current_type": "AC (1-phase)",
+        "quantity": 2
+      }
+    ]
+  },
+  {
+    "ocm_id": 246418,
+    "name": "305 East 80th Street",
+    "town": "New York",
+    "latitude": 40.77397,
+    "longitude": -73.9539,
+    "num_points": null,
+    "data_quality": 3,
+    "connections": [
+      {
+        "connector_type": "Type1",
+        "power_kw": 3.7,
+        "current_type": "AC (1-phase)",
+        "quantity": 4
+      }
+    ]
+  },
+  {
+    "ocm_id": 246416,
+    "name": "Belmont Parking",
+    "town": "New York",
+    "latitude": 40.773472,
+    "longitude": -73.955287,
+    "num_points": null,
+    "data_quality": 3,
+    "connections": [
+      {
+        "connector_type": "Type1",
+        "power_kw": 3.7,
+        "current_type": "AC (1-phase)",
+        "quantity": 1
+      }
+    ]
+  },
+  {
+    "ocm_id": 81618,
+    "name": "Parkright 300 E 77th St",
+    "town": "New York",
+    "latitude": 40.771794,
+    "longitude": -73.955624,
+    "num_points": 2,
+    "data_quality": 1,
+    "connections": [
+      {
+        "connector_type": "Unknown",
+        "power_kw": 8,
+        "current_type": "AC (1-phase)",
+        "quantity": 2
+      }
+    ]
+  },
+  {
+    "ocm_id": 125175,
+    "name": "Impark 188 E 78th St",
+    "town": "Manhattan",
+    "latitude": 40.773665,
+    "longitude": -73.958333,
+    "num_points": 2,
+    "data_quality": 1,
+    "connections": [
+      {
+        "connector_type": "Unknown",
+        "power_kw": 10,
+        "current_type": "AC (1-phase)",
+        "quantity": 2
+      }
+    ]
+  },
+  {
+    "ocm_id": 354088,
+    "name": "IMPark 188 E 78th St - Tesla Destination",
+    "town": "Manhattan",
+    "latitude": 40.773665,
+    "longitude": -73.958333,
+    "num_points": null,
+    "data_quality": 3,
+    "connections": [
+      {
+        "connector_type": "Unknown",
+        "power_kw": 3.7,
+        "current_type": "AC (1-phase)",
+        "quantity": 2
+      }
+    ]
+  },
+  {
+    "ocm_id": 354081,
+    "name": "iPark NYC E 77th Street - Tesla Destination",
+    "town": "New York",
+    "latitude": 40.773415,
+    "longitude": -73.959234,
+    "num_points": null,
+    "data_quality": 3,
+    "connections": [
+      {
+        "connector_type": "Unknown",
+        "power_kw": 3.7,
+        "current_type": "AC (1-phase)",
+        "quantity": 3
+      }
+    ]
+  },
+  {
+    "ocm_id": 103654,
+    "name": "Rapidpark 150 East 77th Street",
+    "town": "New York",
+    "latitude": 40.773256,
+    "longitude": -73.959334,
+    "num_points": 2,
+    "data_quality": 1,
+    "connections": [
+      {
+        "connector_type": "Unknown",
+        "power_kw": 8,
+        "current_type": "AC (1-phase)",
+        "quantity": 2
+      }
+    ]
+  },
+  {
+    "ocm_id": 354076,
+    "name": "Rapidpark 150 East 77th Street - Tesla Destination",
+    "town": "New York",
+    "latitude": 40.773256,
+    "longitude": -73.959334,
+    "num_points": null,
+    "data_quality": 3,
+    "connections": [
+      {
+        "connector_type": "Unknown",
+        "power_kw": 3.7,
+        "current_type": "AC (1-phase)",
+        "quantity": 3
+      }
+    ]
+  },
+  {
+    "ocm_id": 354042,
+    "name": "Mayfair Apts - Garage",
+    "town": "New York",
+    "latitude": 40.770958,
+    "longitude": -73.958625,
+    "num_points": null,
+    "data_quality": 3,
+    "connections": [
+      {
+        "connector_type": "Type1",
+        "power_kw": 3.7,
+        "current_type": "AC (1-phase)",
+        "quantity": 20
+      }
+    ]
+  },
+  {
+    "ocm_id": 81521,
+    "name": "GGMC Parking E 74th Street",
+    "town": "New York",
+    "latitude": 40.769947,
+    "longitude": -73.956989,
+    "num_points": 2,
+    "data_quality": 1,
+    "connections": [
+      {
+        "connector_type": "Unknown",
+        "power_kw": 10,
+        "current_type": "AC (1-phase)",
+        "quantity": 2
+      }
+    ]
+  },
+  {
+    "ocm_id": 246398,
+    "name": "333 E 75th St.",
+    "town": "New York",
+    "latitude": 40.7702,
+    "longitude": -73.95525,
+    "num_points": null,
+    "data_quality": 3,
+    "connections": [
+      {
+        "connector_type": "Type1",
+        "power_kw": 3.7,
+        "current_type": "AC (1-phase)",
+        "quantity": 4
+      }
+    ]
+  },
+  {
+    "ocm_id": 354011,
+    "name": "340 E 74th St.",
+    "town": "New York",
+    "latitude": 40.76928,
+    "longitude": -73.95586,
+    "num_points": null,
+    "data_quality": 3,
+    "connections": [
+      {
+        "connector_type": "Type1",
+        "power_kw": 3.7,
+        "current_type": "AC (1-phase)",
+        "quantity": 2
+      }
+    ]
+  },
+  {
+    "ocm_id": 354018,
+    "name": "Parking Systems at 343 E 74th",
+    "town": "New York",
+    "latitude": 40.76957,
+    "longitude": -73.95589,
+    "num_points": null,
+    "data_quality": 3,
+    "connections": [
+      {
+        "connector_type": "Type1",
+        "power_kw": 3.7,
+        "current_type": "AC (1-phase)",
+        "quantity": 1
+      }
+    ]
+  },
+  {
+    "ocm_id": 353971,
+    "name": "The Somerset - Garage",
+    "town": "New York",
+    "latitude": 40.767348,
+    "longitude": -73.953832,
+    "num_points": null,
+    "data_quality": 3,
+    "connections": [
+      {
+        "connector_type": "Type1",
+        "power_kw": 3.7,
+        "current_type": "AC (1-phase)",
+        "quantity": 20
+      }
+    ]
+  },
+  {
+    "ocm_id": 92510,
+    "name": "Icon Parking Independent",
+    "town": "New York",
+    "latitude": 40.766708,
+    "longitude": -73.955483,
+    "num_points": 2,
+    "data_quality": 1,
+    "connections": [
+      {
+        "connector_type": "Unknown",
+        "power_kw": 16,
+        "current_type": "AC (3-phase)",
+        "quantity": 2
+      }
+    ]
+  },
+  {
+    "ocm_id": 353882,
+    "name": "1175 York Ave - 1175 York Garage",
+    "town": "New York",
+    "latitude": 40.761537,
+    "longitude": -73.957979,
+    "num_points": null,
+    "data_quality": 3,
+    "connections": [
+      {
+        "connector_type": "Type1",
+        "power_kw": 3.7,
+        "current_type": "AC (1-phase)",
+        "quantity": 4
+      }
+    ]
+  },
+  {
+    "ocm_id": 226928,
+    "name": "498 E 67th St",
+    "town": "New York",
+    "latitude": 40.763723,
+    "longitude": -73.956354,
+    "num_points": null,
+    "data_quality": 3,
+    "connections": [
+      {
+        "connector_type": "Type1",
+        "power_kw": 3.7,
+        "current_type": "AC (1-phase)",
+        "quantity": 2
+      }
+    ]
+  },
+  {
+    "ocm_id": 246381,
+    "name": "Weill Cornell Medical",
+    "town": "New York",
+    "latitude": 40.765313,
+    "longitude": -73.955553,
+    "num_points": null,
+    "data_quality": 3,
+    "connections": [
+      {
+        "connector_type": "Type1",
+        "power_kw": 3.7,
+        "current_type": "AC (1-phase)",
+        "quantity": 2
+      }
+    ]
+  },
+  {
+    "ocm_id": 353947,
+    "name": "Weill Cornell Medical",
+    "town": "New York",
+    "latitude": 40.765378,
+    "longitude": -73.955054,
+    "num_points": null,
+    "data_quality": 3,
+    "connections": [
+      {
+        "connector_type": "Type1",
+        "power_kw": 3.7,
+        "current_type": "AC (1-phase)",
+        "quantity": 2
+      }
+    ]
+  },
+  {
+    "ocm_id": 95515,
+    "name": "Icon Parking 515 E 72ND Street",
+    "town": "New York",
+    "latitude": 40.766545,
+    "longitude": -73.95292,
+    "num_points": 2,
+    "data_quality": 1,
+    "connections": [
+      {
+        "connector_type": "Unknown",
+        "power_kw": 8,
+        "current_type": "AC (1-phase)",
+        "quantity": 2
+      }
+    ]
+  },
+  {
+    "ocm_id": 67382,
+    "name": "Icon Parking - Tesla",
+    "town": "New York",
+    "latitude": 40.7667035,
+    "longitude": -73.9529622,
+    "num_points": 2,
+    "data_quality": 3,
+    "connections": [
+      {
+        "connector_type": "Unknown",
+        "power_kw": 8,
+        "current_type": "AC (1-phase)",
+        "quantity": 2
+      }
+    ]
+  },
+  {
+    "ocm_id": 113905,
+    "name": "Icon Parking 524 East 73RD",
+    "town": "New York",
+    "latitude": 40.766736,
+    "longitude": -73.951891,
+    "num_points": 2,
+    "data_quality": 1,
+    "connections": [
+      {
+        "connector_type": "Unknown",
+        "power_kw": 8,
+        "current_type": "AC (1-phase)",
+        "quantity": 2
+      }
+    ]
+  },
+  {
+    "ocm_id": 353961,
+    "name": "Icon Parking 524 East 73rd - Tesla Destination",
+    "town": "New York",
+    "latitude": 40.766736,
+    "longitude": -73.951891,
+    "num_points": null,
+    "data_quality": 3,
+    "connections": [
+      {
+        "connector_type": "Unknown",
+        "power_kw": 3.7,
+        "current_type": "AC (1-phase)",
+        "quantity": 3
+      }
+    ]
+  },
+  {
+    "ocm_id": 354017,
+    "name": "The Stratford - Garage",
+    "town": "New York",
+    "latitude": 40.76953,
+    "longitude": -73.9519,
+    "num_points": null,
+    "data_quality": 3,
+    "connections": [
+      {
+        "connector_type": "Type1",
+        "power_kw": 3.7,
+        "current_type": "AC (1-phase)",
+        "quantity": 20
+      }
+    ]
+  },
+  {
+    "ocm_id": 467213,
+    "name": "The Pavilion - Parking Garage",
+    "town": "New York",
+    "latitude": 40.769563,
+    "longitude": -73.9508,
+    "num_points": null,
+    "data_quality": 3,
+    "connections": [
+      {
+        "connector_type": "Type1",
+        "power_kw": 3.7,
+        "current_type": "AC (1-phase)",
+        "quantity": 16
+      }
+    ]
+  },
+  {
+    "ocm_id": 226932,
+    "name": "STATION 4TH FL MOTORGATE 3",
+    "town": "New York",
+    "latitude": 40.764464,
+    "longitude": -73.946924,
+    "num_points": null,
+    "data_quality": 3,
+    "connections": [
+      {
+        "connector_type": "Type1",
+        "power_kw": 3.7,
+        "current_type": "AC (1-phase)",
+        "quantity": 2
+      }
+    ]
+  },
+  {
+    "ocm_id": 353924,
+    "name": "STATION 4TH FL MOTORGATE #1",
+    "town": "New York",
+    "latitude": 40.764429,
+    "longitude": -73.946793,
+    "num_points": null,
+    "data_quality": 3,
+    "connections": [
+      {
+        "connector_type": "Type1",
+        "power_kw": 3.7,
+        "current_type": "AC (1-phase)",
+        "quantity": 2
+      }
+    ]
+  },
+  {
+    "ocm_id": 226929,
+    "name": "STATION 4TH FL MOTORGATE #2",
+    "town": "New York",
+    "latitude": 40.764208,
+    "longitude": -73.947198,
+    "num_points": null,
+    "data_quality": 3,
+    "connections": [
+      {
+        "connector_type": "Type1",
+        "power_kw": 3.7,
+        "current_type": "AC (1-phase)",
+        "quantity": 2
+      }
+    ]
+  },
+  {
+    "ocm_id": 108803,
+    "name": "2702 Queens Plaza South",
+    "town": "Queens",
+    "latitude": 40.749941,
+    "longitude": -73.939887,
+    "num_points": 6,
+    "data_quality": 1,
+    "connections": [
+      {
+        "connector_type": "Unknown",
+        "power_kw": 6,
+        "current_type": "AC (1-phase)",
+        "quantity": 6
+      }
+    ]
+  },
+  {
+    "ocm_id": 353729,
+    "name": "MTP Parking 41-42 24th Street - Tesla Destination",
+    "town": "Long Island City",
+    "latitude": 40.751556,
+    "longitude": -73.941406,
+    "num_points": null,
+    "data_quality": 3,
+    "connections": [
+      {
+        "connector_type": "Unknown",
+        "power_kw": 3.7,
+        "current_type": "AC (1-phase)",
+        "quantity": 4
+      }
+    ]
+  },
+  {
+    "ocm_id": 114914,
+    "name": "MTP Parking 41-42 24th Street",
+    "town": "Long Island City",
+    "latitude": 40.7515557,
+    "longitude": -73.9414058,
+    "num_points": 4,
+    "data_quality": 1,
+    "connections": [
+      {
+        "connector_type": "Unknown",
+        "power_kw": 10,
+        "current_type": "AC (1-phase)",
+        "quantity": 4
+      }
+    ]
+  },
+  {
+    "ocm_id": 282579,
+    "name": "Ravel Hotel",
+    "town": "Long Island City",
+    "latitude": 40.75402,
+    "longitude": -73.9493,
+    "num_points": null,
+    "data_quality": 3,
+    "connections": [
+      {
+        "connector_type": "Type1",
+        "power_kw": 3.7,
+        "current_type": "AC (1-phase)",
+        "quantity": 2
+      }
+    ]
+  },
+  {
+    "ocm_id": 353873,
+    "name": "Rockefeller Univ - Garage Ground Floor",
+    "town": "New York",
+    "latitude": 40.760823,
+    "longitude": -73.957536,
+    "num_points": null,
+    "data_quality": 3,
+    "connections": [
+      {
+        "connector_type": "Type1",
+        "power_kw": 3.7,
+        "current_type": "AC (1-phase)",
+        "quantity": 25
+      }
+    ]
+  },
+  {
+    "ocm_id": 353773,
+    "name": "TATABROOKFIELD #7",
+    "town": "New York",
+    "latitude": 40.755314,
+    "longitude": -73.955605,
+    "num_points": null,
+    "data_quality": 3,
+    "connections": [
+      {
+        "connector_type": "Type1",
+        "power_kw": 3.7,
+        "current_type": "AC (1-phase)",
+        "quantity": 1
+      }
+    ]
+  },
+  {
+    "ocm_id": 353768,
+    "name": "TATABROOKFIELD GATEWAY #1",
+    "town": "New York",
+    "latitude": 40.755024,
+    "longitude": -73.955605,
+    "num_points": null,
+    "data_quality": 3,
+    "connections": [
+      {
+        "connector_type": "Type1",
+        "power_kw": 3.7,
+        "current_type": "AC (1-phase)",
+        "quantity": 1
+      }
+    ]
+  },
+  {
+    "ocm_id": 353770,
+    "name": "TATABROOKFIELD #2",
+    "town": "New York",
+    "latitude": 40.755077,
+    "longitude": -73.955605,
+    "num_points": null,
+    "data_quality": 3,
+    "connections": [
+      {
+        "connector_type": "Type1",
+        "power_kw": 3.7,
+        "current_type": "AC (1-phase)",
+        "quantity": 1
+      }
+    ]
+  },
+  {
+    "ocm_id": 246349,
+    "name": "Prestige Parking Corp",
+    "town": "New York",
+    "latitude": 40.7565187377,
+    "longitude": -73.9610743999,
+    "num_points": null,
+    "data_quality": 3,
+    "connections": [
+      {
+        "connector_type": "Type1",
+        "power_kw": 3.7,
+        "current_type": "AC (1-phase)",
+        "quantity": 2
+      }
+    ]
+  },
+  {
+    "ocm_id": 246350,
+    "name": "435 E. 55th St.",
+    "town": "New York",
+    "latitude": 40.75657,
+    "longitude": -73.96226,
+    "num_points": null,
+    "data_quality": 3,
+    "connections": [
+      {
+        "connector_type": "Type1",
+        "power_kw": 3.7,
+        "current_type": "AC (1-phase)",
+        "quantity": 4
+      }
+    ]
+  },
+  {
+    "ocm_id": 246344,
+    "name": "EastSide Parking LLC.",
+    "town": "New York",
+    "latitude": 40.755627,
+    "longitude": -73.961468,
+    "num_points": null,
+    "data_quality": 3,
+    "connections": [
+      {
+        "connector_type": "Type1",
+        "power_kw": 3.7,
+        "current_type": "AC (1-phase)",
+        "quantity": 3
+      }
+    ]
+  },
+  {
+    "ocm_id": 113869,
+    "name": "GMC Parking 420 E 53RD",
+    "town": "New York",
+    "latitude": 40.755289,
+    "longitude": -73.963804,
+    "num_points": 1,
+    "data_quality": 1,
+    "connections": [
+      {
+        "connector_type": "Unknown",
+        "power_kw": 6,
+        "current_type": "AC (1-phase)",
+        "quantity": 1
+      }
+    ]
+  },
+  {
+    "ocm_id": 353772,
+    "name": "GMC Parking 420 E 53rd - Tesla Destination",
+    "town": "New York",
+    "latitude": 40.755289,
+    "longitude": -73.963804,
+    "num_points": null,
+    "data_quality": 3,
+    "connections": [
+      {
+        "connector_type": "Unknown",
+        "power_kw": 3.7,
+        "current_type": "AC (1-phase)",
+        "quantity": 1
+      }
+    ]
+  },
+  {
+    "ocm_id": 97779,
+    "name": "Icon Parking Sutton 53",
+    "town": "New York",
+    "latitude": 40.755363,
+    "longitude": -73.963841,
+    "num_points": 2,
+    "data_quality": 1,
+    "connections": [
+      {
+        "connector_type": "Unknown",
+        "power_kw": 8,
+        "current_type": "AC (1-phase)",
+        "quantity": 2
+      }
+    ]
+  },
+  {
+    "ocm_id": 353775,
+    "name": "Icon Parking Sutton 53 - Tesla Destination",
+    "town": "New York",
+    "latitude": 40.755363,
+    "longitude": -73.963841,
+    "num_points": null,
+    "data_quality": 3,
+    "connections": [
+      {
+        "connector_type": "Unknown",
+        "power_kw": 3.7,
+        "current_type": "AC (1-phase)",
+        "quantity": 3
+      }
+    ]
+  },
+  {
+    "ocm_id": 108967,
+    "name": "Sutton Place North Garage",
+    "town": "New York",
+    "latitude": 40.75552,
+    "longitude": -73.962734,
+    "num_points": 2,
+    "data_quality": 1,
+    "connections": [
+      {
+        "connector_type": "Unknown",
+        "power_kw": 16,
+        "current_type": "AC (3-phase)",
+        "quantity": 2
+      }
+    ]
+  },
+  {
+    "ocm_id": 353779,
+    "name": "Sutton Place North Garage - Tesla Destination",
+    "town": "New York",
+    "latitude": 40.75552,
+    "longitude": -73.962734,
+    "num_points": null,
+    "data_quality": 3,
+    "connections": [
+      {
+        "connector_type": "Unknown",
+        "power_kw": 3.7,
+        "current_type": "AC (1-phase)",
+        "quantity": 2
+      }
+    ]
+  },
+  {
+    "ocm_id": 246341,
+    "name": "Beekman Parking",
+    "town": "New York",
+    "latitude": 40.754022,
+    "longitude": -73.965166,
+    "num_points": null,
+    "data_quality": 3,
+    "connections": [
+      {
+        "connector_type": "Type1",
+        "power_kw": 3.7,
+        "current_type": "AC (1-phase)",
+        "quantity": 2
+      }
+    ]
+  },
+  {
+    "ocm_id": 353744,
+    "name": "449 East 49th Street",
+    "town": "New York",
+    "latitude": 40.75267,
+    "longitude": -73.96482,
+    "num_points": null,
+    "data_quality": 3,
+    "connections": [
+      {
+        "connector_type": "Type1",
+        "power_kw": 3.7,
+        "current_type": "AC (1-phase)",
+        "quantity": 6
+      }
+    ]
+  },
+  {
+    "ocm_id": 246339,
+    "name": "ABM Parking 866 UN Plaza - Tesla Destination",
+    "town": "New York",
+    "latitude": 40.752641,
+    "longitude": -73.965187,
+    "num_points": null,
+    "data_quality": 3,
+    "connections": [
+      {
+        "connector_type": "Unknown",
+        "power_kw": 3.7,
+        "current_type": "AC (1-phase)",
+        "quantity": 3
+      }
+    ]
+  }
+]

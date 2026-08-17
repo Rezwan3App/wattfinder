@@ -8,3 +8,7 @@ build/
 .vercel/
 *.log
 .DS_Store
+
+# Raw OCM dump is regenerable via scripts/fetch-ocm.ts; the normalized
+# data/stations-nyc.json (the seed source) is committed for reproducibility.
+data/ocm-nyc-raw.json

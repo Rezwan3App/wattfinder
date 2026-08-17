@@ -44,8 +44,8 @@ Not final, no fabricated metrics until the app is live and measured:
 
 ## Build phases
 
-- [ ] Phase 1 — data layer (cached OCM stations + synthetic occupancy + charge-curve model)
-- [ ] Phase 2 — estimators (availability predictor + charge-time estimator as serverless functions)
+- [~] Phase 1 — data layer: 498 real NYC stations + 541 connectors seeded into Postgres; occupancy profile columns in place (generator still to come)
+- [~] Phase 2 — charge-time estimator built + verified (`src/lib/estimator.ts`); availability predictor still to come
 - [ ] Phase 3 — app build (map + car setup + station detail + recommendation)
 - [ ] Phase 4 — polish + mobile-first pass + Vercel deploy
 - [ ] Phase 5 — story assets (architecture diagram, "how it works" explainer, portfolio page, walkthrough video)
@@ -64,5 +64,9 @@ Full spec, decisions log, and Phase 0 research live outside this code repo, in t
 - [OpenChargeMap API research](../MD%20files%20masterlist/project-3-ev-app/research/openchargemap-api.md)
 - [Charge-curve data (Model 3 / Ioniq 5 / Bolt)](../MD%20files%20masterlist/project-3-ev-app/research/charge-curves.md)
 - [Competitor gap analysis](../MD%20files%20masterlist/project-3-ev-app/research/competitor-gap.md)
+
+## Data attribution
+
+Charging station data from [OpenChargeMap](https://openchargemap.org), licensed CC BY-SA 4.0.
 
 This is a portfolio project — built to be shown, not sold.

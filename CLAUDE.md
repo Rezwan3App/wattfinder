@@ -28,12 +28,14 @@ App track of Project 3 (portfolio piece). Full spec: `../MD files masterlist/pro
 
 - Aug 15, 2026: Next.js app scaffolded (TS, Tailwind, App Router, src/, ESLint). create-next-app also dropped an `AGENTS.md` (its default) — this CLAUDE.md is still the source of truth.
 - Aug 15, 2026: Charge-time estimator built + verified — `src/lib/estimator.ts` (3-car curve data + `estimateChargeTime`), self-check `src/lib/estimator.test.ts` (`npm run test:estimator`). Reproduces published 10->80% times within tolerance; Bolt reads ~65 vs 73min (linear-interp ceiling, noted with a ponytail comment). This is the Phase 2 charge-time core, done early because it needed no API keys.
-- **Next unblocked step:** none without keys. Map, station data, occupancy, and design all wait on the two blockers below.
+- Aug 17, 2026: Both blockers cleared (OCM key + Supabase project `nsmkanozwuwgynatdaft`, us-east-2). Keys/URL in `.env.local` (gitignored). Service role key still blank there but not needed — seed uses DATABASE_URL directly.
+- Aug 17, 2026: **Phase 1 data layer mostly done.** Schema applied (migration `stations_schema`): `stations` + `station_connections`, RLS on with public-read-only policies. `scripts/fetch-ocm.ts` pulls NYC (bounding box) -> `data/stations-nyc.json` (committed) + raw dump (gitignored). `scripts/seed.ts` loads it via `pg`/DATABASE_URL. Seeded: 498 stations, 541 connectors, 35 towns, 89 DC connectors, max 350kW. Occupancy profile columns (`base_utilization`, `occupancy_seed`) populated deterministically from ocm_id.
+- **Next step:** the synthetic occupancy generator (compute "busy right now" from the stored profile + current time), then wire the map UI (Phase 3) to query stations + run the estimator.
 
-## Blocking on Rezwan
+## Supabase project
 
-- OpenChargeMap API key not yet registered (needed before Phase 1 data fetching)
-- Supabase project not yet created (needed before Phase 1)
+- Project ref: `nsmkanozwuwgynatdaft`, region us-east-2. Free tier auto-pauses after ~7 days idle — un-pause in the dashboard if a session hits a dead DB.
+- Seed/re-seed: `npx tsx --env-file=.env.local scripts/fetch-ocm.ts` then `scripts/seed.ts`.
 
 ## Session-close checklist
 
