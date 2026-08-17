@@ -6,20 +6,11 @@
 // Run: npx tsx --env-file=.env.local scripts/seed.ts
 import { readFileSync } from "node:fs";
 import { Client } from "pg";
+import { inferConnectorFromStationName } from "../src/lib/connectors";
+import type { Station } from "../src/lib/stations";
 
 const DB = process.env.DATABASE_URL;
 if (!DB) throw new Error("DATABASE_URL missing (run with --env-file=.env.local)");
-
-type Station = {
-  ocm_id: number;
-  name: string;
-  town: string | null;
-  latitude: number;
-  longitude: number;
-  num_points: number | null;
-  data_quality: number | null;
-  connections: { connector_type: string; power_kw: number; current_type: string | null; quantity: number }[];
-};
 
 // Deterministic baseline busyness (0.25..0.64) from the station's stable id.
 const baseUtilization = (ocmId: number) => 0.25 + (ocmId % 40) / 100;
@@ -43,10 +34,19 @@ async function main() {
       );
       const stationId = rows[0].id;
       for (const c of s.connections) {
+        const connectorType = inferConnectorFromStationName(c.connector_type, s.name);
         await client.query(
-          `insert into public.station_connections (station_id, connector_type, power_kw, current_type, quantity)
-           values ($1,$2,$3,$4,$5)`,
-          [stationId, c.connector_type, c.power_kw, c.current_type, c.quantity],
+          `insert into public.station_connections
+             (station_id, connector_type, power_kw, current_type, quantity, connection_type_id)
+           values ($1,$2,$3,$4,$5,$6)`,
+          [
+            stationId,
+            connectorType,
+            c.power_kw,
+            c.current_type,
+            c.quantity,
+            c.connection_type_id ?? null,
+          ],
         );
       }
     }
@@ -62,4 +62,7 @@ async function main() {
   }
 }
 
-main();
+main().catch((err) => {
+  console.error(err);
+  process.exit(1);
+});

@@ -20,7 +20,7 @@ App track of Project 3 (portfolio piece). Full spec: `../MD files masterlist/pro
 
 - **Primary color: green.** Soft/muted background treatment, not a stark or saturated look — soft green backgrounds specifically called out (details TBD once real design work starts).
 - Use the `/impeccable` skill for the actual design pass when Phase 3 starts, not a generic frontend build.
-- **Logo:** he wants real logo inspiration he sources himself, not AI-generated logo concepts. Wait for him to bring reference images before proposing any logo direction.
+- **Logo:** he wants real logo inspiration he sources himself, not AI-generated logo concepts. Wait for him to bring reference images before proposing any logo direction. Interim app mark (Aug 17, 2026): lowercase **w** whose right stroke becomes a two-prong plug (`public/wattfinder-mark.svg`, favicon `src/app/icon.svg`). Placeholder only — not the sourced brand lockup.
 - Hosted live on Vercel (already the plan) — confirmed, not just a placeholder deploy target. Default `wattfinder.vercel.app` subdomain for now; custom domain is a later, explicitly-approved purchase decision, not assumed.
 - **Project name: WattFinder**, brand casing is lowercase **wattfinder** in logo/headers (decided Aug 15, 2026, "simple/direct descriptive" direction). Repo and local folder renamed to `wattfinder`.
 
@@ -29,14 +29,15 @@ App track of Project 3 (portfolio piece). Full spec: `../MD files masterlist/pro
 - Aug 15, 2026: Next.js app scaffolded (TS, Tailwind, App Router, src/, ESLint). create-next-app also dropped an `AGENTS.md` (its default) — this CLAUDE.md is still the source of truth.
 - Aug 15, 2026: Charge-time estimator built + verified — `src/lib/estimator.ts` (3-car curve data + `estimateChargeTime`), self-check `src/lib/estimator.test.ts` (`npm run test:estimator`). Reproduces published 10->80% times within tolerance; Bolt reads ~65 vs 73min (linear-interp ceiling, noted with a ponytail comment). This is the Phase 2 charge-time core, done early because it needed no API keys.
 - Aug 17, 2026: Both blockers cleared (OCM key + Supabase project `nsmkanozwuwgynatdaft`, us-east-2). Keys/URL in `.env.local` (gitignored). Service role key still blank there but not needed — seed uses DATABASE_URL directly.
-- Aug 17, 2026: **Phase 1 data layer mostly done.** Schema applied (migration `stations_schema`): `stations` + `station_connections`, RLS on with public-read-only policies. `scripts/fetch-ocm.ts` pulls NYC (bounding box) -> `data/stations-nyc.json` (committed) + raw dump (gitignored). `scripts/seed.ts` loads it via `pg`/DATABASE_URL. Seeded: 498 stations, 541 connectors, 35 towns, 89 DC connectors, max 350kW. Occupancy profile columns (`base_utilization`, `occupancy_seed`) populated deterministically from ocm_id.
-- **Next step:** the synthetic occupancy generator (compute "busy right now" from the stored profile + current time), then wire the map UI (Phase 3) to query stations + run the estimator.
+- Aug 17, 2026: **Phase 1 data layer mostly done.** Schema applied (migration `stations_schema`): `stations` + `station_connections`, RLS on with public-read-only policies. `scripts/fetch-ocm.ts` pulls NYC (bounding box) -> `data/stations-nyc.json` (committed) + raw dump (gitignored). `scripts/seed.ts` loads it via `pg`/DATABASE_URL. Seeded: 498 stations, 541 connectors, 35 towns, 89 DC connectors, max 350kW. Occupancy baseline (`base_utilization`) is populated deterministically from `ocm_id` (the occupancy seed is `ocm_id` itself — do not add a separate `occupancy_seed` column).
+- Aug 17, 2026 (review pass): dropped redundant `occupancy_seed` column (was a copy of ocm_id; use ocm_id as the occupancy seed). Added `db/schema.sql`, made `tsx` a real devDependency (npm scripts were broken without it), added `fetch:stations`/`seed` npm scripts.
+- Aug 17, 2026 (mistake-correction pass): estimator now clamps SoC, sizes the last integration step, and rejects `stationKW <= 0`. Fetch tiles the NYC box so a 500-result cap cannot silently drop POIs, and stores `connection_type_id` on each connector. Tesla-named Unknowns in the committed cache remapped (51); 81 Unknowns remain until `npm run fetch:stations`. Interim **w→plug** mark on the holding page. `pg` is a seed-only devDependency.
+- **Next step:** the synthetic occupancy generator (compute "busy right now" from the stored profile + current time), then wire the map UI (Phase 3) to query stations + run the estimator. Re-fetch stations when convenient so remaining Unknown connectors pick up NEMA/NACS ids.
 
 ## Supabase project
 
 - Project ref: `nsmkanozwuwgynatdaft`, region us-east-2. Free tier auto-pauses after ~7 days idle — un-pause in the dashboard if a session hits a dead DB.
-- Seed/re-seed: `npm run fetch:stations` then `npm run seed`. Schema of record: `db/schema.sql`.
-- Aug 17, 2026 (review pass): dropped redundant `occupancy_seed` column (was a copy of ocm_id; use ocm_id as the occupancy seed). Added `db/schema.sql`, made `tsx` a real devDependency (npm scripts were broken without it), added `fetch:stations`/`seed` npm scripts.
+- Seed/re-seed: `npm run fetch:stations` then `npm run seed`. Schema of record: `db/schema.sql`. Additive live-DB patch: `db/migrate_connection_type_id.sql` (adds `connection_type_id`; run once, then re-seed).
 
 ## Session-close checklist
 

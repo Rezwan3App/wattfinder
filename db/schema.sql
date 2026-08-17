@@ -13,14 +13,16 @@ create table public.stations (
   longitude double precision not null,
   num_points int,                             -- OCM NumberOfPoints
   data_quality int,                           -- OCM DataQualityLevel 1-5
-  base_utilization real not null default 0.4, -- 0..1 baseline busyness
+  base_utilization real not null default 0.4
+    check (base_utilization >= 0 and base_utilization <= 1),
   created_at timestamptz not null default now()
 );
 
 create table public.station_connections (
   id bigint generated always as identity primary key,
   station_id bigint not null references public.stations(id) on delete cascade,
-  connector_type text not null,               -- CCS / CHAdeMO / Tesla / Type2 / ...
+  connector_type text not null,               -- CCS / CHAdeMO / Tesla / Type2 / NACS / ...
+  connection_type_id int,                     -- raw OpenChargeMap ConnectionTypeID
   power_kw real,                              -- nullable in OCM
   current_type text,                          -- DC / AC
   quantity int not null default 1

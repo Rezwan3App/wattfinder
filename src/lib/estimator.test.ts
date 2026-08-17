@@ -2,7 +2,7 @@
 // Asserts the model reproduces published 10->80% charging times (within tolerance)
 // and the qualitative behavior that makes the "honesty" pitch defensible.
 import assert from "node:assert";
-import { CARS, estimateChargeTime, carAcceptedKW } from "./estimator";
+import { CARS, estimateChargeTime, carAcceptedKW, clampSoc } from "./estimator";
 
 const car = (id: string) => {
   const c = CARS.find((x) => x.id === id);
@@ -41,5 +41,24 @@ console.log(`ok  Bolt is car-limited: 50kW=${bolt50}min vs 350kW=${bolt350}min`)
 
 // Sanity: power must monotonically taper past the peak (no charging faster while fuller).
 assert.ok(carAcceptedKW(car("model3-lr-rwd"), 30) > carAcceptedKW(car("model3-lr-rwd"), 70), "Model 3 must taper");
+
+// Inputs the UI will eventually send: clamp SoC, reject a dead stall, don't overshoot.
+assert.equal(clampSoc(-10), 0);
+assert.equal(clampSoc(140), 100);
+assert.equal(estimateChargeTime(car("bolt-ev"), 50, 50, 50).minutes, 0);
+assert.equal(estimateChargeTime(car("bolt-ev"), 80, 10, 50).minutes, 0);
+
+assert.throws(
+  () => estimateChargeTime(car("bolt-ev"), 10, 80, 0),
+  /stationKW must be a positive number/,
+);
+
+const exact = estimateChargeTime(car("model3-lr-rwd"), 10, 80, 250).minutes;
+const oddTarget = estimateChargeTime(car("model3-lr-rwd"), 10, 80.3, 250).minutes;
+assert.ok(
+  oddTarget >= exact && oddTarget - exact <= 1,
+  `last step must not overshoot: 10->80=${exact}min vs 10->80.3=${oddTarget}min`,
+);
+console.log(`ok  last-step sizing: 10->80=${exact}min, 10->80.3=${oddTarget}min`);
 
 console.log("\nAll estimator checks passed.");
