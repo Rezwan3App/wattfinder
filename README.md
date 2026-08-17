@@ -4,7 +4,7 @@ A smart EV charging companion app. Answers the two questions that actually matte
 
 This is the portfolio piece that fuses mechanical engineering (battery charge curves, power delivery, state-of-charge physics) with product management (turning that physics into a clean "go here, wait ~6 min, done in 25" consumer flow).
 
-**Status:** Phase 1 not started. Phase 0 research is complete — see the spec and research links below.
+**Status:** Phase 1 data layer is in Postgres (498 NYC stations). Phase 2 charge-time estimator is built and tested. Occupancy generator and the map UI are next.
 
 ## The pitch
 
@@ -52,8 +52,10 @@ Not final, no fabricated metrics until the app is live and measured:
 
 ## Blocking items
 
-- [ ] Register a free OpenChargeMap API key at [openchargemap.org](https://openchargemap.org) (My Profile → My Apps → Register An Application) and drop it into `.env.local` (see `.env.local.example`)
-- [ ] Create a free Supabase project (supabase.com) for the Postgres database and drop its connection details into `.env.local`
+- [x] OpenChargeMap API key in `.env.local`
+- [x] Supabase project + `DATABASE_URL` in `.env.local`
+
+If the live database was created before `connection_type_id` existed, run `db/migrate_connection_type_id.sql` in the Supabase SQL editor, then `npm run seed`. A later `npm run fetch:stations` (tiled NYC box, stores raw OCM type ids) will replace the remaining `Unknown` connectors — 51 Tesla-named rows were remapped in the committed cache; 81 are still unknown until that re-fetch.
 
 ## Project docs
 

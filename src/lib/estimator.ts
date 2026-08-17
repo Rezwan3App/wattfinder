@@ -69,16 +69,25 @@ export const CARS: Car[] = [
   },
 ];
 
+/** Clamp a state-of-charge input to the 0–100% range the curves are defined on. */
+export function clampSoc(soc: number): number {
+  if (!Number.isFinite(soc)) return 0;
+  return Math.min(100, Math.max(0, soc));
+}
+
 /** Power (kW) the car accepts at a given SoC %, linearly interpolated between anchors. */
 export function carAcceptedKW(car: Car, soc: number): number {
   const pts = car.curve;
-  if (soc <= pts[0].soc) return pts[0].kw;
-  if (soc >= pts[pts.length - 1].soc) return pts[pts.length - 1].kw;
+  if (pts.length === 0) throw new Error(`${car.id} has an empty charging curve`);
+  const x = clampSoc(soc);
+  if (x <= pts[0].soc) return pts[0].kw;
+  if (x >= pts[pts.length - 1].soc) return pts[pts.length - 1].kw;
   for (let i = 0; i < pts.length - 1; i++) {
     const a = pts[i];
     const b = pts[i + 1];
-    if (soc >= a.soc && soc <= b.soc) {
-      const t = (soc - a.soc) / (b.soc - a.soc);
+    if (x >= a.soc && x <= b.soc) {
+      const span = b.soc - a.soc;
+      const t = span === 0 ? 0 : (x - a.soc) / span;
       return a.kw + t * (b.kw - a.kw);
     }
   }
@@ -105,22 +114,33 @@ export function estimateChargeTime(
   targetSoc: number,
   stationKW: number,
 ): ChargeEstimate {
-  if (targetSoc <= startSoc) return { minutes: 0, avgKW: 0, stationLimited: false };
+  if (!Number.isFinite(stationKW) || stationKW <= 0) {
+    throw new Error("stationKW must be a positive number");
+  }
+
+  const start = clampSoc(startSoc);
+  const target = clampSoc(targetSoc);
+  if (target <= start) return { minutes: 0, avgKW: 0, stationLimited: false };
 
   const stepPct = 0.5; // integration granularity
   let minutes = 0;
   let energyKWh = 0;
   let stationLimited = false;
 
-  for (let soc = startSoc; soc < targetSoc; soc += stepPct) {
-    const mid = soc + stepPct / 2;
+  for (let soc = start; soc < target; ) {
+    const step = Math.min(stepPct, target - soc);
+    const mid = soc + step / 2;
     const accepted = carAcceptedKW(car, mid);
     const effective = Math.min(accepted, stationKW);
     if (stationKW < accepted) stationLimited = true;
+    if (effective <= 0) {
+      throw new Error("effective charge power is zero; cannot estimate");
+    }
 
-    const stepEnergy = car.usableKWh * (stepPct / 100); // kWh added this step
+    const stepEnergy = car.usableKWh * (step / 100); // kWh added this step
     minutes += (stepEnergy / effective) * 60;
     energyKWh += stepEnergy;
+    soc += step;
   }
 
   const avgKW = energyKWh / (minutes / 60);

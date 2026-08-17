@@ -7,13 +7,13 @@
     "build": "next build",
     "start": "next start",
     "lint": "eslint",
+    "test": "tsx src/lib/estimator.test.ts && tsx src/lib/connectors.test.ts",
     "test:estimator": "tsx src/lib/estimator.test.ts",
     "fetch:stations": "tsx --env-file=.env.local scripts/fetch-ocm.ts",
     "seed": "tsx --env-file=.env.local scripts/seed.ts"
   },
   "dependencies": {
     "next": "16.3.1",
-    "pg": "^8.23.0",
     "react": "19.2.8",
     "react-dom": "19.2.8"
   },
@@ -21,6 +21,7 @@
     "@tailwindcss/postcss": "^4",
     "@types/node": "^20",
     "@types/pg": "^8.23.0",
+    "pg": "^8.23.0",
     "@types/react": "^19",
     "@types/react-dom": "^19",
     "eslint": "^9",

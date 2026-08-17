@@ -1083,7 +1083,7 @@
     "data_quality": 3,
     "connections": [
       {
-        "connector_type": "Unknown",
+        "connector_type": "Tesla",
         "power_kw": 3.7,
         "current_type": "AC (1-phase)",
         "quantity": 2
@@ -1117,7 +1117,7 @@
     "data_quality": 3,
     "connections": [
       {
-        "connector_type": "Unknown",
+        "connector_type": "Tesla",
         "power_kw": 3.7,
         "current_type": "AC (1-phase)",
         "quantity": 2
@@ -1470,7 +1470,7 @@
     "data_quality": 3,
     "connections": [
       {
-        "connector_type": "Unknown",
+        "connector_type": "Tesla",
         "power_kw": 3.7,
         "current_type": "AC (1-phase)",
         "quantity": 4
@@ -1504,7 +1504,7 @@
     "data_quality": 3,
     "connections": [
       {
-        "connector_type": "Unknown",
+        "connector_type": "Tesla",
         "power_kw": 16,
         "current_type": "AC (1-phase)",
         "quantity": 2
@@ -1521,7 +1521,7 @@
     "data_quality": 3,
     "connections": [
       {
-        "connector_type": "Unknown",
+        "connector_type": "Tesla",
         "power_kw": 3.7,
         "current_type": "AC (1-phase)",
         "quantity": 2
@@ -1555,7 +1555,7 @@
     "data_quality": 3,
     "connections": [
       {
-        "connector_type": "Unknown",
+        "connector_type": "Tesla",
         "power_kw": 3.7,
         "current_type": "AC (1-phase)",
         "quantity": 4
@@ -1623,7 +1623,7 @@
     "data_quality": 3,
     "connections": [
       {
-        "connector_type": "Unknown",
+        "connector_type": "Tesla",
         "power_kw": 3.7,
         "current_type": "AC (1-phase)",
         "quantity": 4
@@ -1683,7 +1683,7 @@
   },
   {
     "ocm_id": 100178,
-    "name": "Jersey City, NJ – First Street (Valet & Pay to Park)",
+    "name": "Jersey City, NJ \u2013 First Street (Valet & Pay to Park)",
     "town": "Jersey City",
     "latitude": 40.721595,
     "longitude": -74.040469,
@@ -1759,7 +1759,7 @@
     "data_quality": 3,
     "connections": [
       {
-        "connector_type": "Unknown",
+        "connector_type": "Tesla",
         "power_kw": 3.7,
         "current_type": "AC (1-phase)",
         "quantity": 4
@@ -1810,7 +1810,7 @@
     "data_quality": 3,
     "connections": [
       {
-        "connector_type": "Unknown",
+        "connector_type": "Tesla",
         "power_kw": 3.7,
         "current_type": "AC (1-phase)",
         "quantity": 4
@@ -1844,7 +1844,7 @@
     "data_quality": 3,
     "connections": [
       {
-        "connector_type": "Unknown",
+        "connector_type": "Tesla",
         "power_kw": 3.7,
         "current_type": "AC (1-phase)",
         "quantity": 9
@@ -1878,7 +1878,7 @@
     "data_quality": 3,
     "connections": [
       {
-        "connector_type": "Unknown",
+        "connector_type": "Tesla",
         "power_kw": 3.7,
         "current_type": "AC (1-phase)",
         "quantity": 2
@@ -1935,7 +1935,7 @@
     "data_quality": 3,
     "connections": [
       {
-        "connector_type": "Unknown",
+        "connector_type": "Tesla",
         "power_kw": 3.7,
         "current_type": "AC (1-phase)",
         "quantity": 3
@@ -2719,7 +2719,7 @@
     "data_quality": 3,
     "connections": [
       {
-        "connector_type": "Unknown",
+        "connector_type": "Tesla",
         "power_kw": 3.7,
         "current_type": "AC (1-phase)",
         "quantity": 8
@@ -2804,7 +2804,7 @@
     "data_quality": 3,
     "connections": [
       {
-        "connector_type": "Unknown",
+        "connector_type": "Tesla",
         "power_kw": 3.7,
         "current_type": "AC (1-phase)",
         "quantity": 8
@@ -4144,7 +4144,7 @@
     "data_quality": 3,
     "connections": [
       {
-        "connector_type": "Unknown",
+        "connector_type": "Tesla",
         "power_kw": 3.7,
         "current_type": "AC (1-phase)",
         "quantity": 4
@@ -4246,7 +4246,7 @@
     "data_quality": 3,
     "connections": [
       {
-        "connector_type": "Unknown",
+        "connector_type": "Tesla",
         "power_kw": 3.7,
         "current_type": "AC (1-phase)",
         "quantity": 4
@@ -4843,7 +4843,7 @@
     "data_quality": 3,
     "connections": [
       {
-        "connector_type": "Unknown",
+        "connector_type": "Tesla",
         "power_kw": 3.7,
         "current_type": "AC (1-phase)",
         "quantity": 2
@@ -5172,7 +5172,7 @@
     "data_quality": 3,
     "connections": [
       {
-        "connector_type": "Unknown",
+        "connector_type": "Tesla",
         "power_kw": 8,
         "current_type": "AC (1-phase)",
         "quantity": 2
@@ -5206,7 +5206,7 @@
     "data_quality": 3,
     "connections": [
       {
-        "connector_type": "Unknown",
+        "connector_type": "Tesla",
         "power_kw": 8,
         "current_type": "AC (1-phase)",
         "quantity": 2
@@ -5422,7 +5422,7 @@
     "data_quality": 3,
     "connections": [
       {
-        "connector_type": "Unknown",
+        "connector_type": "Tesla",
         "power_kw": 3.7,
         "current_type": "AC (1-phase)",
         "quantity": 2
@@ -5558,7 +5558,7 @@
     "data_quality": 3,
     "connections": [
       {
-        "connector_type": "Unknown",
+        "connector_type": "Tesla",
         "power_kw": 3.7,
         "current_type": "AC (1-phase)",
         "quantity": 4
@@ -5916,7 +5916,7 @@
     "data_quality": 3,
     "connections": [
       {
-        "connector_type": "Unknown",
+        "connector_type": "Tesla",
         "power_kw": 3.7,
         "current_type": "AC (1-phase)",
         "quantity": 3
@@ -6001,7 +6001,7 @@
     "data_quality": 3,
     "connections": [
       {
-        "connector_type": "Unknown",
+        "connector_type": "Tesla",
         "power_kw": 10,
         "current_type": "AC (1-phase)",
         "quantity": 2
@@ -6092,7 +6092,7 @@
     "data_quality": 3,
     "connections": [
       {
-        "connector_type": "Unknown",
+        "connector_type": "Tesla",
         "power_kw": 3.7,
         "current_type": "AC (1-phase)",
         "quantity": 3
@@ -6126,7 +6126,7 @@
     "data_quality": 3,
     "connections": [
       {
-        "connector_type": "Unknown",
+        "connector_type": "Tesla",
         "power_kw": 16,
         "current_type": "AC (1-phase)",
         "quantity": 2
@@ -6143,7 +6143,7 @@
     "data_quality": 3,
     "connections": [
       {
-        "connector_type": "Unknown",
+        "connector_type": "Tesla",
         "power_kw": 8,
         "current_type": "AC (1-phase)",
         "quantity": 2
@@ -6160,7 +6160,7 @@
     "data_quality": 3,
     "connections": [
       {
-        "connector_type": "Unknown",
+        "connector_type": "Tesla",
         "power_kw": 8,
         "current_type": "AC (1-phase)",
         "quantity": 2
@@ -6296,7 +6296,7 @@
     "data_quality": 3,
     "connections": [
       {
-        "connector_type": "Unknown",
+        "connector_type": "Tesla",
         "power_kw": 3.7,
         "current_type": "AC (1-phase)",
         "quantity": 4
@@ -6387,7 +6387,7 @@
     "data_quality": 3,
     "connections": [
       {
-        "connector_type": "Unknown",
+        "connector_type": "Tesla",
         "power_kw": 16,
         "current_type": "AC (1-phase)",
         "quantity": 2
@@ -6506,7 +6506,7 @@
     "data_quality": 3,
     "connections": [
       {
-        "connector_type": "Unknown",
+        "connector_type": "Tesla",
         "power_kw": 3.7,
         "current_type": "AC (1-phase)",
         "quantity": 3
@@ -6778,7 +6778,7 @@
     "data_quality": 3,
     "connections": [
       {
-        "connector_type": "Unknown",
+        "connector_type": "Tesla",
         "power_kw": 8,
         "current_type": "AC (1-phase)",
         "quantity": 2
@@ -6982,7 +6982,7 @@
     "data_quality": 3,
     "connections": [
       {
-        "connector_type": "Unknown",
+        "connector_type": "Tesla",
         "power_kw": 8,
         "current_type": "AC (1-phase)",
         "quantity": 2
@@ -7016,7 +7016,7 @@
     "data_quality": 3,
     "connections": [
       {
-        "connector_type": "Unknown",
+        "connector_type": "Tesla",
         "power_kw": 3.7,
         "current_type": "AC (1-phase)",
         "quantity": 3
@@ -7237,7 +7237,7 @@
     "data_quality": 3,
     "connections": [
       {
-        "connector_type": "Unknown",
+        "connector_type": "Tesla",
         "power_kw": 3.7,
         "current_type": "AC (1-phase)",
         "quantity": 3
@@ -7288,7 +7288,7 @@
     "data_quality": 3,
     "connections": [
       {
-        "connector_type": "Unknown",
+        "connector_type": "Tesla",
         "power_kw": 8,
         "current_type": "AC (1-phase)",
         "quantity": 2
@@ -7356,7 +7356,7 @@
     "data_quality": 3,
     "connections": [
       {
-        "connector_type": "Unknown",
+        "connector_type": "Tesla",
         "power_kw": 3.7,
         "current_type": "AC (1-phase)",
         "quantity": 3
@@ -7390,7 +7390,7 @@
     "data_quality": 3,
     "connections": [
       {
-        "connector_type": "Unknown",
+        "connector_type": "Tesla",
         "power_kw": 16,
         "current_type": "AC (1-phase)",
         "quantity": 2
@@ -7560,7 +7560,7 @@
     "data_quality": 3,
     "connections": [
       {
-        "connector_type": "Unknown",
+        "connector_type": "Tesla",
         "power_kw": 8,
         "current_type": "AC (1-phase)",
         "quantity": 2
@@ -7594,7 +7594,7 @@
     "data_quality": 3,
     "connections": [
       {
-        "connector_type": "Unknown",
+        "connector_type": "Tesla",
         "power_kw": 3.7,
         "current_type": "AC (1-phase)",
         "quantity": 3
@@ -7611,7 +7611,7 @@
     "data_quality": 3,
     "connections": [
       {
-        "connector_type": "Unknown",
+        "connector_type": "Tesla",
         "power_kw": 16,
         "current_type": "AC (1-phase)",
         "quantity": 2
@@ -7662,7 +7662,7 @@
     "data_quality": 3,
     "connections": [
       {
-        "connector_type": "Unknown",
+        "connector_type": "Tesla",
         "power_kw": 3.7,
         "current_type": "AC (1-phase)",
         "quantity": 4
@@ -7985,7 +7985,7 @@
     "data_quality": 3,
     "connections": [
       {
-        "connector_type": "Unknown",
+        "connector_type": "Tesla",
         "power_kw": 3.7,
         "current_type": "AC (1-phase)",
         "quantity": 2
@@ -8002,7 +8002,7 @@
     "data_quality": 3,
     "connections": [
       {
-        "connector_type": "Unknown",
+        "connector_type": "Tesla",
         "power_kw": 3.7,
         "current_type": "AC (1-phase)",
         "quantity": 3
@@ -8036,7 +8036,7 @@
     "data_quality": 3,
     "connections": [
       {
-        "connector_type": "Unknown",
+        "connector_type": "Tesla",
         "power_kw": 3.7,
         "current_type": "AC (1-phase)",
         "quantity": 3
@@ -8257,7 +8257,7 @@
     "data_quality": 3,
     "connections": [
       {
-        "connector_type": "Unknown",
+        "connector_type": "Tesla",
         "power_kw": 8,
         "current_type": "AC (1-phase)",
         "quantity": 2
@@ -8291,7 +8291,7 @@
     "data_quality": 3,
     "connections": [
       {
-        "connector_type": "Unknown",
+        "connector_type": "Tesla",
         "power_kw": 3.7,
         "current_type": "AC (1-phase)",
         "quantity": 3
@@ -8410,7 +8410,7 @@
     "data_quality": 3,
     "connections": [
       {
-        "connector_type": "Unknown",
+        "connector_type": "Tesla",
         "power_kw": 3.7,
         "current_type": "AC (1-phase)",
         "quantity": 4
@@ -8597,7 +8597,7 @@
     "data_quality": 3,
     "connections": [
       {
-        "connector_type": "Unknown",
+        "connector_type": "Tesla",
         "power_kw": 3.7,
         "current_type": "AC (1-phase)",
         "quantity": 1
@@ -8631,7 +8631,7 @@
     "data_quality": 3,
     "connections": [
       {
-        "connector_type": "Unknown",
+        "connector_type": "Tesla",
         "power_kw": 3.7,
         "current_type": "AC (1-phase)",
         "quantity": 3
@@ -8665,7 +8665,7 @@
     "data_quality": 3,
     "connections": [
       {
-        "connector_type": "Unknown",
+        "connector_type": "Tesla",
         "power_kw": 3.7,
         "current_type": "AC (1-phase)",
         "quantity": 2
@@ -8716,7 +8716,7 @@
     "data_quality": 3,
     "connections": [
       {
-        "connector_type": "Unknown",
+        "connector_type": "Tesla",
         "power_kw": 3.7,
         "current_type": "AC (1-phase)",
         "quantity": 3
