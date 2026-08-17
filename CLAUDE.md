@@ -24,9 +24,16 @@ App track of Project 3 (portfolio piece). Full spec: `../MD files masterlist/pro
 - Hosted live on Vercel (already the plan) — confirmed, not just a placeholder deploy target. Default `wattfinder.vercel.app` subdomain for now; custom domain is a later, explicitly-approved purchase decision, not assumed.
 - **Project name: WattFinder**, brand casing is lowercase **wattfinder** in logo/headers (decided Aug 15, 2026, "simple/direct descriptive" direction). Repo and local folder renamed to `wattfinder`.
 
+## Progress
+
+- Aug 15, 2026: Next.js app scaffolded (TS, Tailwind, App Router, src/, ESLint). create-next-app also dropped an `AGENTS.md` (its default) — this CLAUDE.md is still the source of truth.
+- Aug 15, 2026: Charge-time estimator built + verified — `src/lib/estimator.ts` (3-car curve data + `estimateChargeTime`), self-check `src/lib/estimator.test.ts` (`npm run test:estimator`). Reproduces published 10->80% times within tolerance; Bolt reads ~65 vs 73min (linear-interp ceiling, noted with a ponytail comment). This is the Phase 2 charge-time core, done early because it needed no API keys.
+- **Next unblocked step:** none without keys. Map, station data, occupancy, and design all wait on the two blockers below.
+
 ## Blocking on Rezwan
 
 - OpenChargeMap API key not yet registered (needed before Phase 1 data fetching)
+- Supabase project not yet created (needed before Phase 1)
 
 ## Session-close checklist
 
