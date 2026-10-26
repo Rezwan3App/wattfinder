@@ -1,26 +1,63 @@
 @import "tailwindcss";
+@import "leaflet/dist/leaflet.css";
 
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
+  --bg: #eaf1ed;
+  --surface: #f7faf8;
+  --ink: #12261d;
+  --muted: #476055;
+  --line: #cbdcd2;
+  --primary: #1b7248;
+  --primary-ink: #ffffff;
+  --primary-soft: #d6eadd;
+  --free: #1b7248;
+  --wait: #a8650f;
+  --busy: #ad3b33;
 }
 
 @theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
+  --color-bg: var(--bg);
+  --color-surface: var(--surface);
+  --color-ink: var(--ink);
+  --color-muted: var(--muted);
+  --color-line: var(--line);
+  --color-primary: var(--primary);
+  --color-primary-ink: var(--primary-ink);
+  --color-soft: var(--primary-soft);
+  --color-free: var(--free);
+  --color-wait: var(--wait);
+  --color-busy: var(--busy);
   --font-sans: var(--font-geist-sans);
   --font-mono: var(--font-geist-mono);
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
+html {
+  color-scheme: light;
 }
 
 body {
-  background: var(--background);
-  color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+  background: var(--bg);
+  color: var(--ink);
+  font-family: var(--font-geist-sans), system-ui, sans-serif;
+}
+
+:focus-visible {
+  outline: 2px solid var(--primary);
+  outline-offset: 2px;
+}
+
+input[type="range"] {
+  accent-color: var(--primary);
+}
+
+.leaflet-container {
+  font-family: inherit;
+  background: #dfe9e3;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  * {
+    transition: none !important;
+    animation: none !important;
+  }
 }

@@ -2,7 +2,7 @@
 // Asserts the model reproduces published 10->80% charging times (within tolerance)
 // and the qualitative behavior that makes the "honesty" pitch defensible.
 import assert from "node:assert";
-import { CARS, estimateChargeTime, carAcceptedKW } from "./estimator";
+import { CARS, estimateChargeTime, carAcceptedKW, coldFactor, curveSeries } from "./estimator";
 
 const car = (id: string) => {
   const c = CARS.find((x) => x.id === id);
@@ -41,5 +41,29 @@ console.log(`ok  Bolt is car-limited: 50kW=${bolt50}min vs 350kW=${bolt350}min`)
 
 // Sanity: power must monotonically taper past the peak (no charging faster while fuller).
 assert.ok(carAcceptedKW(car("model3-lr-rwd"), 30) > carAcceptedKW(car("model3-lr-rwd"), 70), "Model 3 must taper");
+
+// Cold derating: slower than warm; undefined tempC and a warm day change nothing.
+const m3 = car("model3-lr-rwd");
+const warm = estimateChargeTime(m3, 10, 80, 250).minutes;
+assert.equal(estimateChargeTime(m3, 10, 80, 250, undefined).minutes, warm, "undefined tempC must be unchanged");
+assert.equal(estimateChargeTime(m3, 10, 80, 250, 25).minutes, warm, "warm day must be unchanged");
+const cold = estimateChargeTime(m3, 10, 80, 250, -10).minutes;
+assert.ok(cold > warm, "cold should be slower than warm");
+assert.equal(coldFactor(-30), 0.55);
+assert.ok(coldFactor(5) < 1 && coldFactor(5) > 0.55);
+console.log(`ok  cold derating: 25C=${warm}min vs -10C=${cold}min`);
+
+// curveSeries ends where estimateChargeTime ends, and starts at minute 0.
+for (const c of CARS) {
+  for (const t of [undefined, 0]) {
+    const series = curveSeries(c, 10, 80, 150, t);
+    const last = series[series.length - 1];
+    const est = estimateChargeTime(c, 10, 80, 150, t).minutes;
+    assert.ok(Math.abs(last.minutes - est) <= 1, `${c.id} series end ${last.minutes} vs ${est}`);
+    assert.equal(last.soc, 80);
+    assert.equal(series[0].minutes, 0);
+  }
+}
+console.log("ok  curveSeries matches estimateChargeTime");
 
 console.log("\nAll estimator checks passed.");

@@ -1,72 +1,176 @@
 # WattFinder
 
-A smart EV charging companion app. Answers the two questions that actually matter in the moment: *which nearby station is free right now, and how long will charging actually take there for my car?*
+**An EV charging companion for NYC that ranks nearby stations by total time (drive + wait + an honest charge time for your specific car), instead of by the max kW printed on the sticker.**
 
-This is the portfolio piece that fuses mechanical engineering (battery charge curves, power delivery, state-of-charge physics) with product management (turning that physics into a clean "go here, wait ~6 min, done in 25" consumer flow).
+Live demo: not deployed yet. See [Roadmap](#roadmap).
 
-**Status:** Phase 1 not started. Phase 0 research is complete — see the spec and research links below.
+## The problem
 
-## The pitch
+Charging apps tell you a station delivers "150 kW" and leave the math to you. Two things go wrong:
 
-Existing apps quote a station's max kW and leave the driver to guess. This app models the real charging curve per car (charging slows as the battery fills — it's not linear) and shows honest minutes-to-80%, plus real-time-feeling availability, so the recommendation is defensible: "Fastest total trip: Station B, ~4 min drive, open now, ~22 min to 80%."
+1. **The sticker number is not what your car gets.** Charging slows as the battery fills, and every car accepts power differently. A Chevy Bolt on a 150 kW charger pulls roughly 42 kW on average from 10 to 80%. Naive `kWh / kW` says 18 minutes. The curve says 65.
+2. **You don't know if the station is free.** A trip to an occupied charger can cost more than the charge itself.
 
-## Scope for v1
+WattFinder answers both with one recommendation: "Station B, 4 min away, short wait, about 22 min to 80%."
 
-- **Metro area:** NYC (real station data via OpenChargeMap)
-- **Car catalog:** Tesla Model 3 LR RWD, Hyundai Ioniq 5 LR AWD, Chevy Bolt EV — three deliberately different charge-curve shapes (steep taper / plateau+cliff / stepped)
-- **Data approach:** real station locations + connector types + power ratings from OpenChargeMap's free API, cached to JSON (never called live from the demo). Occupancy/availability is a synthetic, seeded, time-of-day-aware model layered on top.
-- **Stack:** Next.js (App Router) + TypeScript + Tailwind, Leaflet (free tiles), shadcn/ui. Postgres via Supabase for cached station data and the occupancy layer (real schema, not static JSON — deliberately semi-complex). Deploys on Vercel.
-- **Optional bonus (deferred, revisit Phase 4):** a Hugging Face Gradio mini-app reusing the estimator code, as a standalone engineering artifact.
+## What it does
 
-## Two estimators (the engineering core)
+1. Pick your car (Tesla Model 3 LR RWD, Hyundai Ioniq 5 LR AWD, or Chevy Bolt EV).
+2. Set your current and target battery level with sliders.
+3. See NYC stations on a Leaflet map and in a ranked list. Each is scored by estimated drive time + modeled wait + charge time.
+4. Open a station to see your car's charge curve against that station's power limit, plus the naive estimate next to the honest one.
 
-1. **Availability / wait-time predictor** — synthetic occupancy by time-of-day/day-of-week, reproducible via seed. Outputs: likely free now / busy / short wait, plus estimated wait if busy.
-2. **Charge-time estimator** — realistic per-car charging curve (not naive `kWh / kW`), min of station kW vs. car's accepted rate at current SoC. Outputs: realistic minutes to 80% (and full), with a small curve chart.
+## How the estimate works
 
-## Timeline estimate
+Each car has a charge curve: the power it accepts (kW) at each state of charge (SoC, %). Between published anchor points the app interpolates linearly. At any SoC the power actually delivered is the slower of the two sides:
 
-Phase 0 done. Remaining: ~4-6 build sessions (1-1.5 for data layer, 0.5-1 for estimators, 1.5-2 for app build, 0.5-1 for polish/deploy, 0.5-1 for story assets). At one session/week that's 4-6 weeks to a live v1; two sessions some weeks compresses it to 2-3 weeks.
+```
+P(s) = min( car_accepted_kW(s), station_kW )
+```
+
+Time to charge from `s0` to `s1` is the energy in each slice divided by the power in that slice, summed over the range. The estimator uses 0.5% slices:
+
+```
+minutes = sum over slices of  ( usable_kWh * 0.005 / P(s_mid) ) * 60
+```
+
+A cold battery charges slower, so the app multiplies the car's accepted power by a derating factor driven by live NYC temperature (see below).
+
+### Worked example (10% to 80%, from `src/lib/estimator.test.ts` and the estimator itself)
+
+| Car | Station | Naive `kWh / kW` | Curve-based | Average power actually delivered |
+|---|---|---|---|---|
+| Tesla Model 3 LR RWD (78 kWh) | 250 kW | 13 min | **32 min** | 104 kW |
+| Hyundai Ioniq 5 LR AWD (80 kWh) | 350 kW | 10 min | **18 min** | 189 kW |
+| Chevy Bolt EV (65 kWh) | 150 kW | 18 min | **65 min** | 42 kW |
+
+The Ioniq 5 shows the station mattering: on a 150 kW unit the same 10 to 80% takes 24 minutes instead of 18. The Bolt shows the opposite: it peaks near 55 kW, so a 350 kW charger and a 50 kW charger give nearly the same result (65 vs 67 min). Spending extra to find a fast charger is wasted on that car, and the app says so.
+
+Estimates are checked against published test times (Model 3 target about 34.5 min, Ioniq 5 about 19.5 min, Bolt about 73 min). The Bolt reads low because linear interpolation smooths its hard power steps. That is a known gap, noted in the code.
+
+## Architecture
+
+```mermaid
+flowchart LR
+  OCM[OpenChargeMap API] --> F[scripts/fetch-ocm.ts]
+  F --> J[(data/stations-nyc.json<br/>committed snapshot)]
+  J --> S[scripts/seed.ts]
+  S --> PG[(Postgres / Supabase)]
+  PG --> G[getStations]
+  J -. fallback if DB unreachable .-> G
+  G --> R[rankStations]
+  O[occupancy.ts<br/>synthetic, time-of-day] --> R
+  E[estimator.ts<br/>charge curves] --> R
+  W[Open-Meteo<br/>live NYC temperature] --> E
+  R --> UI[Next.js UI<br/>Leaflet map + list + detail]
+```
+
+- `getStations()` reads Postgres and falls back to the committed OpenChargeMap snapshot (498 stations, 541 connectors) if the database is unreachable. The app works with no database at all.
+- `occupancy.ts` produces deterministic, time-of-day-aware availability in NYC local time, seeded by station id.
+- `weather.ts` fetches live temperature from Open-Meteo and feeds the estimator's cold-pack derating.
+- `recommend.ts` ranks stations by drive time + modeled wait + charge time.
+
+## Data sources and honesty
+
+| Data | Status | Notes |
+|---|---|---|
+| Station locations, connector types, kW ratings | **Real** | OpenChargeMap snapshot, fetched once |
+| Charge curves | **Real, published** | Digitized from EVKX, EV-Database, InsideEVs tests, assuming a warm pack |
+| NYC temperature | **Live** | Open-Meteo, no key. This is the one real-time input |
+| Station availability / wait | **Modeled** | Synthetic, deterministic, time-of-day aware. Not live occupancy |
+| Drive time | **Estimated** | Straight-line distance x 1.3 road factor at an assumed 18 km/h city average, plus 12 min when the trip crosses the Hudson. Not routed |
+
+Why availability is modeled: OpenChargeMap is a registry of where chargers are, not a feed of whether they are in use. Real occupancy needs a network or a paid source (see roadmap). I would rather ship a clearly labeled model than imply live data I don't have. The UI marks availability as modeled.
+
+## Getting started
+
+**Prerequisites:** Node 20+ and npm.
+
+1. Clone the repo and enter it:
+   ```bash
+   git clone https://github.com/Rezwan3App/wattfinder.git
+   cd wattfinder
+   ```
+2. Install dependencies:
+   ```bash
+   npm install
+   ```
+3. Copy the env template:
+   ```bash
+   cp .env.local.example .env.local
+   ```
+4. Run the app:
+   ```bash
+   npm run dev
+   ```
+   Open http://localhost:3000. **This works with no keys at all.** With `DATABASE_URL` unset or unreachable, the app reads the committed snapshot in `data/stations-nyc.json`. Weather needs no key either.
+5. Run the estimator checks:
+   ```bash
+   npm run test:estimator
+   npm run test:recommend
+   ```
+
+### Optional: refresh the data and use Postgres
+
+| Variable | Needed for | Required to run the app? |
+|---|---|---|
+| `OPENCHARGEMAP_API_KEY` | `npm run fetch:stations` (free key from openchargemap.org: My Profile, My Apps) | No |
+| `DATABASE_URL` | `npm run seed` and DB-backed reads | No (snapshot fallback) |
+| `NEXT_PUBLIC_SUPABASE_URL`, `NEXT_PUBLIC_SUPABASE_ANON_KEY`, `SUPABASE_SERVICE_ROLE_KEY` | Reserved for future Supabase client use. The app and seed script only use `DATABASE_URL` today | No |
+
+```bash
+npm run fetch:stations   # OpenChargeMap -> data/stations-nyc.json
+npm run seed             # snapshot -> Postgres (truncates and reloads)
+```
+
+The schema is in `db/schema.sql`; apply it to a fresh Postgres before seeding.
+
+**Supabase connection notes:**
+
+- Use the **pooler** connection string for `DATABASE_URL`: Supabase dashboard, Connect, Session pooler. The direct host `db.<ref>.supabase.co` is IPv6-only, so it fails on IPv4 networks and on Vercel.
+- Free-tier projects pause after about a week idle. If the DB is unreachable, restore the project from the Supabase dashboard. The app keeps working from the snapshot in the meantime.
+
+## Project structure
+
+```
+src/lib/estimator.ts       charge curves, min(car, station) integration, cold derating
+src/lib/estimator.test.ts  self-check against published charge times
+src/lib/stations.ts        getStations(): Postgres with snapshot fallback
+src/lib/occupancy.ts       synthetic time-of-day availability model
+src/lib/weather.ts         live NYC temperature (Open-Meteo)
+src/lib/recommend.ts       rankStations: drive + wait + charge time
+src/app/                   Next.js App Router UI (map, car picker, list, detail)
+scripts/fetch-ocm.ts       pulls NYC stations from OpenChargeMap
+scripts/seed.ts            loads the snapshot into Postgres
+db/schema.sql              Postgres schema (stations, station_connections)
+data/stations-nyc.json     committed station snapshot
+docs/overview.html         one-page visual overview
+```
+
+## Roadmap
+
+- [x] Data layer: 498 NYC stations and 541 connectors in Postgres, with snapshot fallback
+- [x] Charge-time estimator with per-car curves, validated against published times
+- [x] Occupancy model, live weather, and ranking (`src/lib`)
+- [x] Map UI: Leaflet map, car picker, sliders, ranked list, detail view
+- [ ] Mobile-first polish pass and Vercel deploy
+- [ ] Walkthrough video and portfolio write-up
+- [ ] Bolt step-function curve (replaces linear interpolation)
+- [ ] **True live availability.** Realistic sources: Google Places API (New) `evChargeOptions` availability counts (paid, requires Google Cloud billing), or the NREL AFDC station API (free key, but it reports station status, not occupancy). Either would replace the synthetic model.
+
+## Attribution
+
+- Charging station data: [OpenChargeMap](https://openchargemap.org), CC BY-SA 4.0
+- Map tiles: OpenStreetMap contributors
+- Weather: [Open-Meteo](https://open-meteo.com), CC BY 4.0
+- Charge curves: EVKX, EV-Database, and InsideEVs charging tests (anchor points are my own digitization)
 
 ## Project narrative
 
-WattFinder exists to fix a specific, common frustration for EV drivers: existing charging apps either don't know whether a nearby station is actually free right now, or they estimate charging time using a naive calculation that ignores how batteries actually behave. Drivers are told a station delivers "150 kW" and left to do the math themselves, when the real answer depends on their specific car, their current battery percentage, and the physics of how charging speed tapers as a battery fills up. The result is wasted trips to occupied or broken stations, and charge-time guesses that are routinely wrong by 10 to 15 minutes. WattFinder is built to answer the two questions that actually matter in that moment: which nearby station is free right now, and how long will charging honestly take, for this car, at this battery level, on this specific charger.
+Charging apps have two blind spots. They rarely know whether a nearby station is free right now, and they estimate charge time with a calculation that ignores how batteries behave. Drivers get a "150 kW" label and are left to guess, which is how a 25-minute stop becomes an hour.
 
-The app pulls real charging station locations, connector types, and power ratings from OpenChargeMap's public API for the New York metro area, cached into a Postgres database rather than fetched live, since OCM is a registry, not a real-time availability feed. On top of that real map data, WattFinder layers a synthetic but seeded and time-of-day-aware occupancy model to simulate realistic busy/free patterns, and a charge-time estimator that models the actual charging curve for three deliberately different EVs, a Tesla Model 3, a Hyundai Ioniq 5, and a Chevy Bolt, each of which tapers, plateaus, or steps down differently as the battery fills. The estimator takes the minimum of what the car can accept and what the station can deliver at that state of charge, so the app can say something like "Station B, about 4 minutes away, open now, roughly 22 minutes to 80 percent," and explain exactly how it got there.
+I built WattFinder to close that gap for three deliberately different EVs, each of which tapers, plateaus, or steps down differently as the battery fills. The estimator takes the minimum of what the car accepts and what the station delivers at each state of charge, so the app can say how it got to its number.
 
-Beyond the app itself, WattFinder is the deliberate fusion of the two halves of my background: the mechanical engineering training in battery behavior and power delivery from my time at Zachry Nuclear, and the product management instinct for turning that technical depth into a simple, trustworthy consumer decision. It's built as a portfolio piece for product management interviews, specifically to demonstrate that I can reason about the underlying engineering well enough to make a defensible product call, not just describe a feature on top of someone else's data. The honesty angle, showing drivers the real number instead of the misleading sticker spec, is both the technical differentiator and the interview story: an engineering insight that directly shapes a product decision.
+It is also where my two backgrounds meet: mechanical engineering training in battery behavior and power delivery, and a product instinct for turning that into one trustworthy decision. The honesty angle, showing the real number instead of the sticker spec, is both the technical differentiator and the product call.
 
-## Resume bullet drafts
-
-Not final, no fabricated metrics until the app is live and measured:
-
-- Designed and built WattFinder, a full-stack EV charging app (Next.js, TypeScript, Supabase/Postgres) that models real per-vehicle charging curves across 3 EV platforms to replace misleading sticker-kW claims with physics-based charge-time predictions and live-feeling station availability.
-- Built WattFinder end-to-end (React/Next.js, Postgres, real charging-station data) as a product case study in translating battery/power-delivery engineering into a consumer-facing recommendation feature.
-
-## Build phases
-
-- [~] Phase 1 — data layer: 498 real NYC stations + 541 connectors seeded into Postgres; occupancy profile columns in place (generator still to come)
-- [~] Phase 2 — charge-time estimator built + verified (`src/lib/estimator.ts`); availability predictor still to come
-- [ ] Phase 3 — app build (map + car setup + station detail + recommendation)
-- [ ] Phase 4 — polish + mobile-first pass + Vercel deploy
-- [ ] Phase 5 — story assets (architecture diagram, "how it works" explainer, portfolio page, walkthrough video)
-
-## Blocking items
-
-- [ ] Register a free OpenChargeMap API key at [openchargemap.org](https://openchargemap.org) (My Profile → My Apps → Register An Application) and drop it into `.env.local` (see `.env.local.example`)
-- [ ] Create a free Supabase project (supabase.com) for the Postgres database and drop its connection details into `.env.local`
-
-## Project docs
-
-Full spec, decisions log, and Phase 0 research live outside this code repo, in the planning folder:
-
-- [Project spec](../MD%20files%20masterlist/project-3-ev-charging-companion.md) — problem, decisions, product journey, build phases, definition of done
-- [Planning README + decisions log](../MD%20files%20masterlist/project-3-ev-app/) — phase checklist, dated decisions
-- [OpenChargeMap API research](../MD%20files%20masterlist/project-3-ev-app/research/openchargemap-api.md)
-- [Charge-curve data (Model 3 / Ioniq 5 / Bolt)](../MD%20files%20masterlist/project-3-ev-app/research/charge-curves.md)
-- [Competitor gap analysis](../MD%20files%20masterlist/project-3-ev-app/research/competitor-gap.md)
-
-## Data attribution
-
-Charging station data from [OpenChargeMap](https://openchargemap.org), licensed CC BY-SA 4.0.
-
-This is a portfolio project — built to be shown, not sold.
+A portfolio project, built to be shown, not sold.

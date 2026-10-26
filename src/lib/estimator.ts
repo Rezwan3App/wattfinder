@@ -14,6 +14,12 @@ export type Car = {
   // Anchor points; power between anchors is linearly interpolated.
   curve: { soc: number; kw: number }[];
   curveSource: string;
+  // Onboard AC charger limit (kW): AC stalls can never feed the car faster than this.
+  // Approximate spec-sheet values, not measured.
+  onboardAcKW: number;
+  // DC plug types the car can use (natively or with a common adapter). All cars can
+  // also use AC "Type1" (J1772), capped at onboardAcKW.
+  connectors: string[];
 };
 
 export const CARS: Car[] = [
@@ -31,6 +37,8 @@ export const CARS: Car[] = [
       { soc: 100, kw: 15 },
     ],
     curveSource: "EVKX — model_3_long_range_rwd_my2024",
+    onboardAcKW: 11.5,
+    connectors: ["Tesla", "CCS"],
   },
   {
     id: "ioniq5-lr-awd",
@@ -47,6 +55,8 @@ export const CARS: Car[] = [
       { soc: 100, kw: 40 },
     ],
     curveSource: "EVKX / EV-Database car/2236",
+    onboardAcKW: 10.9,
+    connectors: ["CCS"],
   },
   {
     id: "bolt-ev",
@@ -66,6 +76,8 @@ export const CARS: Car[] = [
       { soc: 100, kw: 13 },
     ],
     curveSource: "InsideEVs 613786 / 589169 charging tests",
+    onboardAcKW: 11.0, // 2020+ Bolt
+    connectors: ["CCS"],
   },
 ];
 
@@ -98,31 +110,71 @@ export type ChargeEstimate = {
  * Numerically integrates energy / effective-power, where effective power at each
  * step is min(car-accepted rate, station rating) — so the slower side wins, which
  * is the honest "your 150 kW charger only feeds your car 74 kW right now" story.
+ * Optional tempC derates the car's accepted rate for a cold pack (see coldFactor).
  */
 export function estimateChargeTime(
   car: Car,
   startSoc: number,
   targetSoc: number,
   stationKW: number,
+  tempC?: number,
 ): ChargeEstimate {
   if (targetSoc <= startSoc) return { minutes: 0, avgKW: 0, stationLimited: false };
 
-  const stepPct = 0.5; // integration granularity
+  const { steps, minutes, stationLimited } = integrate(car, startSoc, targetSoc, stationKW, tempC);
+  const energyKWh = car.usableKWh * ((steps.length * STEP_PCT) / 100);
+  const avgKW = energyKWh / (minutes / 60);
+  return { minutes: Math.round(minutes), avgKW: Math.round(avgKW), stationLimited };
+}
+
+/**
+ * Multiplier on the car's accepted DC power for a cold battery: 1.0 at >=20C,
+ * falling linearly to 0.55 at -10C (flat below).
+ * ponytail: real packs depend on preconditioning (a Tesla navigating to a charger
+ * warms up first); one linear factor for all cars, per-car curves if it matters.
+ */
+export function coldFactor(tempC: number): number {
+  if (tempC >= 20) return 1;
+  if (tempC <= -10) return 0.55;
+  return 0.55 + ((tempC + 10) / 30) * 0.45;
+}
+
+type Step = { soc: number; kw: number; minutes: number };
+const STEP_PCT = 0.5; // integration granularity
+
+// Shared integration loop: one entry per 0.5% SoC step (soc/minutes at the step's end,
+// kw = effective power mid-step), so the estimate and the chart can't disagree.
+function integrate(car: Car, startSoc: number, targetSoc: number, stationKW: number, tempC?: number) {
+  const cold = tempC === undefined ? 1 : coldFactor(tempC);
+  const steps: Step[] = [];
   let minutes = 0;
-  let energyKWh = 0;
   let stationLimited = false;
 
-  for (let soc = startSoc; soc < targetSoc; soc += stepPct) {
-    const mid = soc + stepPct / 2;
-    const accepted = carAcceptedKW(car, mid);
+  for (let soc = startSoc; soc < targetSoc; soc += STEP_PCT) {
+    const accepted = carAcceptedKW(car, soc + STEP_PCT / 2) * cold;
     const effective = Math.min(accepted, stationKW);
     if (stationKW < accepted) stationLimited = true;
 
-    const stepEnergy = car.usableKWh * (stepPct / 100); // kWh added this step
+    const stepEnergy = car.usableKWh * (STEP_PCT / 100); // kWh added this step
     minutes += (stepEnergy / effective) * 60;
-    energyKWh += stepEnergy;
+    steps.push({ soc: soc + STEP_PCT, kw: effective, minutes });
   }
+  return { steps, minutes, stationLimited };
+}
 
-  const avgKW = energyKWh / (minutes / 60);
-  return { minutes: Math.round(minutes), avgKW: Math.round(avgKW), stationLimited };
+/** Chart data: effective power and cumulative minutes, sampled every 2% SoC (plus the end). */
+export function curveSeries(
+  car: Car,
+  startSoc: number,
+  targetSoc: number,
+  stationKW: number,
+  tempC?: number,
+): Step[] {
+  if (targetSoc <= startSoc) return [];
+  const { steps } = integrate(car, startSoc, targetSoc, stationKW, tempC);
+  const out: Step[] = [{ soc: startSoc, kw: steps[0].kw, minutes: 0 }];
+  steps.forEach((st, i) => {
+    if ((i + 1) % 4 === 0 || i === steps.length - 1) out.push(st); // 4 x 0.5% = 2%
+  });
+  return out;
 }
