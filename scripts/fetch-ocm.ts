@@ -9,21 +9,23 @@ import { writeFileSync, mkdirSync } from "node:fs";
 const KEY = process.env.OPENCHARGEMAP_API_KEY;
 if (!KEY) throw new Error("OPENCHARGEMAP_API_KEY missing (run with --env-file=.env.local)");
 
-// NYC metro bounding box (from research/openchargemap-api.md).
-const params = new URLSearchParams({
-  output: "json",
-  boundingbox: "(40.92,-74.26),(40.49,-73.68)",
-  countrycode: "US",
-  maxresults: "500",
-  compact: "true",
-  verbose: "false",
-  opendata: "true",
-});
-const url = `https://api.openchargemap.io/v3/poi/?${params}`;
+type BBox = { north: number; west: number; south: number; east: number };
 
-// OCM connector type IDs -> friendly names (from research notes).
+// NYC metro bounding box (from research/openchargemap-api.md). OCM caps each
+// request at maxresults, so a full box gets split into quadrants until every
+// tile comes back under the cap (the first pull hit 500 and silently dropped stations).
+const NYC_BOX: BBox = { north: 40.92, west: -74.26, south: 40.49, east: -73.68 };
+const MAX_PER_REQUEST = 500;
+const MAX_TILE_DEPTH = 4;
+
+// OCM connector type IDs -> friendly names (OCM /referencedata, US-relevant subset).
+// NACS (SAE J3400) is the Tesla plug standardized, so it maps to "Tesla".
 const CONNECTOR: Record<number, string> = {
-  33: "CCS", 2: "CHAdeMO", 27: "Tesla", 25: "Type2", 32: "CCS", 1: "Type1",
+  1: "Type1", 29: "Type1", // SAE J1772 (socket / tethered)
+  2: "CHAdeMO",
+  8: "Tesla", 27: "Tesla", 30: "Tesla", 1040: "Tesla",
+  25: "Type2", 28: "Type2",
+  32: "CCS", 33: "CCS", 1036: "CCS",
 };
 const CURRENT: Record<number, string> = { 30: "DC", 20: "AC (3-phase)", 10: "AC (1-phase)" };
 
@@ -36,13 +38,47 @@ type OcmPoi = {
   Connections?: { ConnectionTypeID?: number; PowerKW?: number; CurrentTypeID?: number; Quantity?: number }[];
 };
 
-async function main() {
-  console.log("Fetching NYC stations from OpenChargeMap...");
-  const res = await fetch(url, {
+async function fetchBox(box: BBox): Promise<OcmPoi[]> {
+  const params = new URLSearchParams({
+    output: "json",
+    boundingbox: `(${box.north},${box.west}),(${box.south},${box.east})`,
+    countrycode: "US",
+    maxresults: String(MAX_PER_REQUEST),
+    compact: "true",
+    verbose: "false",
+    opendata: "true",
+  });
+  const res = await fetch(`https://api.openchargemap.io/v3/poi/?${params}`, {
     headers: { "X-API-Key": KEY!, "User-Agent": "WattFinder/0.1 (portfolio project)" },
   });
   if (!res.ok) throw new Error(`OCM ${res.status}: ${await res.text()}`);
-  const raw = (await res.json()) as OcmPoi[];
+  return (await res.json()) as OcmPoi[];
+}
+
+async function fetchTiled(box: BBox, depth = 0): Promise<OcmPoi[]> {
+  const pois = await fetchBox(box);
+  if (pois.length < MAX_PER_REQUEST) return pois;
+  if (depth >= MAX_TILE_DEPTH) {
+    console.warn(`tile still at the ${MAX_PER_REQUEST} cap at depth ${depth}; some POIs may be missing`, box);
+    return pois;
+  }
+  const midLat = (box.north + box.south) / 2;
+  const midLng = (box.west + box.east) / 2;
+  const tiles: BBox[] = [
+    { north: box.north, west: box.west, south: midLat, east: midLng },
+    { north: box.north, west: midLng, south: midLat, east: box.east },
+    { north: midLat, west: box.west, south: box.south, east: midLng },
+    { north: midLat, west: midLng, south: box.south, east: box.east },
+  ];
+  const byId = new Map<number, OcmPoi>();
+  // Sequential on purpose: OCM asks for fair use.
+  for (const tile of tiles) for (const p of await fetchTiled(tile, depth + 1)) byId.set(p.ID, p);
+  return [...byId.values()];
+}
+
+async function main() {
+  console.log("Fetching NYC stations from OpenChargeMap (tiled bounding box)...");
+  const raw = await fetchTiled(NYC_BOX);
 
   mkdirSync("data", { recursive: true });
   writeFileSync("data/ocm-nyc-raw.json", JSON.stringify(raw, null, 2));
@@ -78,4 +114,7 @@ async function main() {
   console.log(`Normalized ${stations.length} usable stations (${dc} with DC fast charging) -> data/stations-nyc.json`);
 }
 
-main();
+main().catch((err) => {
+  console.error(err);
+  process.exit(1);
+});

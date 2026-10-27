@@ -66,8 +66,10 @@ export function rankStations(
         effectiveKw = est.avgKW;
         stationLimited = est.stationLimited;
       } else {
-        // J1772 AC only; flat power capped by the onboard charger, no taper curve.
-        if (dcOnly || connector.connectorType !== "Type1") continue;
+        // J1772 for everyone, plus the car's own plug (Tesla destination chargers);
+        // flat power capped by the onboard charger, no taper curve.
+        const acOk = connector.connectorType === "Type1" || car.connectors.includes(connector.connectorType);
+        if (dcOnly || !acOk) continue;
         effectiveKw = Math.min(connector.powerKw, car.onboardAcKW);
         minutes = Math.round(((car.usableKWh * ((targetSoc - startSoc) / 100)) / effectiveKw) * 60);
         stationLimited = connector.powerKw < car.onboardAcKW;

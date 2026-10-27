@@ -65,7 +65,7 @@ flowchart LR
   R --> UI[Next.js UI<br/>Leaflet map + list + detail]
 ```
 
-- `getStations()` reads Postgres and falls back to the committed OpenChargeMap snapshot (498 stations, 541 connectors) if the database is unreachable. The app works with no database at all.
+- `getStations()` reads Postgres and falls back to the committed OpenChargeMap snapshot (1,656 stations, 1,790 connectors, fetched in tiles so the API's 500-result cap cannot drop any) if the database is unreachable. The app works with no database at all.
 - `occupancy.ts` produces deterministic, time-of-day-aware availability in NYC local time, seeded by station id.
 - `weather.ts` fetches live temperature from Open-Meteo and feeds the estimator's cold-pack derating.
 - `recommend.ts` ranks stations by drive time + modeled wait + charge time.
@@ -149,7 +149,7 @@ docs/overview.html         one-page visual overview
 
 ## Roadmap
 
-- [x] Data layer: 498 NYC stations and 541 connectors in Postgres, with snapshot fallback
+- [x] Data layer: 1,656 NYC stations and 1,790 connectors (tiled OpenChargeMap fetch), Postgres with snapshot fallback
 - [x] Charge-time estimator with per-car curves, validated against published times
 - [x] Occupancy model, live weather, and ranking (`src/lib`)
 - [x] Map UI: Leaflet map, car picker, sliders, ranked list, detail view

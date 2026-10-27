@@ -13,7 +13,7 @@ async function main() {
   delete process.env.DATABASE_URL;
   const { stations, source } = await getStations();
   assert.equal(source, "cache");
-  assert.ok(stations.length > 400, `expected ~498 stations, got ${stations.length}`);
+  assert.ok(stations.length > 1500, `expected ~1656 stations, got ${stations.length}`);
   console.log(`ok  getStations: ${stations.length} stations from ${source}`);
 
   // Deterministic availability, and overnight is no busier than the evening peak.
