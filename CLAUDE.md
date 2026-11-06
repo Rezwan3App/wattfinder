@@ -14,7 +14,7 @@ App track of Project 3 (portfolio piece). Full spec: `../MD files masterlist/pro
 - **Stack (Aug 15, 2026):** Next.js (App Router) + TypeScript + Tailwind + Leaflet (free tiles) + shadcn/ui (planned). Postgres via Supabase for station + occupancy data (real schema, not static JSON): chosen over Neon for the easier Vercel integration; swappable if it becomes friction. Deploys on Vercel.
 - Deliberately semi-complex by request: real DB layer instead of flat JSON is the main added moving part, on top of the Next.js app.
 - Optional Hugging Face Gradio mini-app (reusing the estimator code): deferred, decide again at Phase 4.
-- Repo: private, `Rezwan3App/wattfinder` on GitHub, local folder `Desktop/wattfinder`
+- Repo: public, `Rezwan3App/wattfinder` on GitHub, local folder `Desktop/wattfinder`
 
 ## Design direction (added Aug 15, 2026: build itself deferred to a later session)
 
