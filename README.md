@@ -1,5 +1,7 @@
 # WattFinder
 
+**[Live demo](https://wattfinder-dun.vercel.app)**
+
 **An EV charging companion for NYC that ranks nearby stations by total time (drive + wait + an honest charge time for your specific car), instead of by the max kW printed on the sticker.**
 
 Live demo: not deployed yet. See [Roadmap](#roadmap).

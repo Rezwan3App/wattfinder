@@ -4,6 +4,7 @@ import { CARS } from "./estimator";
 import { predictAvailability } from "./occupancy";
 import { rankStations } from "./recommend";
 import { getStations } from "./stations";
+import { formatObservedAt } from "./weather";
 
 const car = (id: string) => CARS.find((c) => c.id === id)!;
 const origin = { lat: 40.7128, lng: -74.006 };
@@ -45,6 +46,12 @@ async function main() {
   const drive = (s: typeof nyc) => rankStations([s], bolt)[0].driveMinutes;
   assert.ok(drive(nj) >= drive(nyc) + 10, `NJ ${drive(nj)}min should carry the crossing vs NYC ${drive(nyc)}min`);
   console.log(`ok  Hudson crossing: NYC ${drive(nyc)}min vs NJ ${drive(nj)}min at similar distance`);
+
+  // Weather timestamps carry no offset, so formatting must not depend on the machine's zone.
+  assert.equal(formatObservedAt("2026-11-06T18:00"), "6:00 PM");
+  assert.equal(formatObservedAt("2026-11-06T00:15"), "12:15 AM");
+  assert.equal(formatObservedAt("2026-11-06T12:00"), "12:00 PM");
+  console.log("ok  observed time formats without a timezone");
 
   console.log("\nAll recommend checks passed.");
 }

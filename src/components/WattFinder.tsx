@@ -5,7 +5,7 @@ import { useEffect, useMemo, useState } from "react";
 import { CARS, coldFactor, estimateChargeTime, type Car } from "@/lib/estimator";
 import { rankStations, type Ranked } from "@/lib/recommend";
 import type { Station } from "@/lib/stations";
-import type { LiveConditions } from "@/lib/weather";
+import { formatObservedAt, type LiveConditions } from "@/lib/weather";
 import ChargeCurve from "./ChargeCurve";
 
 const StationMap = dynamic(() => import("./StationMap"), {
@@ -108,12 +108,7 @@ export default function WattFinder({
             <strong className="font-semibold">{Math.round(conditions.tempC)} &deg;C in NYC</strong>
             <span className="text-muted">
               {" "}as of{" "}
-              {new Date(conditions.observedAt).toLocaleTimeString("en-US", {
-                hour: "numeric",
-                minute: "2-digit",
-                timeZone: "America/New_York",
-              })}{" "}
-              ET (Open-Meteo).{" "}
+              {formatObservedAt(conditions.observedAt)} ET (Open-Meteo).{" "}
             </span>
             {slower >= 3
               ? `Cold batteries charge slower: estimates below run about ${slower}% longer than a warm pack.`
@@ -268,7 +263,7 @@ export default function WattFinder({
       <footer className="border-t border-line pt-3 text-xs leading-relaxed text-muted">
         <p>
           Stations come from OpenChargeMap (CC BY-SA 4.0), read from{" "}
-          {source === "database" ? "the project database" : "a saved snapshot, because the database was unreachable"}.
+          {source === "database" ? "the project database" : "a saved snapshot"}.
           Availability is a modeled estimate based on time of day, not live occupancy. Charging curves are from
           published tests and may differ from your car. Map data &copy; OpenStreetMap contributors.
         </p>
